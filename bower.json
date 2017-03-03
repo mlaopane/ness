@@ -1,7 +1,7 @@
 {
   "name": "ness",
   "authors": [
-    "Mickael LAO-PANE <mlaopane@gmail.com>",
+    "Mickael LAO-PANE <mlaopane@gmail.com>"
   ],
   "description": "A tiny front-end library including some less and js for basic customization",
   "main": "less/ness.less",
