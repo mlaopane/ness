@@ -12,9 +12,6 @@ $(document).ready(function() {
     $progress.width($(ness_bar).data('ness-bar')).appendTo($(ness_bar));
   }
 
-  // Background images
-  setBackground();
-
   /****************************/
   /********** EVENTS **********/
   /****************************/
