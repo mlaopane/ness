@@ -3,32 +3,39 @@
 @import "animation.less";
 
 /***** BUTTONS *****/
+.ness-btn-group {
+  .ness-btn { margin: 4px; }
+}
 .ness-btn {
-  background: @ness-steelgrey;
+  background: @ness-lightgrey;
+  border: 1px solid @ness-steelgrey;
   color: @ness-darkgrey;
-  border: none;
+  padding: 8px 12px;
   .border-radius(4px);
-  font-family: "Montserrat";
-  font-weight: bold;
-  text-transform: uppercase;
 
-  &.ness-btn-failure {
+  &.no-border { border: none; }
+
+  &.ness-btn-danger {
     background: @ness-darkred;
+    border: 1px solid @ness-darkred;
     color: white;
     &:hover { background: darken(@ness-darkred, 10%) }
   }
   &.ness-btn-primary {
     background: @ness-darkblue;
+    border: 1px solid @ness-darkblue;
     color: white;
     &:hover { background: darken(@ness-darkblue, 10%) }
   }
   &.ness-btn-success {
     background: @ness-darkgreen;
+    border: 1px solid @ness-darkgreen;
     color: white;
     &:hover { background: darken(@ness-darkgreen, 10%) }
   }
   &.ness-btn-warning {
     background: @ness-mustard;
+    border: 1px solid @ness-brown;
     color: white;
     &:hover { background: darken(@ness-mustard, 10%) }
   }
