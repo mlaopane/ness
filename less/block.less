@@ -1,0 +1,59 @@
+/***** BLOCKS *****/
+
+.ness-block {
+  background: @ness-lightgrey;
+  margin-bottom: 20px;
+  padding: 16px;
+  position: relative;
+  transition: .2s;
+  &.inverse {
+    color: @ness-lightgrey;
+    background: @ness-darkgrey;
+  }
+  &.failure {
+    background: @ness-red;
+    color: white;
+  }
+  &.success {
+    background: @ness-green;
+    color: white;
+  }
+  &.neutral {
+    background: @ness-blue;
+    color: white;
+  }
+  &.warning {
+    background: @ness-mustard;
+    color: white;
+  }
+  &.border {
+    border: 1px solid @ness-steelgrey;
+  }
+  &.no-border {
+    border: none;
+  }
+  &.round {
+    border-radius: 4px;
+  }
+  &.three-d {
+    box-shadow: 0px 0px 4px 2px @ness-grey;
+  }
+  &.hover {
+    &:hover {
+      background: @ness-darkgrey;
+      border: @ness-darkgrey;
+      color: white;
+      h1,h2,h3,h4,h5,h6,li,p,span { color: @ness-lightgrey !important }
+      .text-muted { color: @ness-steelgrey !important }
+      .ness-bar {border: none}
+    }
+  }
+}
+
+.ness-edit-block {
+  .edit { display: none }
+  &.edit-mode {
+    .edit { display: block; }
+    .noedit { display: none; }
+  }
+}

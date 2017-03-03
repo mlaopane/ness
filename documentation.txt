@@ -1,0 +1,3 @@
+-- NESS Framework --
+
+A tiny library

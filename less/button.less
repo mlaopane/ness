@@ -1,0 +1,52 @@
+@import "color.less";
+@import "mixin.less";
+@import "animation.less";
+
+/***** BUTTONS *****/
+.ness-btn {
+  background: @ness-steelgrey;
+  color: @ness-darkgrey;
+  border: none;
+  .border-radius(4px);
+  font-family: "Montserrat";
+  font-weight: bold;
+  text-transform: uppercase;
+
+  &.ness-btn-failure {
+    background: @ness-darkred;
+    color: white;
+    &:hover { background: darken(@ness-darkred, 10%) }
+  }
+  &.ness-btn-primary {
+    background: @ness-darkblue;
+    color: white;
+    &:hover { background: darken(@ness-darkblue, 10%) }
+  }
+  &.ness-btn-success {
+    background: @ness-darkgreen;
+    color: white;
+    &:hover { background: darken(@ness-darkgreen, 10%) }
+  }
+  &.ness-btn-warning {
+    background: @ness-mustard;
+    color: white;
+    &:hover { background: darken(@ness-mustard, 10%) }
+  }
+
+  &.ness-btn-xs {
+    padding: 4px 6px;
+    font-size: 12px;
+  }
+  &.ness-btn-sm {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  &.ness-btn-md {
+    padding: 20px 30px;
+    font-size: 16px;
+  }
+  &.ness-btn-lg {
+    padding: 30px 45px;
+    font-size: 18px;
+  }
+}

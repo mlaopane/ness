@@ -1,0 +1,64 @@
+/******************/
+/***** COLORS *****/
+/******************/
+
+/* Base */
+@ness-blue: hsl(200, 90%, 55%);
+@ness-green: hsl(150, 74%, 35%);
+@ness-grey: hsl(200, 10%, 40%);
+@ness-papyrus: radial-gradient(circle, hsl(40, 95%, 90%),hsl(35, 70%, 70%));
+@ness-purple: hsl(275, 70%, 60%);
+@ness-red: hsl(355, 70%, 55%);
+@ness-sand: hsl(40, 85%, 70%);
+@ness-yellow: hsl(50, 100%, 59%);
+
+/* Extended */
+@ness-darkblue: darken(@ness-blue, 15%);
+@ness-darkgreen: darken(@ness-green, 10%);
+@ness-darkgrey: darken(@ness-grey, 20%);
+@ness-darkred: darken(@ness-red, 15%);
+@ness-darkpurple: darken(@ness-purple, 15%);
+@ness-graphite: darken(@ness-grey, 10%);
+@ness-lightblue: hsl(200, 70%, 85%);
+@ness-lightgreen: hsl(154, 70%, 42%);
+@ness-lightgrey: lighten(@ness-grey, 55%);
+@ness-mustard: darken(@ness-sand, 24%);
+@ness-seablue: hsl(195, 95%, 60%);
+@ness-steelgrey: hsl(200, 10%, 85%);
+@ness-link-color: white;
+@ness-link-hover-color: darken(@ness-link-color, 15%);
+
+// Links
+@link-color: @ness-darkblue;
+@link-hover-color: darken(@link-color, 5%);
+
+/***** BG-COLORS *****/
+.ness-bg-blue {background: hsl(200, 90%, 60%)}
+.ness-bg-darkblue {
+  background: @ness-darkblue;
+  &:hover {
+    background: darken(@ness-darkblue, 15%);
+  }
+}
+.ness-bg-darkgrey {background: @ness-darkgrey}
+.ness-bg-graphite {background: hsl(200, 10%, 40%)}
+.ness-bg-green {background: hsl(155, 70%, 40%)}
+.ness-bg-sand {background: hsl(45, 86%, 70%)}
+.ness-bg-papyrus {background: radial-gradient(circle, hsl(40, 95%, 90%),hsl(35, 70%, 70%))}
+.ness-bg-red {background: hsl(356, 70%, 60%)}
+.ness-bg-seablue {background: hsl(190, 100%, 60%)}
+.ness-bg-steelgrey {background: hsl(200, 10%, 80%)}
+.ness-bg-yellow {background: hsl(51, 100%, 59%);}
+
+/***** TEXT-COLORS *****/
+.ness-text-blue {color: @ness-blue}
+.ness-text-darkblue {color: @ness-darkblue}
+.ness-text-darkgrey {color: hsl(200, 10%, 20%)}
+.ness-text-graphite {color: hsl(200, 10%, 40%)}
+.ness-text-green {color: hsl(155, 70%, 40%)}
+.ness-text-sand {color: hsl(45, 86%, 70%)}
+.ness-text-papyrus {color: hsl(35, 70%, 70%)}
+.ness-text-red {color: hsl(356, 70%, 60%)}
+.ness-text-seablue {color: hsl(190, 100%, 60%)}
+.ness-text-steelgrey {color: hsl(200, 10%, 80%)}
+.ness-text-yellow {color: hsl(51, 100%, 59%);}

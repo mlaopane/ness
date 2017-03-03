@@ -1,0 +1,23 @@
+
+/***** MIXINS *****/
+
+.border-radius(@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -ms-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.setFadeOut(@color: black; @start: 100%; @end: 20%) {
+  background: linear-gradient(fadeOut(@color, @start), fadeOut(@color, @end));
+}
+
+.translateX(@value: 0%) {
+  -webkit-transform: translateX(@value);
+  -ms-transform: translateX(@value);
+  transform: translateX(@value);
+}
+.translateY(@value: 0%) {
+  -webkit-transform: translateY(@value);
+  -ms-transform: translateY(@value);
+  transform: translateY(@value);
+}

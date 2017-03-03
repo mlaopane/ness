@@ -1,0 +1,119 @@
+@import "color.less";
+@import "mixin.less";
+@import "animation.less";
+@import 'block.less';
+@import 'button.less';
+@import 'form.less';
+@import 'alert.less';
+
+// Progress bars
+.ness-bar {
+  background: white;
+  border: 1px solid @ness-steelgrey;
+  border-radius: 2px;
+  width: 100px;
+  height: 20px;
+  position: relative;
+  .ness-progress {
+    background: @ness-blue;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    height: 100%;
+  }
+}
+
+.ness-displayed {
+  display: block;
+}
+.ness-hidden {
+  display: none;
+}
+.ness-invisible {
+  opacity: 0;
+}
+.ness-visible {
+  opacity: 1;
+}
+
+.ness-filter {
+  background : rgba(0,0,0,0.75);
+}
+
+.ness-list {
+  list-style-type: none;
+  margin: 0; padding: 0;
+  position: relative;
+  width: 100%;
+  .item {
+    align-items: baseline;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 8px 4px;
+    width: 100%;
+    .fa, .glyphicon {
+      padding-right: 4px;
+    }
+  }
+}
+
+.ness-mask {
+  position: absolute;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 3;
+  &.blur {
+    .setFadeOut(@ness-lightgrey, 100%, 30%);
+  }
+}
+
+.flex {
+  &-row {
+    display: flex;
+    flex-flow: row wrap;
+    &.center {
+      justify-content: center;
+      &-center {
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    &.left {
+      justify-content: flex-start;
+      &-center {
+        justify-content: flex-start;
+        align-items: center;
+      }
+    }
+    &.right {
+      justify-content: flex-end;
+      &-center {
+        align-items: center;
+        justify-content: flex-end;
+      }
+    }
+    &.space {
+      justify-content: space-around;
+      &-center {
+        justify-content: space-around;
+        align-items: center;
+      }
+    }
+    &.split {
+      justify-content: space-between;
+      &-center {
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+  &-column {
+    display: flex;
+    flex-flow: column wrap;
+    &.center {align-items: center}
+    &.left {align-items: flex-start;}
+    &.right {align-items: flex-end;}
+  }
+}

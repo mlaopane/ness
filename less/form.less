@@ -1,0 +1,31 @@
+.ness-form {
+  input, select {
+    color: black;
+    padding: 8px 16px;
+    &:focus {
+      background: @ness-grey;
+      color: white;
+    }
+  }
+  .add-input {
+    color: @ness-green;
+    cursor: pointer;
+    font-size: 18px;
+    &:hover {
+      color: @ness-darkgreen;
+    }
+  }
+  .remove-input {
+    color: @ness-red;
+    cursor: pointer;
+    font-size: 18px;
+    &:hover {
+      color: @ness-darkred;
+    }
+  }
+  .edit { display: none }
+  &.edit-mode {
+    .edit { display: block; }
+    .noedit { display: none; }
+  }
+}
