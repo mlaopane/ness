@@ -6,32 +6,30 @@
   border: 1px solid grey;
   border-radius: 5px;
   color: white;
-  display: none; justify-content: center;
+  display: flex;
+  justify-content: center;
   left: 10%; top: 100px;
   margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
   opacity: 0.95;
   padding: 20px;
-  position: fixed;
-  width: 80%;
-  @media (min-width: 769px) {
-    left: 25%;
-    width: 50%;
-  }
+  width: 100%;
   z-index: 3;
   //
   &.success {
-    background: @ness-green;
-    border: 1px solid @ness-darkgreen;
+    background: @ness-success;
+    border: 1px solid darken(@ness-success, 10%);
   }
-  &.failure {
-    background: @ness-red;
-    border: 1px solid @ness-darkred;
+  &.danger {
+    background: @ness-danger;
+    border: 1px solid darken(@ness-danger, 10%);
   }
   &.neutral {
-    background: @ness-blue;
-    border: 1px solid @ness-darkblue;
+    background: @ness-neutral;
+    border: 1px solid darken(@ness-neutral, 10%);
   }
-  &.three-d { box-shadow: 0px 1px 3px 1px grey }
+  &.three-d {
+    box-shadow: 0px 1px 3px 1px grey;
+  }
 }
