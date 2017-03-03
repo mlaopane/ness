@@ -1,0 +1,13 @@
+a {
+  color: @ness-blue;
+  &:hover {
+    color: darken(@ness-blue, 15%);
+    text-decoration: none;
+    &:visited {
+      color: darken(@ness-purple, 15%);
+    }
+  }
+  &:visited {
+    color: @ness-purple;
+  }
+}
