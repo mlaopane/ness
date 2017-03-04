@@ -1,0 +1,65 @@
+/*********************/
+/***** NESS GRID *****/
+/*********************/
+
+/***  Mixins ***/
+.generate-xs(@n, @i: 1) when (@i =< @n) {
+  .ness-xs-@{i} {
+    width: (@i * 100% / @n);
+  }
+  .generate-xs(@n, (@i + 1));
+}
+
+.generate-sm(@n, @i: 1) when (@i =< @n) {
+  .ness-sm-@{i} {
+    @media(min-width: @width-sm) { width: (@i * 100% / @n); }
+  }
+  .generate-sm(@n, (@i + 1));
+}
+
+.generate-md(@n, @i: 1) when (@i =< @n) {
+  .ness-md-@{i} {
+    @media(min-width: @width-md) { width: (@i * 100% / @n); }
+  }
+  .generate-md(@n, (@i + 1));
+}
+
+.generate-lg(@n, @i: 1) when (@i =< @n) {
+  .ness-lg-@{i} {
+    @media(min-width: @width-lg) { width: (@i * 100% / @n); }
+  }
+  .generate-lg(@n, (@i + 1));
+}
+
+.generate-xl(@n, @i: 1) when (@i =< @n) {
+  .ness-xl-@{i} {
+    @media(min-width: @width-xl) { width: (@i * 100% / @n); }
+  }
+  .generate-xl(@n, (@i + 1));
+}
+
+// To generate de ness-<width>-<size> classes
+.generate-columns(@n) {
+  .generate-xs(@n);
+  .generate-sm(@n);
+  .generate-md(@n);
+  .generate-lg(@n);
+  .generate-xl(@n);
+}
+
+/**
+* Generate the 'ness-grid' which is a 12-column-based-flexbox grid
+* Sizes : xs, sm, md, lg, xl (cf. 'width.less' for the values)
+*/
+.ness-grid {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  //
+  .generate-columns(12);
+}
