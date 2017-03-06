@@ -5,7 +5,7 @@
   ],
   "description": "A tiny front-end library including some less and js for basic customization",
   "dependencies": {
-    "jquery": "~3.*",
+    "jquery": "~3.*"
   },
   "main": "less/ness.less",
   "keywords": [
