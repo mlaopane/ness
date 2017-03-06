@@ -1,16 +1,28 @@
-.ness-form {
-  input, select {
-    color: black;
-    padding: 8px 16px;
-    &:focus {
-      background: @ness-grey;
-      color: white;
-    }
+.ness-form-container {
+  h1 {
+    margin: 0 0 24px 0;
+    padding: 24px 0px;
   }
-  .add-input {
+  h2 {
+    margin: 0 0 20px 0;
+    padding: 20px 0px;
+  }
+  h3 {
+    margin: 0 0 16px 0;
+    padding: 16px 0px;
+  }
+  h4 {
+    margin: 0 0 12px 0;
+    padding: 12px 0px;
+    &:first-child { border-bottom: 1px solid @ness-steelgrey }
+  }
+  //
+  .add-input,
+  .add-option {
     color: @ness-green;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 22px;
+    margin-bottom: 8px;
     &:hover {
       color: @ness-darkgreen;
     }
@@ -18,14 +30,40 @@
   .remove-input {
     color: @ness-red;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 22px;
     &:hover {
       color: @ness-darkred;
     }
   }
-  .edit { display: none }
-  &.edit-mode {
-    .edit { display: block; }
-    .noedit { display: none; }
+  .ness-form {
+    input, select, textarea {
+      color: black;
+      padding: 8px 16px;
+      &:focus {
+        background: @ness-grey;
+        color: white;
+      }
+    }
+    .add-input {
+      color: @ness-green;
+      cursor: pointer;
+      font-size: 18px;
+      &:hover {
+        color: @ness-darkgreen;
+      }
+    }
+    .remove-input {
+      color: @ness-red;
+      cursor: pointer;
+      font-size: 18px;
+      &:hover {
+        color: @ness-darkred;
+      }
+    }
+    .edit { display: none }
+    &.edit-mode {
+      .edit { display: block; }
+      .noedit { display: none; }
+    }
   }
 }

@@ -1,4 +1,7 @@
 /*** Core ***/
+nav {
+  background: @nav-bg;
+}
 .ness-menu {
   background: @nav-bg;
   display: flex;
@@ -11,17 +14,25 @@
     justify-content: flex-start;
   }
   //
-  &.vertical { flex-flow: column wrap; }
-  &.horizontal { flex-flow: row wrap; }
+  &.vertical {
+    flex-flow: column wrap;
+    align-items: stretch;
+    li {
+      width: 100%;
+    }
+  }
+  &.horizontal {
+    flex-flow: row wrap;
+  }
   //
   li {
-    border-right: 1px solid @nav-bg-hover;
     display: flex;
   }
   a {
     display: block;
     color: @nav-txt;
     padding: 12px;
+    transition: 0.15s;
     width: 100%;
     &:hover {
       background: @nav-bg-hover;

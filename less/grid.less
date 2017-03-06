@@ -12,28 +12,44 @@
 
 .generate-sm(@n, @i: 1) when (@i =< @n) {
   .ness-sm-@{i} {
-    @media(min-width: @width-sm) { width: (@i * 100% / @n); }
+    @media(min-width: @width-sm) {
+      padding-left: 12px;
+      padding-right: 12px;
+      width: (@i * 100% / @n);
+    }
   }
   .generate-sm(@n, (@i + 1));
 }
 
 .generate-md(@n, @i: 1) when (@i =< @n) {
   .ness-md-@{i} {
-    @media(min-width: @width-md) { width: (@i * 100% / @n); }
+    @media(min-width: @width-md) {
+      padding-left: 16px;
+      padding-right: 16px;
+      width: (@i * 100% / @n);
+    }
   }
   .generate-md(@n, (@i + 1));
 }
 
 .generate-lg(@n, @i: 1) when (@i =< @n) {
   .ness-lg-@{i} {
-    @media(min-width: @width-lg) { width: (@i * 100% / @n); }
+    @media(min-width: @width-lg) {
+      padding-left: 20px;
+      padding-right: 20px;
+      width: (@i * 100% / @n);
+    }
   }
   .generate-lg(@n, (@i + 1));
 }
 
 .generate-xl(@n, @i: 1) when (@i =< @n) {
   .ness-xl-@{i} {
-    @media(min-width: @width-xl) { width: (@i * 100% / @n); }
+    @media(min-width: @width-xl) {
+      padding-left: 24px;
+      padding-right: 24px;
+      width: (@i * 100% / @n);
+    }
   }
   .generate-xl(@n, (@i + 1));
 }
@@ -55,10 +71,7 @@
   box-sizing: border-box;
   display: flex;
   flex-flow: row wrap;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
+
   width: 100%;
   //
   .generate-columns(12);
