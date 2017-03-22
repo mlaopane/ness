@@ -5,6 +5,7 @@
 /***  Mixins ***/
 .generate-xs(@n, @i: 1) when (@i =< @n) {
   .ness-xs-@{i} {
+    box-sizing: border-box;
     width: (@i * 100% / @n);
   }
   .generate-xs(@n, (@i + 1));
@@ -13,6 +14,7 @@
 .generate-sm(@n, @i: 1) when (@i =< @n) {
   .ness-sm-@{i} {
     @media(min-width: @width-sm) {
+      box-sizing: border-box;
       padding-left: 12px;
       padding-right: 12px;
       width: (@i * 100% / @n);
@@ -24,6 +26,7 @@
 .generate-md(@n, @i: 1) when (@i =< @n) {
   .ness-md-@{i} {
     @media(min-width: @width-md) {
+      box-sizing: border-box;
       padding-left: 16px;
       padding-right: 16px;
       width: (@i * 100% / @n);
@@ -35,6 +38,7 @@
 .generate-lg(@n, @i: 1) when (@i =< @n) {
   .ness-lg-@{i} {
     @media(min-width: @width-lg) {
+      box-sizing: border-box;
       padding-left: 20px;
       padding-right: 20px;
       width: (@i * 100% / @n);
@@ -46,6 +50,7 @@
 .generate-xl(@n, @i: 1) when (@i =< @n) {
   .ness-xl-@{i} {
     @media(min-width: @width-xl) {
+      box-sizing: border-box;
       padding-left: 24px;
       padding-right: 24px;
       width: (@i * 100% / @n);
