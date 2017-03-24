@@ -67,3 +67,21 @@
     }
   }
 }
+
+.ness-label
+{
+  margin-bottom: 5px;
+  padding: 6px 8px;
+}
+.ness-input
+{
+  border: 1px solid @ness-steelgrey;
+  border-radius: 4px;
+  box-shadow: inset 0px 1px 2px hsla(200, 5%, 5%, 0.1);
+  padding: 8px 12px;
+  &:active, &:focus
+  {
+    border: 1px solid @ness-darkblue;
+    box-shadow: 0px 0px 1px 1px @ness-lightblue;
+  }
+}

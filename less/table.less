@@ -1,0 +1,84 @@
+/***************************/
+/********** TABLE **********/
+/***************************/
+
+.table-container {
+  align-self: stretch;
+  border: 1px solid @nedge-lightgrey;
+  margin: 10px auto 20px;
+  overflow-x: auto;
+  width: 100%;
+  &.half { width: 50% }
+  &.xs { width: 280px }
+  &.sm { width: 450px }
+  &.md { width: 720px }
+  &.lg { width: 950px }
+  //
+  table {
+    border-collapse: collapse;
+    color: black;
+    font-size: 0.9em;
+    margin: auto;
+    width: 100%;
+    //
+    thead {
+      tr {
+        border-bottom: 2px solid @nedge-lightgrey;
+        //
+        th {
+          background: @nedge-darkgrey;
+          color: white;
+          padding: 8px 16px;
+          text-align: center;
+          //
+          &:not(:last-child) {
+            border-right: 1px solid @nedge-steelgrey;
+          }
+        }
+      }
+    }
+    tbody {
+      tr {
+        color: black;
+        transition: 0.15s;
+        //
+        &:nth-child(even) { background: @nedge-lightgrey }
+        &:nth-child(odd) { background: white }
+        &:hover {
+          background: @nedge-darkblue;
+          color: white;
+          cursor: default;
+          button { color: @nedge-darkgrey }
+          //
+          a { color: white }
+        }
+        a { text-decoration: none }
+        //
+        td {
+          padding: 8px 16px;
+          text-align: center;
+          //
+          &:not(:last-child) { border-right: 1px solid @nedge-steelgrey }
+          &:last-child { cursor: pointer }
+          a:hover { text-shadow: 1px 1px black }
+        }
+      }
+    }
+    ul {flex-flow: row;}
+    button {
+      background: white;
+      border: none;
+      box-shadow: 0px 0px 1px 0px @nedge-darkgrey;
+      border-radius: 4px;
+      color: @nedge-darkgrey;
+      &:hover {
+        background: @nedge-lightgrey;
+        color: @nedge-darkgrey;
+      }
+      padding: 3px 6px;
+      &:not(:last-child) {
+        margin-right: 5px;
+      }
+    }
+  } // table
+}
