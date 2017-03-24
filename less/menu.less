@@ -1,7 +1,4 @@
 /*** Core ***/
-nav {
-  background: @nav-bg;
-}
 .ness-menu {
   background: @nav-bg;
   display: flex;
@@ -29,8 +26,9 @@ nav {
     display: flex;
   }
   a {
-    display: block;
+    background: darken(@nav-bg, 5%);
     color: @nav-txt;
+    display: block;
     padding: 12px;
     transition: 0.15s;
     width: 100%;
