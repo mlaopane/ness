@@ -6,6 +6,8 @@
 .generate-xs(@n, @i: 1) when (@i =< @n) {
   .ness-xs-@{i} {
     box-sizing: border-box;
+    padding-left: 12px;
+    padding-right: 12px;
     width: (@i * 100% / @n);
   }
   .generate-xs(@n, (@i + 1));
@@ -27,8 +29,8 @@
   .ness-md-@{i} {
     @media(min-width: @width-md) {
       box-sizing: border-box;
-      padding-left: 16px;
-      padding-right: 16px;
+      padding-left: 12px;
+      padding-right: 12px;
       width: (@i * 100% / @n);
     }
   }
@@ -39,8 +41,8 @@
   .ness-lg-@{i} {
     @media(min-width: @width-lg) {
       box-sizing: border-box;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: 22px;
+      padding-right: 22px;
       width: (@i * 100% / @n);
     }
   }
@@ -76,6 +78,7 @@
   box-sizing: border-box;
   display: flex;
   flex-flow: row wrap;
+  width: 100%;
   //
   .generate-columns(12);
 }
