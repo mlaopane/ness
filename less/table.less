@@ -2,10 +2,10 @@
 /********** TABLE **********/
 /***************************/
 
-.table-container {
+.ness-table-container {
   align-self: stretch;
   border: 1px solid @ness-lightgrey;
-  margin: 10px auto 20px;
+  margin: 10px auto;
   overflow-x: auto;
   width: 100%;
   &.half { width: 50% }
@@ -13,72 +13,82 @@
   &.sm { width: 450px }
   &.md { width: 720px }
   &.lg { width: 950px }
-  //
+  // Table
   table {
     border-collapse: collapse;
     color: black;
     font-size: 0.9em;
     margin: auto;
     width: 100%;
-    //
+    // Table Header
     thead {
       tr {
-        border-bottom: 2px solid @ness-lightgrey;
-        //
-        th {
-          background: @ness-darkgrey;
-          color: white;
-          padding: 8px 16px;
-          text-align: center;
-          //
-          &:not(:last-child) {
-            border-right: 1px solid @ness-steelgrey;
-          }
-        }
+        background: @thead-tr-bg;
+        border-bottom: 2px solid white;
+        cursor: pointer;
       }
     }
+    // Table Body
     tbody {
       tr {
         color: black;
-        transition: 0.15s;
+        cursor: pointer;
+        transition: 0.12s;
         //
-        &:nth-child(even) { background: @ness-lightgrey }
-        &:nth-child(odd) { background: white }
+        &:nth-child(even) { background: @tbody-tr-bg-even }
+        &:nth-child(odd) { background: @tbody-tr-bg-odd }
         &:hover {
-          background: @ness-darkblue;
-          color: white;
-          cursor: default;
-          button { color: @ness-darkgrey }
+          background: @tbody-tr-bg-hover;
+          color: @tbody-tr-txt-hover;
           //
           a { color: white }
         }
         a { text-decoration: none }
-        //
-        td {
-          padding: 8px 16px;
-          text-align: center;
-          //
-          &:not(:last-child) { border-right: 1px solid @ness-steelgrey }
-          &:last-child { cursor: pointer }
-          a:hover { text-shadow: 1px 1px black }
-        }
       }
     }
-    ul {flex-flow: row;}
-    button {
-      background: white;
-      border: none;
-      box-shadow: 0px 0px 1px 0px @ness-darkgrey;
-      border-radius: 4px;
-      color: @ness-darkgrey;
-      &:hover {
-        background: @ness-lightgrey;
-        color: @ness-darkgrey;
-      }
-      padding: 3px 6px;
+    // Cell Header
+    th {
+      color: white;
+      padding: 8px 16px;
+      text-align: left;
+      //
       &:not(:last-child) {
-        margin-right: 5px;
+        border-right: 1px solid @ness-steelgrey;
+      }
+      &:hover {
+        background: @thead-th-bg-hover;
+      }
+    }
+    // Cell Data
+    td {
+      padding: 8px 16px;
+      //
+      &:not(:last-child) { border-right: 1px solid @ness-steelgrey }
+      &:last-child { cursor: pointer }
+      a:hover { text-shadow: 1px 1px black }
+    }
+    // Center the column content
+    &.col
+    {
+      &-center {
+        th, td { text-align: center; }
+      }
+      &-left {
+        th, td { text-align: left; }
+      }
+      &-right {
+        th, td { text-align: right; }
       }
     }
   } // table
 }
+
+/*** Customize your table ***/
+// thead
+@thead-tr-bg: @ness-grey;
+@thead-th-bg-hover: darken(@thead-tr-bg, 7%); // Overriding isn't necessary
+//tbody
+@tbody-tr-bg-even: white;
+@tbody-tr-bg-odd: @ness-lightgrey;
+@tbody-tr-bg-hover: @ness-darkblue;
+@tbody-tr-txt-hover: white;

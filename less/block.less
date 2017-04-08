@@ -1,48 +1,58 @@
 /***** BLOCKS *****/
 
 .ness-block {
-  background: @ness-lightgrey;
-  margin-bottom: 20px;
+  margin: 10px 0px;
   padding: 16px;
   position: relative;
   transition: .2s;
-  &.inverse {
-    color: @ness-lightgrey;
-    background: @ness-darkgrey;
-  }
-  &.failure {
-    background: @ness-red;
-    color: white;
-  }
-  &.success {
-    background: @ness-green;
-    color: white;
-  }
-  &.neutral {
-    background: @ness-blue;
-    color: white;
-  }
-  &.warning {
-    background: @ness-mustard;
-    color: white;
-  }
+
+  // Block Classes
   &.border {
     border: 1px solid @ness-steelgrey;
   }
   &.no-border {
-    border: none;
+    border: none !important;
+  }
+  &.inverse {
+    background: @ness-darkgrey;
+    * { color: @ness-lightgrey };
+  }
+  &.failure {
+    background: @ness-lightred;
+    border: 1px solid darken(@ness-lightred, 8%);
+    * { color: @ness-darkred };
+  }
+  &.success {
+    background: @ness-lightgreen;
+    border: 1px solid darken(@ness-lightgreen, 8%);
+    * { color: @ness-darkgreen };
+  }
+  &.info {
+    background: @ness-lightblue;
+    border: 1px solid darken(@ness-lightblue, 8%);
+    * { color: @ness-darkblue };
+  }
+  &.neutral {
+    background: @ness-lightgrey;
+    border: 1px solid darken(@ness-lightgrey, 8%);
+    * { color: @ness-grey };
+  }
+  &.warning {
+    background: @ness-sand;
+    border: 1px solid darken(@ness-sand, 8%);
+    * { color: @ness-wetsand };
   }
   &.round {
-    border-radius: 4px;
+    border-radius: 5px;
   }
   &.three-d {
-    box-shadow: 0px 0px 4px 2px @ness-grey;
+    box-shadow: 0px 0px 3px 1px @ness-grey;
   }
   &.hover {
     &:hover {
       background: @ness-darkgrey;
       border: @ness-darkgrey;
-      color: white;
+      color: white !important;
       h1,h2,h3,h4,h5,h6,li,p,span { color: @ness-lightgrey !important }
       .text-muted { color: @ness-steelgrey !important }
       .ness-bar {border: none}

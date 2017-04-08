@@ -1,38 +1,32 @@
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+p {
+  color: @ness-darkgrey;
 }
 
 a {
+  color: @link-color;
   text-decoration: none;
   &:hover {
+    color: @link-hover-color;
     text-decoration: none;
   }
 }
 
-body > header {
-  background: @ness-darkgrey;
-  color: @ness-lightgrey;
-  padding: 10px;
+h1, h2, h3, h4, h5, h6 {
+  color: @ness-darkgrey;
+  margin: 0px 0px 10px 0px;
+  padding: 8px;
 }
 
-header {
-  h1 {
-    margin: 0px;
-    padding: 20px 8px;
-  }
-  h2 {
-    margin: 0px;
-    padding: 16px 8px;
-  }
-  h3 {
-    margin: 0px;
-    padding: 12px 8px;
-  }
-  h4 {
-    margin: 0px;
-    padding: 8px 8px;
-  }
-}
+h1 { font-size: 36px }
+h2 { font-size: 28px }
+h3 { font-size: 22px }
+h4 { font-size: 18px }
+h5 { font-size: 14px }
+h6 { font-size: 12px }
 
 aside {
   @media(min-width: @width-md) {
