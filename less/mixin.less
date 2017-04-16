@@ -7,6 +7,13 @@
   border-radius: @radius;
 }
 
+.flex(@direction: row, @main: center, @secondary: center) {
+  display: flex;
+  flex-direction: @direction;
+  justify-content: @main;
+  align-items: @secondary;
+}
+
 .setFadeOut(@color: black; @start: 100%; @end: 20%) {
   background: linear-gradient(fadeOut(@color, @start), fadeOut(@color, @end));
 }
