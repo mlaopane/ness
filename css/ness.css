@@ -1,5 +1,9 @@
+html {
+  height: 100%;
+}
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 100%;
 }
 p {
   color: #505c62;
@@ -798,6 +802,74 @@ article {
     width: 100%;
   }
 }
+.flex-row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.flex-column {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.center-center {
+  justify-content: center;
+  align-items: center;
+}
+.center-bottom {
+  justify-content: center;
+  align-items: flex-end;
+}
+.center-top {
+  justify-content: center;
+  align-items: flex-start;
+}
+.center-stretch {
+  justify-content: center;
+  align-items: stretch;
+}
+.center-baseline {
+  justify-content: center;
+  align-items: baseline;
+}
+.left-center {
+  justify-content: flex-start;
+  align-items: center;
+}
+.left-bottom {
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.left-top {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.left-stretch {
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.left-baseline {
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.right-center {
+  justify-content: flex-end;
+  align-items: center;
+}
+.right-bottom {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.right-top {
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.right-stretch {
+  justify-content: flex-end;
+  align-items: stretch;
+}
+.right-baseline {
+  justify-content: flex-end;
+  align-items: baseline;
+}
 /***** BLOCKS *****/
 .ness-block {
   margin: 10px 0px;
@@ -856,7 +928,7 @@ article {
   border-radius: 5px;
 }
 .ness-block.three-d {
-  box-shadow: 3px 3px 6px 0px #73848c;
+  box-shadow: 0px 0px 6px 1px #73848c;
 }
 .ness-block.hover:hover {
   background: #505c62;
@@ -1256,6 +1328,17 @@ article {
   border-bottom-left-radius: 2px;
   height: 100%;
 }
+.ness-mask {
+  background: black;
+  opacity: 0.7;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
 .ness-displayed {
   display: block;
 }
@@ -1295,69 +1378,6 @@ article {
 .ness-list .item .fa,
 .ness-list .item .glyphicon {
   padding-right: 4px;
-}
-.ness-mask {
-  position: absolute;
-  height: 100%;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  z-index: 3;
-}
-.ness-mask.blur {
-  background: linear-gradient(rgba(227, 230, 232, 0), rgba(227, 230, 232, 0.7));
-}
-.flex-row {
-  display: flex;
-  flex-flow: row wrap;
-}
-.flex-row.center {
-  justify-content: center;
-}
-.flex-row.center-center {
-  justify-content: center;
-  align-items: center;
-}
-.flex-row.left {
-  justify-content: flex-start;
-}
-.flex-row.left-center {
-  justify-content: flex-start;
-  align-items: center;
-}
-.flex-row.right {
-  justify-content: flex-end;
-}
-.flex-row.right-center {
-  align-items: center;
-  justify-content: flex-end;
-}
-.flex-row.space {
-  justify-content: space-around;
-}
-.flex-row.space-center {
-  justify-content: space-around;
-  align-items: center;
-}
-.flex-row.split {
-  justify-content: space-between;
-}
-.flex-row.split-center {
-  justify-content: space-between;
-  align-items: center;
-}
-.flex-column {
-  display: flex;
-  flex-flow: column wrap;
-}
-.flex-column.center {
-  align-items: center;
-}
-.flex-column.left {
-  align-items: flex-start;
-}
-.flex-column.right {
-  align-items: flex-end;
 }
 .clear-margin {
   margin: 0 !important;

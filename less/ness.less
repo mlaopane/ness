@@ -4,6 +4,7 @@
 @import "mixin.less";
 @import "animation.less";
 @import "grid.less";
+@import "flex.less";
 @import 'block.less';
 @import 'button.less';
 @import 'menu.less';
@@ -25,6 +26,16 @@
     border-bottom-left-radius: 2px;
     height: 100%;
   }
+}
+
+// Masks
+.ness-mask {
+  background: black;
+  opacity: 0.7;
+  bottom: 0; top: 0; left: 0; right: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 }
 
 .ness-displayed {
@@ -63,67 +74,6 @@
     .fa, .glyphicon {
       padding-right: 4px;
     }
-  }
-}
-
-.ness-mask {
-  position: absolute;
-  height: 100%;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  z-index: 3;
-  &.blur {
-    .setFadeOut(@ness-lightgrey, 100%, 30%);
-  }
-}
-
-.flex {
-  &-row {
-    display: flex;
-    flex-flow: row wrap;
-    &.center {
-      justify-content: center;
-      &-center {
-        justify-content: center;
-        align-items: center;
-      }
-    }
-    &.left {
-      justify-content: flex-start;
-      &-center {
-        justify-content: flex-start;
-        align-items: center;
-      }
-    }
-    &.right {
-      justify-content: flex-end;
-      &-center {
-        align-items: center;
-        justify-content: flex-end;
-      }
-    }
-    &.space {
-      justify-content: space-around;
-      &-center {
-        justify-content: space-around;
-        align-items: center;
-      }
-    }
-    &.split {
-      justify-content: space-between;
-      &-center {
-        justify-content: space-between;
-        align-items: center;
-      }
-    }
-  }
-  &-column {
-    display: flex;
-    flex-flow: column wrap;
-    &.center {align-items: center}
-    &.left {align-items: flex-start;}
-    &.right {align-items: flex-end;}
   }
 }
 

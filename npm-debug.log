@@ -1,0 +1,36 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'webpack' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.2
+4 verbose run-script [ 'prewebpack', 'webpack', 'postwebpack' ]
+5 info lifecycle ness@1.0.0~prewebpack: ness@1.0.0
+6 silly lifecycle ness@1.0.0~prewebpack: no script for prewebpack, continuing
+7 info lifecycle ness@1.0.0~webpack: ness@1.0.0
+8 verbose lifecycle ness@1.0.0~webpack: unsafe-perm in lifecycle true
+9 verbose lifecycle ness@1.0.0~webpack: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;F:\Mykel\Programmation\Custom\ness\node_modules\.bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Mykel Admin\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\PROGRAM FILES\BROADCOM\BROADCOM 802.11 NETWORK ADAPTER;C:\PROGRAM FILES (X86)\INTEL\ICLS CLIENT;C:\PROGRAM FILES\INTEL\ICLS CLIENT;C:\Windows\SYSTEM32;C:\Windows;C:\Windows\SYSTEM32\WBEM;C:\Windows\SYSTEM32\WINDOWSPOWERSHELL\V1.0;C:\PROGRAM FILES\INTEL\INTEL(R) MANAGEMENT ENGINE COMPONENTS\DAL;C:\PROGRAM FILES\INTEL\INTEL(R) MANAGEMENT ENGINE COMPONENTS\IPT;C:\PROGRAM FILES (X86)\INTEL\INTEL(R) MANAGEMENT ENGINE COMPONENTS\DAL;C:\PROGRAM FILES (X86)\INTEL\INTEL(R) MANAGEMENT ENGINE COMPONENTS\IPT;C:\PROGRAM FILES\WIDCOMM\BLUETOOTH SOFTWARE;C:\PROGRAM FILES\WIDCOMM\BLUETOOTH SOFTWARE\SYSWOW64;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Satsuki Decoder Pack\Filtres;C:\Program Files\Java\jdk1.8.0_102\bin;C:\Program Files\Git\;C:\Program Files\Git\cmd;F:\wamp64\bin\php\php7.0.10;F:\wamp64\bin\mysql\mysql5.7.14\bin;F:\bin;C:\Users\Myke Chang\AppData\Local\ComposerSetup\bin;C:\Program Files (x86)\Skype\Phone;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk1.8.0_121\bin;C:\Android\android-sdk\tools;C:\Android\android-sdk\platform-tools;C:\Program Files\nodejs;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\Satsuki Decoder Pack\Filtres;C:\Users\Mykel Admin\AppData\Local\atom\bin;F:\Microsoft VS Code\bin;C:\Users\Mykel Admin\AppData\Roaming\npm;C:\Users\Mykel Admin\AppData\Roaming\Composer\vendor\bin
+10 verbose lifecycle ness@1.0.0~webpack: CWD: F:\Mykel\Programmation\Custom\ness
+11 silly lifecycle ness@1.0.0~webpack: Args: [ '/d /s /c', 'webpack --watch' ]
+12 verbose stack Error: kill ENOSYS
+12 verbose stack     at exports._errnoException (util.js:1018:11)
+12 verbose stack     at process.kill (internal/process.js:190:13)
+12 verbose stack     at process.listener (C:\Program Files\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:86:15)
+12 verbose stack     at emitNone (events.js:91:20)
+12 verbose stack     at process.emit (events.js:185:7)
+12 verbose stack     at processEmit (C:\Program Files\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+12 verbose stack     at processEmit (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+12 verbose stack     at Signal.wrap.onsignal (internal/process.js:217:44)
+13 verbose cwd F:\Mykel\Programmation\Custom\ness
+14 error Windows_NT 6.1.7601
+15 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "webpack"
+16 error node v6.10.2
+17 error npm  v3.10.10
+18 error code ENOSYS
+19 error errno ENOSYS
+20 error syscall kill
+21 error kill ENOSYS
+22 error If you need help, you may report this error at:
+22 error     <https://github.com/npm/npm/issues>
+23 verbose exit [ 1, true ]

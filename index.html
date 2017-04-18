@@ -6,7 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="author" content="Mickaël LAO-PANE">
   <link href="css/ness.css" rel="stylesheet">
+  <script src="dist/ness.js"></script>
   <title>Ness Library</title>
+  <style>
+    section { margin-bottom: 20px;}
+  </style>
 </head>
 <body>
 
@@ -17,7 +21,7 @@
     <div class="ness-grid">
 
       <!-- # Block -->
-      <section class="ness-xs-12 ness-md-6">
+      <section class="ness-xs-12 ness-lg-6">
         <h2>Blocks</h2>
         <article class="ness-block">
           <h4>Basic</h4>
@@ -44,11 +48,11 @@
           <p></p>
         </article>
         <div class="ness-grid">
-          <article class="ness-block success ness-md-6">
+          <article class="ness-block success ness-xs-12 ness-lg-6">
             <h4>Success</h4>
             <p>Green for success</p>
           </article>
-          <article class="ness-block failure ness-md-6">
+          <article class="ness-block failure ness-xs-12 ness-lg-6">
             <h4>Failure</h4>
             <p>If something has failed</p>
           </article>
@@ -61,7 +65,7 @@
       <!-- Block # -->
 
       <!-- # Form -->
-      <section class="ness-xs-12 ness-md-6">
+      <section class="ness-xs-12 ness-lg-6">
         <h2>Form</h2>
         <div class="ness-form-container">
 
@@ -70,7 +74,7 @@
       <!-- # Form -->
 
       <!-- # Table -->
-      <section class="ness-xs-12 ness-md-6">
+      <section class="ness-xs-12 ness-lg-6">
         <h2>Table</h2>
         <section class="ness-table-container">
           <table>
@@ -102,6 +106,35 @@
         </section>
       </section>
       <!-- Table # -->
+
+      <!-- # Mask -->
+      <section class="ness-xs-12 ness-lg-6">
+        <h2>Mask</h2>
+        <div>
+          <div class="ness-mask"></div>
+          <div class="flex-row center-center">
+            <p class="ness-block neutral">I'm inside a block with a black mask</p>
+          </div>
+        </div>
+      </section>
+      <!-- Mask # -->
+
+      <!-- # Flex -->
+      <section class="ness-xs-12 ness-lg-6">
+        <h2>Flex</h2>
+        <div class="ness-block three-d">
+          <div class="flex-row left-top">
+            <p class="ness-block neutral">Left - Top</p>
+          </div>
+          <div class="flex-row center-center">
+            <p class="ness-block neutral">Center - Center</p>
+          </div>
+          <div class="flex-row right-bottom">
+            <p class="ness-block neutral">Right - Bottom</p>
+          </div>
+        </div>
+      </section>
+      <!-- Flex # -->
 
     </div>
     <!-- Ness Grid # -->
