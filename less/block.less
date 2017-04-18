@@ -5,66 +5,6 @@
   padding: 16px;
   position: relative;
   transition: .2s;
-
-  // Block Classes
-  &.border {
-    border: 1px solid @ness-steelgrey;
-  }
-  &.no-border {
-    border: none !important;
-  }
-  &.inverse {
-    background: @ness-darkgrey;
-    * { color: @ness-lightgrey };
-  }
-  &.failure {
-    background: @ness-lightred;
-    border: 1px solid darken(@ness-lightred, 8%);
-    * { color: @ness-darkred };
-  }
-  &.success {
-    background: @ness-lightgreen;
-    border: 1px solid darken(@ness-lightgreen, 8%);
-    * { color: @ness-darkgreen };
-  }
-  &.info {
-    background: @ness-lightblue;
-    border: 1px solid darken(@ness-lightblue, 8%);
-    * { color: @ness-darkblue };
-  }
-  &.neutral {
-    background: @ness-lightgrey;
-    border: 1px solid darken(@ness-lightgrey, 8%);
-    * { color: @ness-grey };
-  }
-  &.warning {
-    background: @ness-sand;
-    border: 1px solid darken(@ness-sand, 8%);
-    * { color: @ness-wetsand };
-  }
-  &.round {
-    border-radius: 5px;
-  }
-  &.three-d {
-    box-shadow: 0px 0px 6px 1px @ness-grey;
-  }
-  &.hover {
-    &:hover {
-      background: @ness-darkgrey;
-      border: @ness-darkgrey;
-      color: white !important;
-      h1,h2,h3,h4,h5,h6,li,p,span { color: @ness-lightgrey !important }
-      .text-muted { color: @ness-steelgrey !important }
-      .ness-bar {border: none}
-    }
-  }
-  //
-  .ness-inside-block {
-    background: white;
-    border: 1px solid @ness-steelgrey;
-    border-radius: 5px;
-    padding: 12px;
-  }
 }
 
 .ness-edit-block {
@@ -74,3 +14,53 @@
     .noedit { display: none; }
   }
 }
+
+.ness-caption {
+  border: 1px solid @caption-border;
+  margin-bottom: 10px;
+  min-width: 100px;
+  .round;
+  .toggle-caption {
+    background-color: @ness-duckblue;
+    border-radius: 50%;
+    color: @caption-bg;
+    cursor: pointer;
+    font-size: 20px;
+    height: 24px; width: 24px;
+    .flex(row, center, center);
+    &:hover {
+      background-color: @ness-turquoise;
+    }
+  }
+  .title {
+    background-color: @caption-bg;
+    border-radius: 2px 2px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+    color: @caption-txt;
+    padding: 8px;
+  }
+  .content {
+    border-radius: 0px 0px 5px 5px;
+    font-size: 16px;
+    padding: 8px;
+  }
+  &.hide {
+    .title {
+      border-radius: 2px;
+    }
+    .content {
+      display: none;
+    }
+    .toggle-caption {
+      color: white;
+    }
+  }
+}
+
+// Customization
+@caption-bg: @ness-anthracite-blue;
+@caption-txt: @ness-lightgrey;
+@caption-border: lighten(@caption-bg, 5%);

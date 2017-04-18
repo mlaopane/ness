@@ -7,9 +7,10 @@
   border-radius: @radius;
 }
 
-.flex(@direction: row, @main: center, @secondary: center) {
+.flex(@direction: row, @main: center, @secondary: center, @wrap: nowrap) {
   display: flex;
   flex-direction: @direction;
+  flex-wrap: @wrap;
   justify-content: @main;
   align-items: @secondary;
 }

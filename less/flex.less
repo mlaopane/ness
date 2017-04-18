@@ -1,31 +1,65 @@
 .flex {
-  &-row {
-    display: flex; flex-flow: row nowrap;  
+  display: flex;
+  align-content: flex-start;
+  &.row {
+     flex-flow: row wrap;
+    .cross() {
+      &-center { .common(); align-items: center; }
+      &-bottom { .common(); align-items: flex-end; }
+      &-top { .common(); align-items: flex-start; }
+      &-stretch { .common(); align-items: stretch; }
+      &-baseline { .common(); align-items: baseline; }    
+    }
+    &.center {
+      .common() { justify-content: center; }
+      .cross();
+    }
+    &.left {
+      .common() { justify-content: flex-start; }
+      .cross();
+    }
+    &.right {
+      .common() { justify-content: flex-end; }
+      .cross();
+    }
+    &.split {
+      .common() { justify-content: space-between; }
+      .cross();
+    }
+    &.space {
+      .common() { justify-content: space-around; }
+      .cross();
+    }
   }
-  &-column {
-    display: flex; flex-flow: column nowrap;
+  &.column {
+    display: flex; flex-flow: column wrap;
+    .cross() {
+      &-center { .common(); align-items: center; }
+      &-right { .common(); align-items: flex-end; }
+      &-left { .common(); align-items: flex-start; }
+      &-stretch { .common(); align-items: stretch; }
+      &-baseline { .common(); align-items: baseline; }    
+    }
+    &.center {
+      .common() { justify-content: center; }
+      .cross();
+    }
+    &.top {
+      .common() { justify-content: flex-start; }
+      .cross();
+    }
+    &.bottom {
+      .common() { justify-content: flex-end; }
+      .cross();
+    }
+    &.split {
+      .common() { justify-content: space-between; }
+      .cross();
+    }
+    &.space {
+      .common() { justify-content: space-around; }
+      .cross();
+    }
   }
 }
 
-.cross() {
-  &-center { .common(); align-items: center; }
-  &-bottom { .common(); align-items: flex-end; }
-  &-top { .common(); align-items: flex-start; }
-  &-stretch { .common(); align-items: stretch; }
-  &-baseline { .common(); align-items: baseline; }    
-}
-
-.center {
-  .common() { justify-content: center; }
-  .cross();
-}
-
-.left {
-  .common() { justify-content: flex-start; }
-  .cross();
-}
-
-.right {
-  .common() { justify-content: flex-end; }
-  .cross();
-}

@@ -1,0 +1,51 @@
+.border {
+  border: 1px solid @ness-steelgrey;
+}
+.no-border {
+  border: none !important;
+}
+.inverse {
+  background: @ness-darkgrey;
+  * { color: @ness-lightgrey };
+}
+.failure {
+  background: @ness-lightred;
+  border: 1px solid darken(@ness-lightred, 8%);
+  * { color: @ness-darkred };
+}
+.success {
+  background: @ness-lightgreen;
+  border: 1px solid darken(@ness-lightgreen, 8%);
+  * { color: @ness-darkgreen };
+}
+.info {
+  background: @ness-lightblue;
+  border: 1px solid darken(@ness-lightblue, 8%);
+  * { color: @ness-darkblue };
+}
+.neutral {
+  background: @ness-lightgrey;
+  border: 1px solid darken(@ness-lightgrey, 8%);
+  * { color: @ness-grey };
+}
+.warning {
+  background: @ness-sand;
+  border: 1px solid darken(@ness-sand, 8%);
+  * { color: @ness-wetsand };
+}
+.round {
+  border-radius: 5px;
+}
+.three-d {
+  box-shadow: 0px 0px 6px 1px @ness-grey;
+}
+.hover {
+  :hover {
+    background: @ness-darkgrey;
+    border: @ness-darkgrey;
+    color: white !important;
+    h1,h2,h3,h4,h5,h6,li,p,span { color: @ness-lightgrey !important }
+    .text-muted { color: @ness-steelgrey !important }
+    .ness-bar {border: none}
+  }
+}
