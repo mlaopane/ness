@@ -85,3 +85,13 @@
     box-shadow: 0px 0px 1px 1px @ness-lightblue;
   }
 }
+.ness-checkbox {
+  background: @ness-lightgrey 100%;
+  background: linear-gradient(top, @ness-lightgrey 0%, white 50%, @ness-lightgrey 100%);
+  border-radius: 5px/10px;
+  height: @medium; width: @medium;
+  position: relative;
+  & + input[type=checkbox] {
+    visibility: hidden;
+  }   
+}

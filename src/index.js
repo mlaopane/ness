@@ -7,4 +7,5 @@ var $ = require('../node_modules/jquery/dist/jquery.min');
 
 $(function() {
   app.init();
+  events.init();
 });

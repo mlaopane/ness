@@ -17,7 +17,7 @@
 
 .ness-caption {
   border: 1px solid @caption-border;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   min-width: 100px;
   .round;
   .toggle-caption {
@@ -26,6 +26,7 @@
     color: @caption-bg;
     cursor: pointer;
     font-size: 20px;
+    font-weight: bold;
     height: 24px; width: 24px;
     .flex(row, center, center);
     &:hover {
@@ -37,15 +38,22 @@
     border-radius: 2px 2px 0px 0px;
     display: flex;
     justify-content: space-between;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 18px;
     color: @caption-txt;
     padding: 8px;
   }
   .content {
     border-radius: 0px 0px 5px 5px;
-    font-size: 16px;
+    font-size: 14px;
     padding: 8px;
+    transition: transform .3s ease;
+    &.closed {
+      transform: translate(0, -100%);
+    }
+
+    &.opened {
+      transform: translate(0, 0%);
+    }
   }
   &.hide {
     .title {

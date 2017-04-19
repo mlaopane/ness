@@ -7,15 +7,21 @@ body {
   height: 100%;
 }
 
+hr {
+  width: 90%;
+  text-align: center;
+  background: @ness-steelgrey;
+}
+
 p {
   color: @ness-darkgrey;
 }
 
 a {
-  color: @link-color;
+  color: @my-link-color;
   text-decoration: none;
   &:hover {
-    color: @link-hover-color;
+    color: @my-link-color-hover;
     text-decoration: none;
   }
 }
@@ -48,3 +54,7 @@ aside {
 article {
   margin-bottom: 20px;
 }
+
+/*** ***/
+@my-link-color: black;
+@my-link-color-hover: @ness-darkgrey;

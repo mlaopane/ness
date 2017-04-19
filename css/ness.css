@@ -5,15 +5,20 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   height: 100%;
 }
+hr {
+  width: 90%;
+  text-align: center;
+  background: #d5dadd;
+}
 p {
   color: #505c62;
 }
 a {
-  color: #0d73a5;
+  color: black;
   text-decoration: none;
 }
 a:hover {
-  color: #0b628e;
+  color: #505c62;
   text-decoration: none;
 }
 h1,
@@ -62,6 +67,7 @@ h6 {
 article {
   margin-bottom: 20px;
 }
+/*** ***/
 /******************/
 /***** COLORS *****/
 /******************/
@@ -292,93 +298,93 @@ article {
 }
 .ness-grid .ness-xs-1 {
   box-sizing: border-box;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
   transition: .2s;
   width: 8.33333333%;
 }
 .ness-grid .ness-xs-2 {
   box-sizing: border-box;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
   transition: .2s;
   width: 16.66666667%;
 }
 .ness-grid .ness-xs-3 {
   box-sizing: border-box;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
   transition: .2s;
   width: 25%;
 }
 .ness-grid .ness-xs-4 {
   box-sizing: border-box;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
   transition: .2s;
   width: 33.33333333%;
 }
 .ness-grid .ness-xs-5 {
   box-sizing: border-box;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
   transition: .2s;
   width: 41.66666667%;
 }
 .ness-grid .ness-xs-6 {
   box-sizing: border-box;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
   transition: .2s;
   width: 50%;
 }
 .ness-grid .ness-xs-7 {
   box-sizing: border-box;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
   transition: .2s;
   width: 58.33333333%;
 }
 .ness-grid .ness-xs-8 {
   box-sizing: border-box;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
   transition: .2s;
   width: 66.66666667%;
 }
 .ness-grid .ness-xs-9 {
   box-sizing: border-box;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
   transition: .2s;
   width: 75%;
 }
 .ness-grid .ness-xs-10 {
   box-sizing: border-box;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
   transition: .2s;
   width: 83.33333333%;
 }
 .ness-grid .ness-xs-11 {
   box-sizing: border-box;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
   transition: .2s;
   width: 91.66666667%;
 }
 .ness-grid .ness-xs-12 {
   box-sizing: border-box;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
   transition: .2s;
   width: 100%;
 }
 @media (min-width: 450px) {
   .ness-grid .ness-sm-1 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 8.33333333%;
   }
@@ -386,8 +392,8 @@ article {
 @media (min-width: 450px) {
   .ness-grid .ness-sm-2 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 16.66666667%;
   }
@@ -395,8 +401,8 @@ article {
 @media (min-width: 450px) {
   .ness-grid .ness-sm-3 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 25%;
   }
@@ -404,8 +410,8 @@ article {
 @media (min-width: 450px) {
   .ness-grid .ness-sm-4 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 33.33333333%;
   }
@@ -413,8 +419,8 @@ article {
 @media (min-width: 450px) {
   .ness-grid .ness-sm-5 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 41.66666667%;
   }
@@ -422,8 +428,8 @@ article {
 @media (min-width: 450px) {
   .ness-grid .ness-sm-6 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 50%;
   }
@@ -431,8 +437,8 @@ article {
 @media (min-width: 450px) {
   .ness-grid .ness-sm-7 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 58.33333333%;
   }
@@ -440,8 +446,8 @@ article {
 @media (min-width: 450px) {
   .ness-grid .ness-sm-8 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 66.66666667%;
   }
@@ -449,8 +455,8 @@ article {
 @media (min-width: 450px) {
   .ness-grid .ness-sm-9 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 75%;
   }
@@ -458,8 +464,8 @@ article {
 @media (min-width: 450px) {
   .ness-grid .ness-sm-10 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 83.33333333%;
   }
@@ -467,8 +473,8 @@ article {
 @media (min-width: 450px) {
   .ness-grid .ness-sm-11 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 91.66666667%;
   }
@@ -476,8 +482,8 @@ article {
 @media (min-width: 450px) {
   .ness-grid .ness-sm-12 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 100%;
   }
@@ -485,8 +491,8 @@ article {
 @media (min-width: 750px) {
   .ness-grid .ness-md-1 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 8.33333333%;
   }
@@ -494,8 +500,8 @@ article {
 @media (min-width: 750px) {
   .ness-grid .ness-md-2 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 16.66666667%;
   }
@@ -503,8 +509,8 @@ article {
 @media (min-width: 750px) {
   .ness-grid .ness-md-3 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 25%;
   }
@@ -512,8 +518,8 @@ article {
 @media (min-width: 750px) {
   .ness-grid .ness-md-4 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 33.33333333%;
   }
@@ -521,8 +527,8 @@ article {
 @media (min-width: 750px) {
   .ness-grid .ness-md-5 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 41.66666667%;
   }
@@ -530,8 +536,8 @@ article {
 @media (min-width: 750px) {
   .ness-grid .ness-md-6 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 50%;
   }
@@ -539,8 +545,8 @@ article {
 @media (min-width: 750px) {
   .ness-grid .ness-md-7 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 58.33333333%;
   }
@@ -548,8 +554,8 @@ article {
 @media (min-width: 750px) {
   .ness-grid .ness-md-8 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 66.66666667%;
   }
@@ -557,8 +563,8 @@ article {
 @media (min-width: 750px) {
   .ness-grid .ness-md-9 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 75%;
   }
@@ -566,8 +572,8 @@ article {
 @media (min-width: 750px) {
   .ness-grid .ness-md-10 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 83.33333333%;
   }
@@ -575,8 +581,8 @@ article {
 @media (min-width: 750px) {
   .ness-grid .ness-md-11 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 91.66666667%;
   }
@@ -584,8 +590,8 @@ article {
 @media (min-width: 750px) {
   .ness-grid .ness-md-12 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 100%;
   }
@@ -593,8 +599,8 @@ article {
 @media (min-width: 1000px) {
   .ness-grid .ness-lg-1 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 8.33333333%;
   }
@@ -602,8 +608,8 @@ article {
 @media (min-width: 1000px) {
   .ness-grid .ness-lg-2 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 16.66666667%;
   }
@@ -611,8 +617,8 @@ article {
 @media (min-width: 1000px) {
   .ness-grid .ness-lg-3 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 25%;
   }
@@ -620,8 +626,8 @@ article {
 @media (min-width: 1000px) {
   .ness-grid .ness-lg-4 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 33.33333333%;
   }
@@ -629,8 +635,8 @@ article {
 @media (min-width: 1000px) {
   .ness-grid .ness-lg-5 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 41.66666667%;
   }
@@ -638,8 +644,8 @@ article {
 @media (min-width: 1000px) {
   .ness-grid .ness-lg-6 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 50%;
   }
@@ -647,8 +653,8 @@ article {
 @media (min-width: 1000px) {
   .ness-grid .ness-lg-7 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 58.33333333%;
   }
@@ -656,8 +662,8 @@ article {
 @media (min-width: 1000px) {
   .ness-grid .ness-lg-8 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 66.66666667%;
   }
@@ -665,8 +671,8 @@ article {
 @media (min-width: 1000px) {
   .ness-grid .ness-lg-9 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 75%;
   }
@@ -674,8 +680,8 @@ article {
 @media (min-width: 1000px) {
   .ness-grid .ness-lg-10 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 83.33333333%;
   }
@@ -683,8 +689,8 @@ article {
 @media (min-width: 1000px) {
   .ness-grid .ness-lg-11 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 91.66666667%;
   }
@@ -692,8 +698,8 @@ article {
 @media (min-width: 1000px) {
   .ness-grid .ness-lg-12 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 100%;
   }
@@ -701,8 +707,8 @@ article {
 @media (min-width: 1300px) {
   .ness-grid .ness-xl-1 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 8.33333333%;
   }
@@ -710,8 +716,8 @@ article {
 @media (min-width: 1300px) {
   .ness-grid .ness-xl-2 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 16.66666667%;
   }
@@ -719,8 +725,8 @@ article {
 @media (min-width: 1300px) {
   .ness-grid .ness-xl-3 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 25%;
   }
@@ -728,8 +734,8 @@ article {
 @media (min-width: 1300px) {
   .ness-grid .ness-xl-4 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 33.33333333%;
   }
@@ -737,8 +743,8 @@ article {
 @media (min-width: 1300px) {
   .ness-grid .ness-xl-5 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 41.66666667%;
   }
@@ -746,8 +752,8 @@ article {
 @media (min-width: 1300px) {
   .ness-grid .ness-xl-6 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 50%;
   }
@@ -755,8 +761,8 @@ article {
 @media (min-width: 1300px) {
   .ness-grid .ness-xl-7 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 58.33333333%;
   }
@@ -764,8 +770,8 @@ article {
 @media (min-width: 1300px) {
   .ness-grid .ness-xl-8 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 66.66666667%;
   }
@@ -773,8 +779,8 @@ article {
 @media (min-width: 1300px) {
   .ness-grid .ness-xl-9 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 75%;
   }
@@ -782,8 +788,8 @@ article {
 @media (min-width: 1300px) {
   .ness-grid .ness-xl-10 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 83.33333333%;
   }
@@ -791,8 +797,8 @@ article {
 @media (min-width: 1300px) {
   .ness-grid .ness-xl-11 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 91.66666667%;
   }
@@ -800,8 +806,8 @@ article {
 @media (min-width: 1300px) {
   .ness-grid .ness-xl-12 {
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     transition: .2s;
     width: 100%;
   }
@@ -1090,7 +1096,7 @@ article {
 }
 /*** Core ***/
 .ness-menu {
-  background: #0d73a5;
+  background: white;
   display: flex;
   flex-flow: column wrap;
   margin: 0;
@@ -1112,22 +1118,33 @@ article {
 .ness-menu.horizontal {
   flex-flow: row wrap;
 }
+.ness-menu .item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space;
+  align-items: center;
+  padding: 6px;
+  position: relative;
+}
+.ness-menu .item > * {
+  cursor: pointer;
+}
 .ness-menu li {
   display: flex;
+  color: #505c62;
+  cursor: pointer;
+}
+.ness-menu li:hover {
+  color: black;
 }
 .ness-menu a {
-  background: #0b628e;
-  color: white;
-  display: block;
-  padding: 12px;
-  transition: 0.15s;
-  width: 100%;
+  display: flex;
+  color: #505c62;
+  cursor: pointer;
 }
 .ness-menu a:hover {
-  background: #0b628e;
-  box-shadow: 0px 0px 3px 1px #505c62;
-  color: white;
-  text-decoration: none;
+  color: black;
 }
 .ness-menu .glyphicon {
   padding-right: 12px;
@@ -1233,6 +1250,17 @@ article {
   border: 1px solid #0d73a5;
   box-shadow: 0px 0px 1px 1px #d0edfb;
 }
+.ness-checkbox {
+  background: #e3e6e8 100%;
+  background: linear-gradient(top, #e3e6e8 0%, white 50%, #e3e6e8 100%);
+  border-radius: 0.5px;
+  height: 16px;
+  width: 16px;
+  position: relative;
+}
+.ness-checkbox + input[type=checkbox] {
+  visibility: hidden;
+}
 /***** BLOCKS *****/
 .ness-block {
   margin: 10px 0px;
@@ -1251,7 +1279,7 @@ article {
 }
 .ness-caption {
   border: 1px solid #243d42;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   min-width: 100px;
   border-radius: 5px;
 }
@@ -1261,6 +1289,7 @@ article {
   color: #1b2e32;
   cursor: pointer;
   font-size: 20px;
+  font-weight: bold;
   height: 24px;
   width: 24px;
   display: flex;
@@ -1277,15 +1306,21 @@ article {
   border-radius: 2px 2px 0px 0px;
   display: flex;
   justify-content: space-between;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 18px;
   color: #e3e6e8;
   padding: 8px;
 }
 .ness-caption .content {
   border-radius: 0px 0px 5px 5px;
-  font-size: 16px;
+  font-size: 14px;
   padding: 8px;
+  transition: transform .3s ease;
+}
+.ness-caption .content.closed {
+  transform: translate(0, -100%);
+}
+.ness-caption .content.opened {
+  transform: translate(0, 0%);
 }
 .ness-caption.hide .title {
   border-radius: 2px;
@@ -1407,6 +1442,20 @@ article {
 }
 .hover :hover .ness-bar {
   border: none;
+}
+.ness-box {
+  content: '';
+  width: 9px;
+  height: 5px;
+  bottom: 0px;
+  top: 2px;
+  right: -2px;
+  border: 3px solid #0faebd;
+  border-top: none;
+  border-right: none;
+  background: transparent;
+  position: absolute;
+  transform: rotate(-45deg);
 }
 /***************************/
 /********** TABLE **********/
@@ -1572,4 +1621,11 @@ article {
 }
 .clear-padding {
   padding: 0 !important;
+}
+.ness-title {
+  padding: 10px 0px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #d7dadb;
 }
