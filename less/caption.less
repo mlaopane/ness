@@ -1,0 +1,52 @@
+.ness-caption {
+  border: 1px solid @caption-border;
+  margin-bottom: 15px;
+  min-width: 100px;
+  .round;
+  .toggle-caption {
+    background-color: @duckblue;
+    border-radius: 50%;
+    color: @caption-bg;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    height: 24px; width: 24px;
+    .flex(row, center, center);
+    &:hover {
+      background-color: @turquoise;
+    }
+  }
+  .title {
+    background-color: @caption-bg;
+    border-radius: 2px 2px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    color: @caption-txt;
+    padding: 8px;
+  }
+  .content {
+    border-radius: 0px 0px 5px 5px;
+    font-size: 14px;
+    padding: 8px;
+    transition: transform .3s ease;
+    &.closed {
+      transform: translate(0, -100%);
+    }
+
+    &.opened {
+      transform: translate(0, 0%);
+    }
+  }
+  &.hide {
+    .title {
+      border-radius: 2px;
+    }
+    .content {
+      display: none;
+    }
+    .toggle-caption {
+      color: white;
+    }
+  }
+}
