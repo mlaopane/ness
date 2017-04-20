@@ -8,9 +8,9 @@
   .ness-btn { margin: 4px; }
 }
 .ness-btn {
-  background: @ness-lightgrey;
-  border: 1px solid @ness-steelgrey;
-  color: @ness-darkgrey;
+  background: @lightgrey;
+  border: 1px solid @steelgrey;
+  color: @darkgrey;
   padding: 8px 12px;
   .border-radius(4px);
 
@@ -38,57 +38,42 @@
   }
 
   &.ness-btn-danger {
-    background: @ness-darkred;
-    border: 1px solid @ness-darkred;
+    background: @darkred;
+    border: 1px solid @darkred;
     color: white;
     &:hover {
-      background: darken(@ness-darkred, 10%);
+      background: darken(@darkred, 10%);
       color: white;
     }
   }
   &.ness-btn-primary {
-    background: @ness-darkblue;
-    border: 1px solid @ness-darkblue;
+    background: @darkblue;
+    border: 1px solid @darkblue;
     color: white;
     &:hover {
       color: white;
-      background: darken(@ness-darkblue, 10%);
+      background: darken(@darkblue, 10%);
     }
   }
   &.ness-btn-success {
-    background: @ness-darkgreen;
-    border: 1px solid @ness-darkgreen;
+    background: @darkgreen;
+    border: 1px solid @darkgreen;
     color: white;
     &:hover {
       color: white;
-      background: darken(@ness-darkgreen, 10%);
+      background: darken(@darkgreen, 10%);
     }
   }
   &.ness-btn-warning {
-    background: @ness-mustard;
-    border: 1px solid @ness-brown;
+    background: @mustard;
+    border: 1px solid @brown;
     color: white;
     &:hover {
-      background: darken(@ness-mustard, 10%);
+      background: darken(@mustard, 10%);
       color: white;
     }
   }
-
-  &.ness-btn-xs {
-    padding: 4px 6px;
-    font-size: 12px;
-  }
-  &.ness-btn-sm {
-    padding: 10px 15px;
-    font-size: 14px;
-  }
-  &.ness-btn-md {
-    padding: 20px 30px;
-    font-size: 16px;
-  }
-  &.ness-btn-lg {
-    padding: 30px 45px;
-    font-size: 18px;
-  }
-
 }
+//
+@border-type: solid;
+@border-color: @grey;

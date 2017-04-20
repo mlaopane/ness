@@ -1,0 +1,285 @@
+/******************/
+/***** COLORS *****/
+/******************/
+/* Base */
+/* Extended */
+/***** BG-COLORS *****/
+.ness-bg-blue {
+  background: #3db8f5;
+}
+.ness-bg-darkblue {
+  background: #0d73a5;
+}
+.ness-bg-darkblue:hover {
+  background: #08415e;
+}
+.ness-bg-darkgrey {
+  background: #505c62;
+}
+.ness-bg-graphite {
+  background: #5c6970;
+}
+.ness-bg-green {
+  background: #1fad72;
+}
+.ness-bg-sand {
+  background: #f4d371;
+}
+.ness-bg-papyrus {
+  background: radial-gradient(circle, #feeecd, #e8bb7d);
+}
+.ness-bg-red {
+  background: #e0525b;
+}
+.ness-bg-seablue {
+  background: #33ddff;
+}
+.ness-bg-steelgrey {
+  background: #c7ced1;
+}
+.ness-bg-yellow {
+  background: #ffe02e;
+}
+/***** TEXT-COLORS *****/
+.ness-text-blue {
+  color: #13a4ec;
+}
+.ness-text-darkblue {
+  color: #0d73a5;
+}
+.ness-text-darkgrey {
+  color: #2e3538;
+}
+.ness-text-graphite {
+  color: #5c6970;
+}
+.ness-text-green {
+  color: #1fad72;
+}
+.ness-text-sand {
+  color: #f4d371;
+}
+.ness-text-papyrus {
+  color: #e8bb7d;
+}
+.ness-text-red {
+  color: #e0525b;
+}
+.ness-text-seablue {
+  color: #33ddff;
+}
+.ness-text-steelgrey {
+  color: #c7ced1;
+}
+.ness-text-yellow {
+  color: #ffe02e;
+}
+/***** GLOBAL MIXINS *****/
+/**** KEYFRAMES *****/
+@keyframes lightSpeedInX {
+  0% {
+    -webkit-transform: translateX(100%) skewX(-15deg);
+    -ms-transform: translateX(100%) skewX(-15deg);
+    transform: translateX(100%) skewX(-15deg);
+    opacity: 0;
+  }
+  15% {
+    -webkit-transform: translateX(80%) skewX(-10deg);
+    -ms-transform: translateX(80%) skewX(-10deg);
+    transform: translateX(80%) skewX(-10deg);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateX(-20%) skewX(10deg);
+    -ms-transform: translateX(-20%) skewX(10deg);
+    transform: translateX(-20%) skewX(10deg);
+    opacity: 0.6;
+  }
+  80% {
+    -webkit-transform: translateX(0%) skewX(-5deg);
+    -ms-transform: translateX(0%) skewX(-5deg);
+    transform: translateX(0%) skewX(-5deg);
+    opacity: 0.9;
+  }
+  100% {
+    -webkit-transform: translateX(0%) skewX(0deg);
+    -ms-transform: translateX(0%) skewX(0deg);
+    transform: translateX(0%) skewX(0deg);
+    opacity: 1;
+  }
+}
+@keyframes lightSpeedOutX {
+  0% {
+    -webkit-transform: translateX(0%) skewX(0deg);
+    -ms-transform: translateX(0%) skewX(0deg);
+    transform: translateX(0%) skewX(0deg);
+    opacity: 1;
+  }
+  15% {
+    -webkit-transform: translateX(20%) skewX(10deg);
+    -ms-transform: translateX(20%) skewX(10deg);
+    transform: translateX(20%) skewX(10deg);
+    opacity: 0.9;
+  }
+  50% {
+    -webkit-transform: translateX(60%) skewX(20deg);
+    -ms-transform: translateX(60%) skewX(20deg);
+    transform: translateX(60%) skewX(20deg);
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateX(100%) skewX(20deg);
+    -ms-transform: translateX(100%) skewX(20deg);
+    transform: translateX(100%) skewX(20deg);
+    opacity: 0;
+  }
+}
+@keyframes lightSpeedInY {
+  0% {
+    -webkit-transform: translateY(100%) skewY(-15deg);
+    -ms-transform: translateY(100%) skewY(-15deg);
+    transform: translateY(100%) skewY(-15deg);
+    opacity: 0;
+  }
+  15% {
+    -webkit-transform: translateY(80%) skewY(-10deg);
+    -ms-transform: translateY(80%) skewY(-10deg);
+    transform: translateY(80%) skewY(-10deg);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateY(-20%) skewY(10deg);
+    -ms-transform: translateY(-20%) skewY(10deg);
+    transform: translateY(-20%) skewY(10deg);
+    opacity: 0.6;
+  }
+  80% {
+    -webkit-transform: translateY(0%) skewY(-5deg);
+    -ms-transform: translateY(0%) skewY(-5deg);
+    transform: translateY(0%) skewY(-5deg);
+    opacity: 0.9;
+  }
+  100% {
+    -webkit-transform: translateY(0%) skewY(0deg);
+    -ms-transform: translateY(0%) skewY(0deg);
+    transform: translateY(0%) skewY(0deg);
+    opacity: 1;
+  }
+}
+@keyframes barAnimation {
+  0% {
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+  25% {
+    -webkit-transform: translateX(35%);
+    -ms-transform: translateX(35%);
+    transform: translateX(35%);
+  }
+  50% {
+    -webkit-transform: translateX(70%);
+    -ms-transform: translateX(70%);
+    transform: translateX(70%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+/***** CLASSES *****/
+.animate.lightSpeedInX {
+  -webkit-animation-name: lightSpeedInX;
+  animation-name: lightSpeedInX;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.animate.lightSpeedInX.lightSpeedOutX {
+  animation-name: lightSpeedOutX;
+}
+.animate.lightSpeedInY {
+  -webkit-animation-name: lightSpeedInY;
+  animation-name: lightSpeedInY;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+/***** BUTTONS *****/
+.ness-btn-group {
+  padding: 8px;
+}
+.ness-btn-group .ness-btn {
+  margin: 4px;
+}
+.ness-btn {
+  background: #e3e6e8;
+  border: 1px solid #d5dadd;
+  color: #505c62;
+  padding: 8px 12px;
+  -webkit-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+}
+.ness-btn.no-border {
+  border: none;
+}
+.ness-btn.small {
+  border: 3px solid #73848c;
+  font-size: 14px;
+  padding: 10px;
+}
+.ness-btn.medium {
+  border: 3px solid #73848c;
+  font-size: 18px;
+  padding: 16px;
+}
+.ness-btn.big {
+  border: 3px solid #73848c;
+  font-size: 22px;
+  padding: 20px;
+}
+.ness-btn.giant {
+  border: 6px solid #73848c;
+  font-size: 32px;
+  padding: 24px;
+}
+.ness-btn.ness-btn-danger {
+  background: #a1121e;
+  border: 1px solid #a1121e;
+  color: white;
+}
+.ness-btn.ness-btn-danger:hover {
+  background: #730d15;
+  color: white;
+}
+.ness-btn.ness-btn-primary {
+  background: #0d73a5;
+  border: 1px solid #0d73a5;
+  color: white;
+}
+.ness-btn.ness-btn-primary:hover {
+  color: white;
+  background: #0a5276;
+}
+.ness-btn.ness-btn-success {
+  background: #12a14d;
+  border: 1px solid #12a14d;
+  color: white;
+}
+.ness-btn.ness-btn-success:hover {
+  color: white;
+  background: #0d7337;
+}
+.ness-btn.ness-btn-warning {
+  background: #eeaf2f;
+  border: 1px solid #b89714;
+  color: white;
+}
+.ness-btn.ness-btn-warning:hover {
+  background: #d99712;
+  color: white;
+}

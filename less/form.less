@@ -1,8 +1,9 @@
 .ness-form-container {
+  padding: @small;
   h1, h2, h3, h4, h5, h6 {
     margin: 0 0 12px 0;
     padding: 12px 0px;
-    &:first-child { border-bottom: 1px solid @ness-steelgrey }
+    &:first-child { border-bottom: 1px solid @steelgrey }
   }
   h1 {
     font-size: 24px;
@@ -19,20 +20,20 @@
   //
   .add-input,
   .add-option {
-    color: @ness-green;
+    color: @green;
     cursor: pointer;
     font-size: 22px;
     margin-bottom: 8px;
     &:hover {
-      color: @ness-darkgreen;
+      color: @darkgreen;
     }
   }
   .remove-input {
-    color: @ness-red;
+    color: @red;
     cursor: pointer;
     font-size: 22px;
     &:hover {
-      color: @ness-darkred;
+      color: @darkred;
     }
   }
   .ness-form {
@@ -40,24 +41,24 @@
       color: black;
       padding: 8px 16px;
       &:focus {
-        background: @ness-grey;
+        background: @grey;
         color: white;
       }
     }
     .add-input {
-      color: @ness-green;
+      color: @green;
       cursor: pointer;
       font-size: 18px;
       &:hover {
-        color: @ness-darkgreen;
+        color: @darkgreen;
       }
     }
     .remove-input {
-      color: @ness-red;
+      color: @red;
       cursor: pointer;
       font-size: 18px;
       &:hover {
-        color: @ness-darkred;
+        color: @darkred;
       }
     }
     .edit { display: none }
@@ -75,19 +76,19 @@
 }
 .ness-input
 {
-  border: 1px solid @ness-steelgrey;
+  border: 1px solid @steelgrey;
   border-radius: 4px;
   box-shadow: inset 0px 1px 2px hsla(200, 5%, 5%, 0.1);
   padding: 8px 12px;
   &:active, &:focus
   {
-    border: 1px solid @ness-darkblue;
-    box-shadow: 0px 0px 1px 1px @ness-lightblue;
+    border: 1px solid @darkblue;
+    box-shadow: 0px 0px 1px 1px @lightblue;
   }
 }
 .ness-checkbox {
-  background: @ness-lightgrey 100%;
-  background: linear-gradient(top, @ness-lightgrey 0%, white 50%, @ness-lightgrey 100%);
+  background: @lightgrey 100%;
+  background: linear-gradient(top, @lightgrey 0%, white 50%, @lightgrey 100%);
   border-radius: 5px/10px;
   height: @medium; width: @medium;
   position: relative;

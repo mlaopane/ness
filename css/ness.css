@@ -1042,6 +1042,26 @@ article {
 .ness-btn.no-border {
   border: none;
 }
+.ness-btn.small {
+  border: 3px solid #73848c;
+  font-size: 14px;
+  padding: 10px;
+}
+.ness-btn.medium {
+  border: 3px solid #73848c;
+  font-size: 18px;
+  padding: 16px;
+}
+.ness-btn.big {
+  border: 3px solid #73848c;
+  font-size: 22px;
+  padding: 20px;
+}
+.ness-btn.giant {
+  border: 6px solid #73848c;
+  font-size: 32px;
+  padding: 24px;
+}
 .ness-btn.ness-btn-danger {
   background: #a1121e;
   border: 1px solid #a1121e;
@@ -1077,22 +1097,6 @@ article {
 .ness-btn.ness-btn-warning:hover {
   background: #d99712;
   color: white;
-}
-.ness-btn.ness-btn-xs {
-  padding: 4px 6px;
-  font-size: 12px;
-}
-.ness-btn.ness-btn-sm {
-  padding: 10px 15px;
-  font-size: 14px;
-}
-.ness-btn.ness-btn-md {
-  padding: 20px 30px;
-  font-size: 16px;
-}
-.ness-btn.ness-btn-lg {
-  padding: 30px 45px;
-  font-size: 18px;
 }
 /*** Core ***/
 .ness-menu {
@@ -1150,6 +1154,9 @@ article {
   padding-right: 12px;
 }
 /*** Customization ***/
+.ness-form-container {
+  padding: 12px;
+}
 .ness-form-container h1,
 .ness-form-container h2,
 .ness-form-container h3,

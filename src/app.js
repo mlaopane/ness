@@ -4,10 +4,10 @@ var $ = require('../node_modules/jquery/dist/jquery.min');
 /** 
  * Initialization *
  */
-function initApp()
-{
-  initBars();
-  initMasks();
+function initApp() {
+  this.initBars();
+  this.initMasks();
+  this.initBackgrounds();
 }
 
 /** 
@@ -31,7 +31,6 @@ function initBars() {
  */
 function initMasks() {
   let masks = $('.ness-mask');
-  console.log(masks.length);
   if (masks.length)
   {
     let parent_css = {position: 'relative'};
@@ -45,10 +44,25 @@ function initMasks() {
   }
 }
 
+/**
+ * Backgrounds *
+ */
+function initBackgrounds() {
+  let elements = $('[data-bg-url]');
+  if (elements.length) {
+    let properties;
+    for (let element of elements) {
+      properties = { background: "url('" + $(element).data('bg-url') + "')" };
+      $(element).css(properties);
+    }
+  }
+}
+
 var App = {
   init : initApp,
   initBars : initBars,
   initMasks : initMasks,
+  initBackgrounds : initBackgrounds,
 }
 
 module.exports = App;

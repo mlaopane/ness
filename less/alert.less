@@ -1,8 +1,8 @@
 /***** ALERTS *****/
 
 .ness-alert {
-  background: @ness-lightgrey;
-  border: 1px solid @ness-steelgrey;
+  background: @lightgrey;
+  border: 1px solid @steelgrey;
   border-radius: 5px;
   color: black;
   display: flex;
@@ -17,18 +17,18 @@
   z-index: 3;
   //
   &.success {
-    background: @ness-success;
-    border: 1px solid darken(@ness-success, 10%);
+    background: @success;
+    border: 1px solid darken(@success, 10%);
     color: white;
   }
   &.danger {
-    background: @ness-danger;
-    border: 1px solid darken(@ness-danger, 10%);
+    background: @danger;
+    border: 1px solid darken(@danger, 10%);
     color: white;
   }
   &.neutral {
-    background: @ness-neutral;
-    border: 1px solid darken(@ness-neutral, 10%);
+    background: @neutral;
+    border: 1px solid darken(@neutral, 10%);
     color: white;
   }
   &.three-d {
@@ -38,6 +38,6 @@
 
 /*** CUSTOMIZATION ***/
 
-@ness-neutral: @ness-blue;
-@ness-success: @ness-green;
-@ness-danger: @ness-red;
+@neutral: @blue;
+@success: @green;
+@danger: @red;

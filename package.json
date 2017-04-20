@@ -4,7 +4,8 @@
   "description": "Ness library",
   "scripts": {
     "dev": "./node_modules/.bin/webpack -d --watch",
-    "prod": "./node_modules/.bin/webpack -p"
+    "prod": "./node_modules/.bin/webpack -p",
+    "less": "lessc less/ness.less css/ness.css"
   },
   "repository": {
     "type": "git",
