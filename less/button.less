@@ -16,6 +16,27 @@
 
   &.no-border { border: none; }
 
+  &.small {
+    border: 3px @border-type @border-color;
+    font-size: 14px;
+    padding: 10px;
+  }
+  &.medium {
+    border: 3px @border-type @border-color;
+    font-size: 18px;
+    padding: 16px;
+  }
+  &.big {
+    border: 3px @border-type @border-color;
+    font-size: 22px;
+    padding: 20px;
+  }
+  &.giant {
+    border: 6px @border-type @border-color;
+    font-size: 32px;
+    padding: 24px;
+  }
+
   &.ness-btn-danger {
     background: @ness-darkred;
     border: 1px solid @ness-darkred;
