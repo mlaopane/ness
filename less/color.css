@@ -1,0 +1,76 @@
+/******************/
+/***** COLORS *****/
+/******************/
+/* Base */
+/* Extended */
+/***** BG-COLORS *****/
+.ness-bg-blue {
+  background: #3db8f5;
+}
+.ness-bg-darkblue {
+  background: #0d73a5;
+}
+.ness-bg-darkblue:hover {
+  background: #08415e;
+}
+.ness-bg-darkgrey {
+  background: #454f54;
+}
+.ness-bg-graphite {
+  background: #5c6970;
+}
+.ness-bg-green {
+  background: #1fad72;
+}
+.ness-bg-sand {
+  background: #f4d371;
+}
+.ness-bg-papyrus {
+  background: radial-gradient(circle, #feeecd, #e8bb7d);
+}
+.ness-bg-red {
+  background: #e0525b;
+}
+.ness-bg-seablue {
+  background: #33ddff;
+}
+.ness-bg-steelgrey {
+  background: #c7ced1;
+}
+.ness-bg-yellow {
+  background: #ffe02e;
+}
+/***** TEXT-COLORS *****/
+.ness-text-blue {
+  color: #2badee;
+}
+.ness-text-darkblue {
+  color: #0d73a5;
+}
+.ness-text-darkgrey {
+  color: #2e3538;
+}
+.ness-text-graphite {
+  color: #5c6970;
+}
+.ness-text-green {
+  color: #1fad72;
+}
+.ness-text-sand {
+  color: #f4d371;
+}
+.ness-text-papyrus {
+  color: #e8bb7d;
+}
+.ness-text-red {
+  color: #e0525b;
+}
+.ness-text-seablue {
+  color: #33ddff;
+}
+.ness-text-steelgrey {
+  color: #c7ced1;
+}
+.ness-text-yellow {
+  color: #ffe02e;
+}
