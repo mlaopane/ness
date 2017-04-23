@@ -1,58 +1,59 @@
-/*** Core ***/
+// out: false
+/*** MENU ***/
+
+@import "color.less";
+@import "mixin.less";
+
 .ness-menu {
   background: @nav-bg;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  //
-  @media(min-width: 480px) {
-    flex-flow: row wrap;
-    justify-content: flex-start;
-  }
-  //
-  &.vertical {
-    flex-flow: column wrap;
-    align-items: stretch;
-    li {
-      width: 100%;
-    }
-  }
-  &.horizontal {
-    flex-flow: row wrap;
-  }
-  //
-  .item {
-    .flex(row, space, center);
-    padding: 6px;
-    position: relative;
-    & > * {
-      cursor: pointer;
-    }
-  }
   li {
-    display: flex;
+    background: @nav-bg;
     color: @nav-txt;
     cursor: pointer;
+    padding-left: 12px;
+    padding-right: 12px;
+    .flex(column, center, stretch);
     &:hover {
+      background: @nav-bg-hover;
+      border: none;
+      box-shadow: 0px 0px 2px 1px @nav-shadow;
       color: @nav-txt-hover;
+      z-index: 1;
+      a {
+        background: @nav-bg-hover;
+        color: @nav-txt-hover;
+      }
     }
   }
   a {
+    background: @nav-bg;
     display: flex;
     color: @nav-txt;
     cursor: pointer;
-    &:hover {
-      color: @nav-txt-hover;
+    padding: 8px;
+  }
+  &.center {
+    a {
+      justify-content: center;
     }
+  }
+  //
+  @media(min-width: @width-md) {
+    flex-flow: row nowrap;
+    // justify-content: flex-start;
   }
   //
   .glyphicon { padding-right: 12px }
 }
 
 /*** Customization ***/
-@nav-bg: white;
-@nav-bg-hover: darken(@nav-bg, 5%);
-@nav-txt: @darkgrey;
-@nav-txt-hover: black;
-@nav-shadow: @darkgrey;
+@nav-bg: @darkgrey;
+@nav-bg-hover: lighten(@nav-bg, 5%);
+@nav-txt: @lightgrey;
+@nav-txt-hover: @nav-txt;
+@nav-shadow: black;

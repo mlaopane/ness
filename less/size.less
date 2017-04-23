@@ -1,12 +1,44 @@
-@width-xs: 300px;
-@width-sm: 450px;
-@width-md: 750px;
-@width-lg: 1000px;
-@width-xl: 1300px;
+/*** SIZE ***/
 
+/* Base for other classes */
+@giant: 32px;
 @x-big: 32px;
 @big: 24px;
 @large: 20px;
 @medium: 16px;
 @small: 12px;
+@tiny: 8px;
 @x-small: 8px;
+
+/* Paddings */
+.no-padding { padding: 0px; }
+.padding-giant { padding: @giant; }
+.padding-big { padding: @big };
+.padding-large { padding: @large; }
+.padding-medium { padding: @medium; }
+.padding-small { padding: @small; }
+.padding-tiny { padding: @tiny; }
+
+/* Margins */
+.no-margin { margin: 0px; }
+.margin-giant { margin: @giant; }
+.margin-big { margin: @big };
+.margin-large { margin: @large; }
+.margin-medium { margin: @medium; }
+.margin-small { margin: @small; }
+.margin-tiny { margin: @tiny; }
+
+/* Fonts */
+.font-giant { margin: @giant; }
+.font-big { margin: @big; }
+.font-large { margin: @large; }
+.font-medium { margin: @medium; }
+.font-small { margin: @small; }
+.font-tiny { margin: @tiny; }
+
+/* Screen */
+@width-xs: 320px;
+@width-sm: 480px;
+@width-md: 768px;
+@width-lg: 1024px;
+@width-xl: 1600px;

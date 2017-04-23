@@ -1,10 +1,13 @@
+/*** BASE ***/
 html {
   height: 100%;
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   height: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
 hr {
@@ -29,7 +32,8 @@ a {
 h1, h2, h3, h4, h5, h6 {
   color: @darkgrey;
   margin: 0px 0px 10px 0px;
-  padding: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 h1 { font-size: 36px }
@@ -38,6 +42,18 @@ h3 { font-size: 22px }
 h4 { font-size: 18px }
 h5 { font-size: 14px }
 h6 { font-size: 12px }
+
+button {
+  background: @lightgrey;
+  color: @darkgrey;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    background: @darkgrey;
+    color: @lightgrey;
+  }
+}
 
 aside {
   @media(min-width: @width-md) {

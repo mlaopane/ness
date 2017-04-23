@@ -1,24 +1,27 @@
+/*** BASE ***/
 html {
   height: 100%;
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   height: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 hr {
   width: 90%;
   text-align: center;
-  background: #d5dadd;
+  background: #c7ced1;
 }
 p {
-  color: #505c62;
+  color: #454f54;
 }
 a {
   color: black;
   text-decoration: none;
 }
 a:hover {
-  color: #505c62;
+  color: #454f54;
   text-decoration: none;
 }
 h1,
@@ -27,9 +30,10 @@ h3,
 h4,
 h5,
 h6 {
-  color: #505c62;
+  color: #454f54;
   margin: 0px 0px 10px 0px;
-  padding: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 h1 {
   font-size: 36px;
@@ -49,17 +53,28 @@ h5 {
 h6 {
   font-size: 12px;
 }
-@media (min-width: 750px) {
+button {
+  background: #e3e6e8;
+  color: #454f54;
+}
+button:focus {
+  outline: none;
+}
+button:hover {
+  background: #454f54;
+  color: #e3e6e8;
+}
+@media (min-width: 768px) {
   aside {
     min-height: 600px;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   aside {
     min-height: 800px;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1600px) {
   aside {
     min-height: 1000px;
   }
@@ -84,7 +99,7 @@ article {
   background: #08415e;
 }
 .ness-bg-darkgrey {
-  background: #505c62;
+  background: #454f54;
 }
 .ness-bg-graphite {
   background: #5c6970;
@@ -112,7 +127,7 @@ article {
 }
 /***** TEXT-COLORS *****/
 .ness-text-blue {
-  color: #13a4ec;
+  color: #2badee;
 }
 .ness-text-darkblue {
   color: #0d73a5;
@@ -144,11 +159,77 @@ article {
 .ness-text-yellow {
   color: #ffe02e;
 }
+/*** SIZE ***/
+/* Base for other classes */
+/* Paddings */
+.no-padding {
+  padding: 0px;
+}
+.padding-giant {
+  padding: 32px;
+}
+.padding-big {
+  padding: 24px;
+}
+.padding-large {
+  padding: 20px;
+}
+.padding-medium {
+  padding: 16px;
+}
+.padding-small {
+  padding: 12px;
+}
+.padding-tiny {
+  padding: 8px;
+}
+/* Margins */
+.no-margin {
+  margin: 0px;
+}
+.margin-giant {
+  margin: 32px;
+}
+.margin-big {
+  margin: 24px;
+}
+.margin-large {
+  margin: 20px;
+}
+.margin-medium {
+  margin: 16px;
+}
+.margin-small {
+  margin: 12px;
+}
+.margin-tiny {
+  margin: 8px;
+}
+/* Fonts */
+.font-giant {
+  margin: 32px;
+}
+.font-big {
+  margin: 24px;
+}
+.font-large {
+  margin: 20px;
+}
+.font-medium {
+  margin: 16px;
+}
+.font-small {
+  margin: 12px;
+}
+.font-tiny {
+  margin: 8px;
+}
+/* Screen */
 @font-face {
   font-family: 'Open Sans';
   src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
 }
-/***** GLOBAL MIXINS *****/
+/*** GLOBAL MIXINS ***/
 /**** KEYFRAMES *****/
 @keyframes lightSpeedInX {
   0% {
@@ -294,520 +375,401 @@ article {
   box-sizing: border-box;
   display: flex;
   flex-flow: row wrap;
+  min-width: 320px;
   width: 100%;
 }
 .ness-grid .ness-xs-1 {
   box-sizing: border-box;
-  padding-left: 8px;
-  padding-right: 8px;
   transition: .2s;
   width: 8.33333333%;
 }
 .ness-grid .ness-xs-2 {
   box-sizing: border-box;
-  padding-left: 8px;
-  padding-right: 8px;
   transition: .2s;
   width: 16.66666667%;
 }
 .ness-grid .ness-xs-3 {
   box-sizing: border-box;
-  padding-left: 8px;
-  padding-right: 8px;
   transition: .2s;
   width: 25%;
 }
 .ness-grid .ness-xs-4 {
   box-sizing: border-box;
-  padding-left: 8px;
-  padding-right: 8px;
   transition: .2s;
   width: 33.33333333%;
 }
 .ness-grid .ness-xs-5 {
   box-sizing: border-box;
-  padding-left: 8px;
-  padding-right: 8px;
   transition: .2s;
   width: 41.66666667%;
 }
 .ness-grid .ness-xs-6 {
   box-sizing: border-box;
-  padding-left: 8px;
-  padding-right: 8px;
   transition: .2s;
   width: 50%;
 }
 .ness-grid .ness-xs-7 {
   box-sizing: border-box;
-  padding-left: 8px;
-  padding-right: 8px;
   transition: .2s;
   width: 58.33333333%;
 }
 .ness-grid .ness-xs-8 {
   box-sizing: border-box;
-  padding-left: 8px;
-  padding-right: 8px;
   transition: .2s;
   width: 66.66666667%;
 }
 .ness-grid .ness-xs-9 {
   box-sizing: border-box;
-  padding-left: 8px;
-  padding-right: 8px;
   transition: .2s;
   width: 75%;
 }
 .ness-grid .ness-xs-10 {
   box-sizing: border-box;
-  padding-left: 8px;
-  padding-right: 8px;
   transition: .2s;
   width: 83.33333333%;
 }
 .ness-grid .ness-xs-11 {
   box-sizing: border-box;
-  padding-left: 8px;
-  padding-right: 8px;
   transition: .2s;
   width: 91.66666667%;
 }
 .ness-grid .ness-xs-12 {
   box-sizing: border-box;
-  padding-left: 8px;
-  padding-right: 8px;
   transition: .2s;
   width: 100%;
 }
-@media (min-width: 450px) {
+@media (min-width: 480px) {
   .ness-grid .ness-sm-1 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 8.33333333%;
   }
 }
-@media (min-width: 450px) {
+@media (min-width: 480px) {
   .ness-grid .ness-sm-2 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 16.66666667%;
   }
 }
-@media (min-width: 450px) {
+@media (min-width: 480px) {
   .ness-grid .ness-sm-3 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 25%;
   }
 }
-@media (min-width: 450px) {
+@media (min-width: 480px) {
   .ness-grid .ness-sm-4 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 33.33333333%;
   }
 }
-@media (min-width: 450px) {
+@media (min-width: 480px) {
   .ness-grid .ness-sm-5 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 41.66666667%;
   }
 }
-@media (min-width: 450px) {
+@media (min-width: 480px) {
   .ness-grid .ness-sm-6 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 50%;
   }
 }
-@media (min-width: 450px) {
+@media (min-width: 480px) {
   .ness-grid .ness-sm-7 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 58.33333333%;
   }
 }
-@media (min-width: 450px) {
+@media (min-width: 480px) {
   .ness-grid .ness-sm-8 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 66.66666667%;
   }
 }
-@media (min-width: 450px) {
+@media (min-width: 480px) {
   .ness-grid .ness-sm-9 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 75%;
   }
 }
-@media (min-width: 450px) {
+@media (min-width: 480px) {
   .ness-grid .ness-sm-10 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 83.33333333%;
   }
 }
-@media (min-width: 450px) {
+@media (min-width: 480px) {
   .ness-grid .ness-sm-11 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 91.66666667%;
   }
 }
-@media (min-width: 450px) {
+@media (min-width: 480px) {
   .ness-grid .ness-sm-12 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 100%;
   }
 }
-@media (min-width: 750px) {
+@media (min-width: 768px) {
   .ness-grid .ness-md-1 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 8.33333333%;
   }
 }
-@media (min-width: 750px) {
+@media (min-width: 768px) {
   .ness-grid .ness-md-2 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 16.66666667%;
   }
 }
-@media (min-width: 750px) {
+@media (min-width: 768px) {
   .ness-grid .ness-md-3 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 25%;
   }
 }
-@media (min-width: 750px) {
+@media (min-width: 768px) {
   .ness-grid .ness-md-4 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 33.33333333%;
   }
 }
-@media (min-width: 750px) {
+@media (min-width: 768px) {
   .ness-grid .ness-md-5 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 41.66666667%;
   }
 }
-@media (min-width: 750px) {
+@media (min-width: 768px) {
   .ness-grid .ness-md-6 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 50%;
   }
 }
-@media (min-width: 750px) {
+@media (min-width: 768px) {
   .ness-grid .ness-md-7 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 58.33333333%;
   }
 }
-@media (min-width: 750px) {
+@media (min-width: 768px) {
   .ness-grid .ness-md-8 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 66.66666667%;
   }
 }
-@media (min-width: 750px) {
+@media (min-width: 768px) {
   .ness-grid .ness-md-9 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 75%;
   }
 }
-@media (min-width: 750px) {
+@media (min-width: 768px) {
   .ness-grid .ness-md-10 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 83.33333333%;
   }
 }
-@media (min-width: 750px) {
+@media (min-width: 768px) {
   .ness-grid .ness-md-11 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 91.66666667%;
   }
 }
-@media (min-width: 750px) {
+@media (min-width: 768px) {
   .ness-grid .ness-md-12 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 100%;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   .ness-grid .ness-lg-1 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 8.33333333%;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   .ness-grid .ness-lg-2 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 16.66666667%;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   .ness-grid .ness-lg-3 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 25%;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   .ness-grid .ness-lg-4 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 33.33333333%;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   .ness-grid .ness-lg-5 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 41.66666667%;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   .ness-grid .ness-lg-6 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 50%;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   .ness-grid .ness-lg-7 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 58.33333333%;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   .ness-grid .ness-lg-8 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 66.66666667%;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   .ness-grid .ness-lg-9 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 75%;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   .ness-grid .ness-lg-10 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 83.33333333%;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   .ness-grid .ness-lg-11 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 91.66666667%;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   .ness-grid .ness-lg-12 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 100%;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1600px) {
   .ness-grid .ness-xl-1 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 8.33333333%;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1600px) {
   .ness-grid .ness-xl-2 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 16.66666667%;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1600px) {
   .ness-grid .ness-xl-3 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 25%;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1600px) {
   .ness-grid .ness-xl-4 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 33.33333333%;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1600px) {
   .ness-grid .ness-xl-5 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 41.66666667%;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1600px) {
   .ness-grid .ness-xl-6 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 50%;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1600px) {
   .ness-grid .ness-xl-7 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 58.33333333%;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1600px) {
   .ness-grid .ness-xl-8 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 66.66666667%;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1600px) {
   .ness-grid .ness-xl-9 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 75%;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1600px) {
   .ness-grid .ness-xl-10 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 83.33333333%;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1600px) {
   .ness-grid .ness-xl-11 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 91.66666667%;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1600px) {
   .ness-grid .ness-xl-12 {
     box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
     transition: .2s;
     width: 100%;
   }
@@ -817,7 +779,7 @@ article {
   align-content: flex-start;
 }
 .flex.row {
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
 }
 .flex.row.center-center {
   justify-content: center;
@@ -920,8 +882,7 @@ article {
   align-items: baseline;
 }
 .flex.column {
-  display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
 }
 .flex.column.center-center {
   justify-content: center;
@@ -1032,12 +993,15 @@ article {
 }
 .ness-btn {
   background: #e3e6e8;
-  border: 1px solid #d5dadd;
-  color: #505c62;
+  border: 1px solid #c7ced1;
+  color: #454f54;
   padding: 8px 12px;
   -webkit-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px;
+}
+.ness-btn:focus {
+  outline: none;
 }
 .ness-btn.no-border {
   border: none;
@@ -1063,12 +1027,12 @@ article {
   padding: 24px;
 }
 .ness-btn.ness-btn-danger {
-  background: #a1121e;
-  border: 1px solid #a1121e;
+  background: #8a0f19;
+  border: 1px solid #8a0f19;
   color: white;
 }
 .ness-btn.ness-btn-danger:hover {
-  background: #730d15;
+  background: #5c0a11;
   color: white;
 }
 .ness-btn.ness-btn-primary {
@@ -1098,192 +1062,72 @@ article {
   background: #d99712;
   color: white;
 }
-/*** Core ***/
+/*** SHAPE ***/
+.ness-box {
+  content: '';
+  width: 9px;
+  height: 5px;
+  bottom: 0px;
+  top: 2px;
+  right: -2px;
+  border: 3px solid #0faebd;
+  border-top: none;
+  border-right: none;
+  background: transparent;
+  position: absolute;
+  transform: rotate(-45deg);
+}
+/*** MENU ***/
 .ness-menu {
-  background: white;
+  background: #454f54;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
-@media (min-width: 480px) {
-  .ness-menu {
-    flex-flow: row wrap;
-    justify-content: flex-start;
-  }
-}
-.ness-menu.vertical {
-  flex-flow: column wrap;
+.ness-menu li {
+  background: #454f54;
+  color: #e3e6e8;
+  cursor: pointer;
+  padding-left: 12px;
+  padding-right: 12px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
   align-items: stretch;
 }
-.ness-menu.vertical li {
-  width: 100%;
-}
-.ness-menu.horizontal {
-  flex-flow: row wrap;
-}
-.ness-menu .item {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space;
-  align-items: center;
-  padding: 6px;
-  position: relative;
-}
-.ness-menu .item > * {
-  cursor: pointer;
-}
-.ness-menu li {
-  display: flex;
-  color: #505c62;
-  cursor: pointer;
-}
 .ness-menu li:hover {
-  color: black;
+  background: #505c62;
+  border: none;
+  box-shadow: 0px 0px 2px 1px black;
+  color: #e3e6e8;
+  z-index: 1;
+}
+.ness-menu li:hover a {
+  background: #505c62;
+  color: #e3e6e8;
 }
 .ness-menu a {
+  background: #454f54;
   display: flex;
-  color: #505c62;
+  color: #e3e6e8;
   cursor: pointer;
+  padding: 8px;
 }
-.ness-menu a:hover {
-  color: black;
+.ness-menu.center a {
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .ness-menu {
+    flex-flow: row nowrap;
+  }
 }
 .ness-menu .glyphicon {
   padding-right: 12px;
 }
 /*** Customization ***/
-.ness-form-container {
-  padding: 12px;
-}
-.ness-form-container h1,
-.ness-form-container h2,
-.ness-form-container h3,
-.ness-form-container h4,
-.ness-form-container h5,
-.ness-form-container h6 {
-  margin: 0 0 12px 0;
-  padding: 12px 0px;
-}
-.ness-form-container h1:first-child,
-.ness-form-container h2:first-child,
-.ness-form-container h3:first-child,
-.ness-form-container h4:first-child,
-.ness-form-container h5:first-child,
-.ness-form-container h6:first-child {
-  border-bottom: 1px solid #d5dadd;
-}
-.ness-form-container h1 {
-  font-size: 24px;
-}
-.ness-form-container h2 {
-  font-size: 24px;
-}
-.ness-form-container h3 {
-  font-size: 24px;
-}
-.ness-form-container h4 {
-  font-size: 24px;
-}
-.ness-form-container .add-input,
-.ness-form-container .add-option {
-  color: #19e66f;
-  cursor: pointer;
-  font-size: 22px;
-  margin-bottom: 8px;
-}
-.ness-form-container .add-input:hover,
-.ness-form-container .add-option:hover {
-  color: #12a14d;
-}
-.ness-form-container .remove-input {
-  color: #e6192a;
-  cursor: pointer;
-  font-size: 22px;
-}
-.ness-form-container .remove-input:hover {
-  color: #a1121e;
-}
-.ness-form-container .ness-form input,
-.ness-form-container .ness-form select,
-.ness-form-container .ness-form textarea {
-  color: black;
-  padding: 8px 16px;
-}
-.ness-form-container .ness-form input:focus,
-.ness-form-container .ness-form select:focus,
-.ness-form-container .ness-form textarea:focus {
-  background: #73848c;
-  color: white;
-}
-.ness-form-container .ness-form .add-input {
-  color: #19e66f;
-  cursor: pointer;
-  font-size: 18px;
-}
-.ness-form-container .ness-form .add-input:hover {
-  color: #12a14d;
-}
-.ness-form-container .ness-form .remove-input {
-  color: #e6192a;
-  cursor: pointer;
-  font-size: 18px;
-}
-.ness-form-container .ness-form .remove-input:hover {
-  color: #a1121e;
-}
-.ness-form-container .ness-form .edit {
-  display: none;
-}
-.ness-form-container .ness-form.edit-mode .edit {
-  display: block;
-}
-.ness-form-container .ness-form.edit-mode .noedit {
-  display: none;
-}
-.ness-label {
-  margin-bottom: 5px;
-  padding: 6px 8px;
-}
-.ness-input {
-  border: 1px solid #d5dadd;
-  border-radius: 4px;
-  box-shadow: inset 0px 1px 2px rgba(12, 13, 13, 0.1);
-  padding: 8px 12px;
-}
-.ness-input:active,
-.ness-input:focus {
-  border: 1px solid #0d73a5;
-  box-shadow: 0px 0px 1px 1px #d0edfb;
-}
-.ness-checkbox {
-  background: #e3e6e8 100%;
-  background: linear-gradient(top, #e3e6e8 0%, white 50%, #e3e6e8 100%);
-  border-radius: 0.5px;
-  height: 16px;
-  width: 16px;
-  position: relative;
-}
-.ness-checkbox + input[type=checkbox] {
-  visibility: hidden;
-}
-/***** BLOCKS *****/
-.ness-block {
-  margin: 10px 0px;
-  padding: 16px;
-  position: relative;
-  transition: .2s;
-}
-.ness-edit-block .edit {
-  display: none;
-}
-.ness-edit-block.edit-mode .edit {
-  display: block;
-}
-.ness-edit-block.edit-mode .noedit {
-  display: none;
-}
 .ness-caption {
   border: 1px solid #243d42;
   margin-bottom: 15px;
@@ -1338,10 +1182,26 @@ article {
 .ness-caption.hide .toggle-caption {
   color: white;
 }
+/*** BLOCKS ***/
+.ness-block {
+  margin: 10px 0px;
+  padding: 16px;
+  position: relative;
+  transition: .2s;
+}
+.ness-edit-block .edit {
+  display: none;
+}
+.ness-edit-block.edit-mode .edit {
+  display: block;
+}
+.ness-edit-block.edit-mode .noedit {
+  display: none;
+}
 /***** ALERTS *****/
 .ness-alert {
   background: #e3e6e8;
-  border: 1px solid #d5dadd;
+  border: 1px solid #c7ced1;
   border-radius: 5px;
   color: black;
   display: flex;
@@ -1357,8 +1217,8 @@ article {
   z-index: 3;
 }
 .ness-alert.success {
-  background: #19e66f;
-  border: 1px solid #14b858;
+  background: #30e87d;
+  border: 1px solid #17cf63;
   color: white;
 }
 .ness-alert.danger {
@@ -1367,8 +1227,8 @@ article {
   color: white;
 }
 .ness-alert.neutral {
-  background: #13a4ec;
-  border: 1px solid #0f83bd;
+  background: #2badee;
+  border: 1px solid #1193d4;
   color: white;
 }
 .ness-alert.three-d {
@@ -1376,13 +1236,13 @@ article {
 }
 /*** CUSTOMIZATION ***/
 .border {
-  border: 1px solid #d5dadd;
+  border: 1px solid #c7ced1;
 }
 .no-border {
   border: none !important;
 }
 .inverse {
-  background: #505c62;
+  background: #454f54;
 }
 .inverse * {
   color: #e3e6e8;
@@ -1392,18 +1252,18 @@ article {
   border: 1px solid #f6acb2;
 }
 .failure * {
-  color: #a1121e;
+  color: #8a0f19;
 }
 .success {
-  background: #d1fae2;
-  border: 1px solid #acf6cb;
+  background: #e8fcf1;
+  border: 1px solid #c3f8d9;
 }
 .success * {
   color: #12a14d;
 }
 .info {
-  background: #d0edfb;
-  border: 1px solid #aadef8;
+  background: #e7f6fd;
+  border: 1px solid #c2e7fa;
 }
 .info * {
   color: #0d73a5;
@@ -1429,8 +1289,8 @@ article {
   box-shadow: 0px 0px 6px 1px #73848c;
 }
 .hover :hover {
-  background: #505c62;
-  border: #505c62;
+  background: #454f54;
+  border: #454f54;
   color: white !important;
 }
 .hover :hover h1,
@@ -1445,28 +1305,126 @@ article {
   color: #e3e6e8 !important;
 }
 .hover :hover .text-muted {
-  color: #d5dadd !important;
+  color: #c7ced1 !important;
 }
 .hover :hover .ness-bar {
   border: none;
 }
-.ness-box {
-  content: '';
-  width: 9px;
-  height: 5px;
-  bottom: 0px;
-  top: 2px;
-  right: -2px;
-  border: 3px solid #0faebd;
-  border-top: none;
-  border-right: none;
-  background: transparent;
-  position: absolute;
-  transform: rotate(-45deg);
+.ness-form-container {
+  padding: 12px;
 }
-/***************************/
-/********** TABLE **********/
-/***************************/
+.ness-form-container h1,
+.ness-form-container h2,
+.ness-form-container h3,
+.ness-form-container h4,
+.ness-form-container h5,
+.ness-form-container h6 {
+  margin: 0 0 12px 0;
+  padding: 12px 0px;
+}
+.ness-form-container h1:first-child,
+.ness-form-container h2:first-child,
+.ness-form-container h3:first-child,
+.ness-form-container h4:first-child,
+.ness-form-container h5:first-child,
+.ness-form-container h6:first-child {
+  border-bottom: 1px solid #c7ced1;
+}
+.ness-form-container h1 {
+  font-size: 24px;
+}
+.ness-form-container h2 {
+  font-size: 24px;
+}
+.ness-form-container h3 {
+  font-size: 24px;
+}
+.ness-form-container h4 {
+  font-size: 24px;
+}
+.ness-form-container .add-input,
+.ness-form-container .add-option {
+  color: #30e87d;
+  cursor: pointer;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+.ness-form-container .add-input:hover,
+.ness-form-container .add-option:hover {
+  color: #12a14d;
+}
+.ness-form-container .remove-input {
+  color: #e6192a;
+  cursor: pointer;
+  font-size: 22px;
+}
+.ness-form-container .remove-input:hover {
+  color: #8a0f19;
+}
+.ness-form-container .ness-form input,
+.ness-form-container .ness-form select,
+.ness-form-container .ness-form textarea {
+  color: black;
+  padding: 8px 16px;
+}
+.ness-form-container .ness-form input:focus,
+.ness-form-container .ness-form select:focus,
+.ness-form-container .ness-form textarea:focus {
+  background: #73848c;
+  color: white;
+}
+.ness-form-container .ness-form .add-input {
+  color: #30e87d;
+  cursor: pointer;
+  font-size: 18px;
+}
+.ness-form-container .ness-form .add-input:hover {
+  color: #12a14d;
+}
+.ness-form-container .ness-form .remove-input {
+  color: #e6192a;
+  cursor: pointer;
+  font-size: 18px;
+}
+.ness-form-container .ness-form .remove-input:hover {
+  color: #8a0f19;
+}
+.ness-form-container .ness-form .edit {
+  display: none;
+}
+.ness-form-container .ness-form.edit-mode .edit {
+  display: block;
+}
+.ness-form-container .ness-form.edit-mode .noedit {
+  display: none;
+}
+.ness-label {
+  margin-bottom: 5px;
+  padding: 6px 8px;
+}
+.ness-input {
+  border: 1px solid #c7ced1;
+  border-radius: 4px;
+  box-shadow: inset 0px 1px 2px rgba(12, 13, 13, 0.1);
+  padding: 8px 12px;
+}
+.ness-input:active,
+.ness-input:focus {
+  border: 1px solid #0d73a5;
+  box-shadow: 0px 0px 1px 1px #e7f6fd;
+}
+.ness-checkbox {
+  background: #e3e6e8 100%;
+  background: linear-gradient(top, #e3e6e8 0%, white 50%, #e3e6e8 100%);
+  border-radius: 0.5px;
+  height: 16px;
+  width: 16px;
+  position: relative;
+}
+.ness-checkbox + input[type=checkbox] {
+  visibility: hidden;
+}
+/*** TABLE ***/
 .ness-table-container {
   align-self: stretch;
   border: 1px solid #e3e6e8;
@@ -1528,7 +1486,7 @@ article {
   text-align: left;
 }
 .ness-table-container table th:not(:last-child) {
-  border-right: 1px solid #d5dadd;
+  border-right: 1px solid #c7ced1;
 }
 .ness-table-container table th:hover {
   background: #637179;
@@ -1537,7 +1495,7 @@ article {
   padding: 8px 16px;
 }
 .ness-table-container table td:not(:last-child) {
-  border-right: 1px solid #d5dadd;
+  border-right: 1px solid #c7ced1;
 }
 .ness-table-container table td:last-child {
   cursor: pointer;
@@ -1560,14 +1518,14 @@ article {
 /*** Customize your table ***/
 .ness-bar {
   background: white;
-  border: 1px solid #d5dadd;
+  border: 1px solid #c7ced1;
   border-radius: 2px;
   width: 100px;
   height: 20px;
   position: relative;
 }
 .ness-bar .ness-progress {
-  background: #13a4ec;
+  background: #2badee;
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
   height: 100%;
@@ -1629,10 +1587,29 @@ article {
 .clear-padding {
   padding: 0 !important;
 }
+.clear-border {
+  border: none !important;
+}
 .ness-title {
   padding: 10px 0px;
   margin-left: 16px;
   margin-right: 16px;
   margin-bottom: 16px;
   border-bottom: 2px solid #d7dadb;
+}
+.margin-h {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.margin-v {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.padding-h {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.padding-v {
+  padding-top: 8px;
+  padding-bottom: 8px;
 }

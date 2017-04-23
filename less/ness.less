@@ -1,3 +1,4 @@
+// out: ../css/ness.css
 @import "base.less";
 @import "color.less";
 @import "size.less";
@@ -83,9 +84,32 @@
 
 .clear-margin { margin: 0 !important }
 .clear-padding { padding: 0 !important }
+.clear-border { border: none !important }
 
 .ness-title {
   padding: 10px 0px;
   margin-left: 16px; margin-right: 16px; margin-bottom: 16px;
   border-bottom: 2px solid hsl(190, 5%, 85%);
+}
+
+.margin {
+  &-h {
+    margin-left: @x-small;
+    margin-right: @x-small;
+  }
+  &-v {
+    margin-top: @x-small;
+    margin-bottom: @x-small;
+  }
+}
+
+.padding {
+  &-h {
+    padding-left: @x-small;
+    padding-right: @x-small;
+  }
+  &-v {
+    padding-top: @x-small;
+    padding-bottom: @x-small;
+  }
 }
