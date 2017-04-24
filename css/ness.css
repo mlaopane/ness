@@ -779,7 +779,7 @@ article {
   align-content: flex-start;
 }
 .flex.row {
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
 }
 .flex.row.center-center {
   justify-content: center;
