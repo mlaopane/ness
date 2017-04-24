@@ -56,6 +56,14 @@ function initBackgrounds() {
       $(element).css(properties);
     }
   }
+  elements = $('[data-bg-color]');
+  if (elements.length) {
+    let properties;
+    for (let element of elements) {
+      properties = { background: $(element).data('bg-color') };
+      $(element).css(properties);
+    }
+  }
 }
 
 var App = {

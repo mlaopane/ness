@@ -20,105 +20,6 @@
     <!-- # Grid -->
     <div class="ness-grid">
 
-      <!-- # Block -->
-      <section class="ness-xs-12 ness-lg-6">
-        <h2>Blocks</h2>
-        <article class="ness-block">
-          <h4>Basic</h4>
-          <p>A <em>Basic Block</em></p>
-          <p>Just some padding, no border, no color</p>
-        </article>
-        <article class="ness-block round border">
-          <h4>With borders</h4>
-          <p>A <em>Block</em> with <em>borders and round corners</em></p>
-        </article>
-        <article class="ness-block three-d">
-          <h4>3D Block</h4>
-          <p>A <em>3D Block</em></p>
-          <p>You can add round corners if you want to</p>
-        </article>
-        <article class="ness-block neutral">
-          <h4>Neutral</h4>
-          <p>Grey looks neutral</p>
-          <p>You can add a no-border class to remove the border</p>
-        </article>
-        <article class="ness-block info">
-          <h4>Info</h4>
-          <p>The 2 blocks below are nested into a new ness-grid</p>
-          <p></p>
-        </article>
-        <div class="ness-grid">
-          <article class="ness-block success ness-xs-12 ness-lg-6">
-            <h4>Success</h4>
-            <p>Green for success</p>
-          </article>
-          <article class="ness-block failure ness-xs-12 ness-lg-6">
-            <h4>Failure</h4>
-            <p>If something has failed</p>
-          </article>
-        </div>
-        <article class="ness-block warning">
-          <h4>Warning</h4>
-          <p>Looks like you've written on the sand</p>
-        </article>
-      </section>
-      <!-- Block # -->
-
-      <!-- # Form -->
-      <section class="ness-xs-12 ness-lg-6">
-        <h2>Form</h2>
-        <div class="ness-form-container">
-          <form class="ness-form"></form>
-        </div>
-      </section>
-      <!-- # Form -->
-
-      <!-- # Table -->
-      <section class="ness-xs-12 ness-lg-6">
-        <h2>Table</h2>
-        <section class="ness-table-container">
-          <table>
-            <thead>
-              <tr>
-                <th>Id</th>
-                <th>Firstname</th>
-                <th>Age</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Mickaël</td>
-                <td>29</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Hildegarde</td>
-                <td>32</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Alfonse</td>
-                <td>38</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-      </section>
-      <!-- Table # -->
-
-      <!-- # Mask -->
-      <section class="ness-xs-12 ness-lg-6">
-        <h2>Mask</h2>
-        <div data-bg-url="http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_640/images/live/p0/43/lq/p043lqmb.jpg">
-          <div class="ness-mask"></div>
-          <div class="flex row center-center">
-            <p class="ness-block neutral">I'm inside a block with a black mask</p>
-          </div>
-        </div>
-      </section>
-      <!-- Mask # -->
-
       <!-- # Flex -->
       <section class="ness-xs-12 ness-lg-6">
         <h2>Flex</h2>
@@ -142,18 +43,18 @@
       <!-- Flex # -->
 
       <!-- # Caption -->
-      <section class="ness-xs-12 ness-lg-6">
+      <section class="ness-xs-12 ness-lg-6 padding-h">
         <h2>Caption</h2>
 
         <div class="ness-grid">
 
-          <div class="flex column top-left ness-xs-6 ness-lg-3">
+          <div class="flex column top-stretch ness-xs-6 ness-lg-3 padding-h">
             <div class="ness-caption">
               <div class="title">
                 <span>Size</span><span class="toggle-caption">&ndash;</span>
               </div>
               <div class="content">
-                <ul class="ness-menu vertical">
+                <ul class="ness-menu flex column center-stretch">
                   <li class="item">Alfonse</li>
                   <li class="item">Hildegarde</li>
                   <li class="item">Emma</li>
@@ -165,7 +66,7 @@
                 <span>Color</span><span class="toggle-caption">&plus;</span>
               </div>
               <div class="content">
-                <ul class="ness-list vertical">
+                <ul class="ness-menu">
                   <li class="item">Red</li>
                   <li class="item">Blue</li>
                   <li class="item">Green</li>
@@ -174,14 +75,12 @@
             </div>
           </div>
 
-          <div class="flex row space-center ness-xs-6 ness-lg-9">
+          <div class="flex column top-stretch ness-xs-6 ness-lg-9 padding-h">
             <p>Some content here</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit sit, non autem obcaecati enim culpa commodi minima nihil, quia molestias aliquam cupiditate unde et omnis ad earum architecto consequatur id.</p>
           </div>
 
         </div>
-
-
 
       </section>
       <!-- Caption # -->

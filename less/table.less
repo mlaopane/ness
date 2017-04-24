@@ -2,7 +2,7 @@
 
 .ness-table-container {
   align-self: stretch;
-  border: 1px solid @lightgrey;
+  border: 1px solid @table-border-color;
   margin: 10px auto;
   overflow-x: auto;
   width: 100%;
@@ -51,7 +51,7 @@
       text-align: left;
       //
       &:not(:last-child) {
-        border-right: 1px solid @steelgrey;
+        border-right: 1px solid @table-border-color;
       }
       &:hover {
         background: @thead-th-bg-hover;
@@ -61,7 +61,7 @@
     td {
       padding: 8px 16px;
       //
-      &:not(:last-child) { border-right: 1px solid @steelgrey }
+      &:not(:last-child) { border-right: 1px solid @table-border-color }
       &:last-child { cursor: pointer }
       a:hover { text-shadow: 1px 1px black }
     }
@@ -83,7 +83,8 @@
 
 /*** Customize your table ***/
 // thead
-@thead-tr-bg: @grey;
+@table-border-color: lighten(@steelgrey, 10%);
+@thead-tr-bg: @darkgrey;
 @thead-th-bg-hover: darken(@thead-tr-bg, 7%); // Overriding isn't necessary
 //tbody
 @tbody-tr-bg-even: white;

@@ -54,7 +54,7 @@ h6 {
   font-size: 12px;
 }
 button {
-  background: #e3e6e8;
+  background: #f1f3f4;
   color: #454f54;
 }
 button:focus {
@@ -62,7 +62,7 @@ button:focus {
 }
 button:hover {
   background: #454f54;
-  color: #e3e6e8;
+  color: #f1f3f4;
 }
 @media (min-width: 768px) {
   aside {
@@ -992,7 +992,7 @@ article {
   margin: 4px;
 }
 .ness-btn {
-  background: #e3e6e8;
+  background: #f1f3f4;
   border: 1px solid #c7ced1;
   color: #454f54;
   padding: 8px 12px;
@@ -1085,9 +1085,41 @@ article {
   margin: 0;
   padding: 0;
 }
+.ness-menu.grey {
+  background: #454f54;
+}
+.ness-menu.grey a {
+  background: #454f54;
+  color: #f1f3f4;
+}
+.ness-menu.grey a:hover {
+  background: #f1f3f4;
+  color: #454f54;
+}
+.ness-menu.blue {
+  background: #0d73a5;
+}
+.ness-menu.blue a {
+  background: #0d73a5;
+  color: #f1f3f4;
+}
+.ness-menu.blue a:hover {
+  background: #f1f3f4;
+  color: #0d73a5;
+}
+.ness-menu.red {
+  background: #8a0f19;
+}
+.ness-menu.red a {
+  background: #8a0f19;
+  color: #f1f3f4;
+}
+.ness-menu.red a:hover {
+  background: #f1f3f4;
+  color: #8a0f19;
+}
 .ness-menu li {
   cursor: pointer;
-  padding: 4px 8px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -1102,7 +1134,8 @@ article {
   display: flex;
   color: #454f54;
   cursor: pointer;
-  padding: 8px;
+  padding: 8px 12px;
+  transition: .15s;
 }
 .ness-menu a:hover {
   color: #454f54;
@@ -1149,7 +1182,7 @@ article {
   display: flex;
   justify-content: space-between;
   font-size: 18px;
-  color: #e3e6e8;
+  color: #f1f3f4;
   padding: 8px;
 }
 .ness-caption .content {
@@ -1191,7 +1224,7 @@ article {
 }
 /***** ALERTS *****/
 .ness-alert {
-  background: #e3e6e8;
+  background: #f1f3f4;
   border: 1px solid #c7ced1;
   border-radius: 5px;
   color: black;
@@ -1236,7 +1269,7 @@ article {
   background: #454f54;
 }
 .inverse * {
-  color: #e3e6e8;
+  color: #f1f3f4;
 }
 .failure {
   background: #fad1d4;
@@ -1260,8 +1293,8 @@ article {
   color: #0d73a5;
 }
 .neutral {
-  background: #e3e6e8;
-  border: 1px solid #cdd3d6;
+  background: #f1f3f4;
+  border: 1px solid #dbdfe1;
 }
 .neutral * {
   color: #73848c;
@@ -1293,7 +1326,7 @@ article {
 .hover :hover li,
 .hover :hover p,
 .hover :hover span {
-  color: #e3e6e8 !important;
+  color: #f1f3f4 !important;
 }
 .hover :hover .text-muted {
   color: #c7ced1 !important;
@@ -1405,8 +1438,8 @@ article {
   box-shadow: 0px 0px 1px 1px #e7f6fd;
 }
 .ness-checkbox {
-  background: #e3e6e8 100%;
-  background: linear-gradient(top, #e3e6e8 0%, white 50%, #e3e6e8 100%);
+  background: #f1f3f4 100%;
+  background: linear-gradient(top, #f1f3f4 0%, white 50%, #f1f3f4 100%);
   border-radius: 0.5px;
   height: 16px;
   width: 16px;
@@ -1446,7 +1479,7 @@ article {
   width: 100%;
 }
 .ness-table-container table thead tr {
-  background: #73848c;
+  background: #454f54;
   border-bottom: 2px solid white;
   cursor: pointer;
 }
@@ -1459,7 +1492,7 @@ article {
   background: white;
 }
 .ness-table-container table tbody tr:nth-child(odd) {
-  background: #e3e6e8;
+  background: #f1f3f4;
 }
 .ness-table-container table tbody tr:hover {
   background: #0d73a5;
@@ -1477,16 +1510,16 @@ article {
   text-align: left;
 }
 .ness-table-container table th:not(:last-child) {
-  border-right: 1px solid #c7ced1;
+  border-right: 1px solid #e3e6e8;
 }
 .ness-table-container table th:hover {
-  background: #637179;
+  background: #353d41;
 }
 .ness-table-container table td {
   padding: 8px 16px;
 }
 .ness-table-container table td:not(:last-child) {
-  border-right: 1px solid #c7ced1;
+  border-right: 1px solid #e3e6e8;
 }
 .ness-table-container table td:last-child {
   cursor: pointer;
