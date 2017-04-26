@@ -20,16 +20,12 @@
       background: @darkgrey;
       color: @txt-color;
       &:hover {
-        background: @lightgrey;
         color: @darkgrey;
       }
     }
     .dropdown-content {
       a {
         background: darken(@darkgrey, 3%);
-        &:hover {
-          color: white
-        }
       }
     }
   }
@@ -39,16 +35,12 @@
       background: @darkred;
       color: @txt-color;
       &:hover {
-        background: @lightgrey;
         color: @darkred;
       }
     }
     .dropdown-content {
       a {
         background: darken(@darkred, 3%);
-        &:hover {
-          color: white
-        }
       }
     }
   }
@@ -58,16 +50,12 @@
       background: @darkgreen;
       color: @txt-color;
       &:hover {
-        background: @lightgrey;
         color: @darkgreen;
       }
     }
     .dropdown-content {
       a {
         background: darken(@darkgreen, 3%);
-        &:hover {
-          color: white
-        }
       }
     }
   }
@@ -77,16 +65,12 @@
       background: @darkblue;
       color: @txt-color;
       &:hover {
-        background: @lightgrey;
         color: @darkblue;
       }
     }
     .dropdown-content {
       a {
         background: darken(@darkblue, 3%);
-        &:hover {
-          color: white
-        }
       }
     }
   }
@@ -106,7 +90,8 @@
       padding: 8px 12px;
       transition: .15s;
       &:hover {
-        box-shadow: 0px 0px 6px 1px hsla(200, 0%, 0%, 0.8);
+        background: @lightgrey;
+        box-shadow: 0px 0px 5px 1px hsla(200, 0%, 0%, 0.8);
         color: @darkgrey;
         text-decoration: none;
       }
@@ -120,6 +105,7 @@
     display: none;
     flex-direction: column;
     list-style-type: none;
+    box-shadow: 0px 0px 4px @blackgrey;
     padding: 0;
     position: absolute;
     top: 100%;
@@ -127,6 +113,15 @@
     z-index: 1;
     @media(min-width: @width-md) {
       width: initial;
+    }
+    li {
+      &:hover {
+        z-index: 2;
+        a {
+          background: @lightgrey;
+          z-index: 2;
+        }
+      }
     }
   }
   // Burger

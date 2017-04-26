@@ -93,10 +93,10 @@ article {
   background: #3db8f5;
 }
 .ness-bg-darkblue {
-  background: #0d73a5;
+  background: #1265a1;
 }
 .ness-bg-darkblue:hover {
-  background: #08415e;
+  background: #0a3a5c;
 }
 .ness-bg-darkgrey {
   background: #505c62;
@@ -127,10 +127,10 @@ article {
 }
 /***** TEXT-COLORS *****/
 .ness-text-blue {
-  color: #2badee;
+  color: #309ce8;
 }
 .ness-text-darkblue {
-  color: #0d73a5;
+  color: #1265a1;
 }
 .ness-text-darkgrey {
   color: #2e3538;
@@ -1040,13 +1040,13 @@ article {
   color: white;
 }
 .ness-btn.ness-btn-primary {
-  background: #0d73a5;
-  border: 1px solid #0d73a5;
+  background: #1265a1;
+  border: 1px solid #1265a1;
   color: white;
 }
 .ness-btn.ness-btn-primary:hover {
   color: white;
-  background: #0a5276;
+  background: #0d4873;
 }
 .ness-btn.ness-btn-success {
   background: #12a14d;
@@ -1102,14 +1102,10 @@ article {
   color: #ffffff;
 }
 .ness-menu.grey a:hover {
-  background: #ffffff;
   color: #505c62;
 }
 .ness-menu.grey .dropdown-content a {
   background: #49545a;
-}
-.ness-menu.grey .dropdown-content a:hover {
-  color: white;
 }
 .ness-menu.red {
   background: #a1121e;
@@ -1119,14 +1115,10 @@ article {
   color: #ffffff;
 }
 .ness-menu.red a:hover {
-  background: #ffffff;
   color: #a1121e;
 }
 .ness-menu.red .dropdown-content a {
   background: #93101b;
-}
-.ness-menu.red .dropdown-content a:hover {
-  color: white;
 }
 .ness-menu.green {
   background: #12a14d;
@@ -1136,31 +1128,23 @@ article {
   color: #ffffff;
 }
 .ness-menu.green a:hover {
-  background: #ffffff;
   color: #12a14d;
 }
 .ness-menu.green .dropdown-content a {
   background: #109347;
 }
-.ness-menu.green .dropdown-content a:hover {
-  color: white;
-}
 .ness-menu.blue {
-  background: #0d73a5;
+  background: #1265a1;
 }
 .ness-menu.blue a {
-  background: #0d73a5;
+  background: #1265a1;
   color: #ffffff;
 }
 .ness-menu.blue a:hover {
-  background: #ffffff;
-  color: #0d73a5;
+  color: #1265a1;
 }
 .ness-menu.blue .dropdown-content a {
-  background: #0c6997;
-}
-.ness-menu.blue .dropdown-content a:hover {
-  color: white;
+  background: #105c93;
 }
 .ness-menu li {
   color: #505c62;
@@ -1184,7 +1168,8 @@ article {
   transition: .15s;
 }
 .ness-menu li a:hover {
-  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.8);
+  background: #ffffff;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.8);
   color: #505c62;
   text-decoration: none;
 }
@@ -1195,6 +1180,7 @@ article {
   display: none;
   flex-direction: column;
   list-style-type: none;
+  box-shadow: 0px 0px 4px #394246;
   padding: 0;
   position: absolute;
   top: 100%;
@@ -1205,6 +1191,13 @@ article {
   .ness-menu .dropdown-content {
     width: initial;
   }
+}
+.ness-menu .dropdown-content li:hover {
+  z-index: 2;
+}
+.ness-menu .dropdown-content li:hover a {
+  background: #ffffff;
+  z-index: 2;
 }
 .ness-menu .toggle-burger {
   border: 1px solid #505c62;
@@ -1237,7 +1230,7 @@ article {
   padding-right: 12px;
 }
 .ness-caption {
-  border: 1px solid #243d42;
+  border: 1px solid #1f3d47;
   margin-bottom: 15px;
   min-width: 100px;
   border-radius: 5px;
@@ -1245,7 +1238,7 @@ article {
 .ness-caption .toggle-caption {
   background-color: #0faebd;
   border-radius: 50%;
-  color: #1b2e32;
+  color: #172e36;
   cursor: pointer;
   font-size: 20px;
   font-weight: bold;
@@ -1261,7 +1254,7 @@ article {
   background-color: #13daec;
 }
 .ness-caption .title {
-  background-color: #1b2e32;
+  background-color: #172e36;
   border-radius: 2px 2px 0px 0px;
   display: flex;
   justify-content: space-between;
@@ -1335,8 +1328,8 @@ article {
   color: white;
 }
 .ness-alert.neutral {
-  background: #2badee;
-  border: 1px solid #1193d4;
+  background: #309ce8;
+  border: 1px solid #1782cf;
   color: white;
 }
 .ness-alert.three-d {
@@ -1370,11 +1363,11 @@ article {
   color: #12a14d;
 }
 .info {
-  background: #e7f6fd;
-  border: 1px solid #c2e7fa;
+  background: #e8f4fc;
+  border: 1px solid #c3e2f8;
 }
 .info * {
-  color: #0d73a5;
+  color: #1265a1;
 }
 .neutral {
   background: #ffffff;
@@ -1518,8 +1511,8 @@ article {
 }
 .ness-input:active,
 .ness-input:focus {
-  border: 1px solid #0d73a5;
-  box-shadow: 0px 0px 1px 1px #e7f6fd;
+  border: 1px solid #1265a1;
+  box-shadow: 0px 0px 1px 1px #e8f4fc;
 }
 .ness-checkbox {
   background: #ffffff 100%;
@@ -1579,7 +1572,7 @@ article {
   background: #ffffff;
 }
 .ness-table-container table tbody tr:hover {
-  background: #0d73a5;
+  background: #1265a1;
   color: white;
 }
 .ness-table-container table tbody tr:hover a {
@@ -1633,7 +1626,7 @@ article {
   position: relative;
 }
 .ness-bar .ness-progress {
-  background: #2badee;
+  background: #309ce8;
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
   height: 100%;
