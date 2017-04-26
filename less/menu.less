@@ -48,9 +48,9 @@
     }
   }
   &.border {
-    border: 1px solid @border-color;
+    border: 1px solid @menu-border-color;
     .dropdown-content {
-      border: 1px solid @border-color;
+      border: 1px solid @menu-border-color;
     }
   }
   &.round {
@@ -176,28 +176,34 @@
     }
   }
   // Burger
-  .toggle-burger {
-    border: 1px solid @darkgrey;
-    border-radius: 5px;
-    cursor: pointer;
-    color: @darkgrey;
-    font-size: 1.1em;
-    height: @giant; width: @giant;
-    .flex(row, center, center);
+  &.burger {
+    display: none;
     @media(min-width: @menu-breakpoint) {
-      display: none;
-    }
-    &:hover {
-      color: @grey;
-    }
-  }
-  .burger-content {
-    @media(min-width: @menu-breakpoint) {
-      display: none;
+      display: flex;
     }
   }
   //
   .glyphicon { padding-right: 12px }
+}
+
+.has-burger {
+  .flex(column, flex-start, stretch);
+}
+.toggle-burger {
+  border: 1px solid @darkgrey;
+  border-radius: 5px;
+  cursor: pointer;
+  color: @darkgrey;
+  font-size: 1.3em;
+  margin-bottom: @tiny;
+  padding: @tiny;
+  .flex(row, center, center);
+  @media(min-width: @menu-breakpoint) {
+    display: none;
+  }
+  &:hover {
+    color: @grey;
+  }
 }
 
 // Specific colors

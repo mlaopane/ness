@@ -1135,10 +1135,10 @@ article {
   text-decoration: none;
 }
 .ness-menu.border {
-  border: 1px solid #819098;
+  border: 1px solid rgba(26, 26, 26, 0.8);
 }
 .ness-menu.border .dropdown-content {
-  border: 1px solid #819098;
+  border: 1px solid rgba(26, 26, 26, 0.8);
 }
 .ness-menu.round > li:first-of-type a {
   border-radius: 4px 4px 0px 0px;
@@ -1242,14 +1242,32 @@ article {
   background: #ffffff;
   z-index: 2;
 }
-.ness-menu .toggle-burger {
+.ness-menu.burger {
+  display: none;
+}
+@media (min-width: 769px) {
+  .ness-menu.burger {
+    display: flex;
+  }
+}
+.ness-menu .glyphicon {
+  padding-right: 12px;
+}
+.has-burger {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.toggle-burger {
   border: 1px solid #505c62;
   border-radius: 5px;
   cursor: pointer;
   color: #505c62;
-  font-size: 1.1em;
-  height: 32px;
-  width: 32px;
+  font-size: 1.3em;
+  margin-bottom: 8px;
+  padding: 8px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -1257,20 +1275,12 @@ article {
   align-items: center;
 }
 @media (min-width: 769px) {
-  .ness-menu .toggle-burger {
+  .toggle-burger {
     display: none;
   }
 }
-.ness-menu .toggle-burger:hover {
+.toggle-burger:hover {
   color: #819098;
-}
-@media (min-width: 769px) {
-  .ness-menu .burger-content {
-    display: none;
-  }
-}
-.ness-menu .glyphicon {
-  padding-right: 12px;
 }
 .ness-caption {
   border: 1px solid #1f3d47;
