@@ -21,31 +21,40 @@ var Events = {
       $icon = $icon == '+' ? '-' : '+';
       $toggle.html($icon);
     }
-    // Event Listener
+    /* Event Listener */
     $('.toggle-caption').on('click', toggleContent);
   },
-  initCaptions: function() {
+  initMenus: function() {
     /**
-     * Click Callback
+     * 
+     * @param {jQuery} $menu 
+     * @param {jQuery} $toggle 
      */
-    let toggleContent = function(event) {
+    let updateChevron = function ($menu, $toggle) {
+      let $chevron = $( $toggle.find('.fa'));
+      if ( $menu.length && $chevron.length ) {
+        $chevron.toggleClass('fa-chevron-right').toggleClass('fa-chevron-down');
+      }
+    }
+    /**
+     * 
+     * @param {object} event 
+     */
+    let toggleMenu = function(event) {
       event.preventDefault;
       let $this = $(this);
       let id_menu = $this.data('toggle');
       let $menu = $($this.parent().find(id_menu));
+      updateChevron($menu, $this);
       $menu.slideToggle(300, function() { });
     }
-    // Event Listener
-    $('.toggle-caption').on('click', toggleContent);
-  },
-  /*** Menu ***/
-function toggleMenu(event) {
-  
-}
+    /* Event Listener */
+    $('.toggle-dropdown').on('click', toggleMenu);
 
-$(document).ready(function() {
-  $('.toggle-dropdown').on('click', toggleMenu);
-});
+    // Toggle Dropdown init
+    let $chevron_right = $('<span>', { class: 'fa fa-chevron-right' })
+    $('.toggle-dropdown').append($chevron_right);
+  },
 };
 
 module.exports = Events;

@@ -11,17 +11,17 @@ body {
 hr {
   width: 90%;
   text-align: center;
-  background: #c7ced1;
+  background: #d5dadd;
 }
 p {
-  color: #454f54;
+  color: #505c62;
 }
 a {
   color: black;
   text-decoration: none;
 }
 a:hover {
-  color: #454f54;
+  color: #505c62;
   text-decoration: none;
 }
 h1,
@@ -30,7 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #454f54;
+  color: #505c62;
   margin: 0px 0px 10px 0px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -54,15 +54,15 @@ h6 {
   font-size: 11px;
 }
 button {
-  background: #f1f3f4;
-  color: #454f54;
+  background: #ffffff;
+  color: #505c62;
 }
 button:focus {
   outline: none;
 }
 button:hover {
-  background: #454f54;
-  color: #f1f3f4;
+  background: #505c62;
+  color: #ffffff;
 }
 @media (min-width: 768px) {
   aside {
@@ -74,7 +74,7 @@ button:hover {
     min-height: 800px;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1440px) {
   aside {
     min-height: 1000px;
   }
@@ -99,7 +99,7 @@ article {
   background: #08415e;
 }
 .ness-bg-darkgrey {
-  background: #454f54;
+  background: #505c62;
 }
 .ness-bg-graphite {
   background: #5c6970;
@@ -379,7 +379,6 @@ article {
   box-sizing: border-box;
   display: flex;
   flex-flow: row wrap;
-  min-width: 320px;
   width: 100%;
 }
 .ness-grid .ness-xs-1 {
@@ -694,84 +693,84 @@ article {
     width: 100%;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1440px) {
   .ness-grid .ness-xl-1 {
     box-sizing: border-box;
     transition: .2s;
     width: 8.33333333%;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1440px) {
   .ness-grid .ness-xl-2 {
     box-sizing: border-box;
     transition: .2s;
     width: 16.66666667%;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1440px) {
   .ness-grid .ness-xl-3 {
     box-sizing: border-box;
     transition: .2s;
     width: 25%;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1440px) {
   .ness-grid .ness-xl-4 {
     box-sizing: border-box;
     transition: .2s;
     width: 33.33333333%;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1440px) {
   .ness-grid .ness-xl-5 {
     box-sizing: border-box;
     transition: .2s;
     width: 41.66666667%;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1440px) {
   .ness-grid .ness-xl-6 {
     box-sizing: border-box;
     transition: .2s;
     width: 50%;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1440px) {
   .ness-grid .ness-xl-7 {
     box-sizing: border-box;
     transition: .2s;
     width: 58.33333333%;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1440px) {
   .ness-grid .ness-xl-8 {
     box-sizing: border-box;
     transition: .2s;
     width: 66.66666667%;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1440px) {
   .ness-grid .ness-xl-9 {
     box-sizing: border-box;
     transition: .2s;
     width: 75%;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1440px) {
   .ness-grid .ness-xl-10 {
     box-sizing: border-box;
     transition: .2s;
     width: 83.33333333%;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1440px) {
   .ness-grid .ness-xl-11 {
     box-sizing: border-box;
     transition: .2s;
     width: 91.66666667%;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1440px) {
   .ness-grid .ness-xl-12 {
     box-sizing: border-box;
     transition: .2s;
@@ -997,9 +996,9 @@ article {
   margin: 4px;
 }
 .ness-btn {
-  background: #f1f3f4;
-  border: 1px solid #c7ced1;
-  color: #454f54;
+  background: #ffffff;
+  border: 1px solid #d5dadd;
+  color: #505c62;
   padding: 8px 12px;
   -webkit-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -1012,32 +1011,32 @@ article {
   border: none;
 }
 .ness-btn.small {
-  border: 3px solid #73848c;
+  border: 3px solid #819098;
   font-size: 14px;
   padding: 10px;
 }
 .ness-btn.medium {
-  border: 3px solid #73848c;
+  border: 3px solid #819098;
   font-size: 18px;
   padding: 16px;
 }
 .ness-btn.big {
-  border: 3px solid #73848c;
+  border: 3px solid #819098;
   font-size: 22px;
   padding: 20px;
 }
 .ness-btn.giant {
-  border: 6px solid #73848c;
+  border: 6px solid #819098;
   font-size: 32px;
   padding: 24px;
 }
 .ness-btn.ness-btn-danger {
-  background: #8a0f19;
-  border: 1px solid #8a0f19;
+  background: #a1121e;
+  border: 1px solid #a1121e;
   color: white;
 }
 .ness-btn.ness-btn-danger:hover {
-  background: #5c0a11;
+  background: #730d15;
   color: white;
 }
 .ness-btn.ness-btn-primary {
@@ -1090,41 +1089,83 @@ article {
   margin: 0;
   padding: 0;
 }
+@media (min-width: 768px) {
+  .ness-menu {
+    flex-flow: row nowrap;
+  }
+}
 .ness-menu.grey {
-  background: #454f54;
+  background: #505c62;
 }
 .ness-menu.grey a {
-  background: #454f54;
-  color: #f1f3f4;
+  background: #505c62;
+  color: #ffffff;
 }
 .ness-menu.grey a:hover {
-  background: #f1f3f4;
-  color: #454f54;
+  background: #ffffff;
+  color: #505c62;
+}
+.ness-menu.grey .dropdown-content a {
+  background: #49545a;
+}
+.ness-menu.grey .dropdown-content a:hover {
+  color: white;
+}
+.ness-menu.red {
+  background: #a1121e;
+}
+.ness-menu.red a {
+  background: #a1121e;
+  color: #ffffff;
+}
+.ness-menu.red a:hover {
+  background: #ffffff;
+  color: #a1121e;
+}
+.ness-menu.red .dropdown-content a {
+  background: #93101b;
+}
+.ness-menu.red .dropdown-content a:hover {
+  color: white;
+}
+.ness-menu.green {
+  background: #12a14d;
+}
+.ness-menu.green a {
+  background: #12a14d;
+  color: #ffffff;
+}
+.ness-menu.green a:hover {
+  background: #ffffff;
+  color: #12a14d;
+}
+.ness-menu.green .dropdown-content a {
+  background: #109347;
+}
+.ness-menu.green .dropdown-content a:hover {
+  color: white;
 }
 .ness-menu.blue {
   background: #0d73a5;
 }
 .ness-menu.blue a {
   background: #0d73a5;
-  color: #f1f3f4;
+  color: #ffffff;
 }
 .ness-menu.blue a:hover {
-  background: #f1f3f4;
+  background: #ffffff;
   color: #0d73a5;
 }
-.ness-menu.red {
-  background: #8a0f19;
+.ness-menu.blue .dropdown-content a {
+  background: #0c6997;
 }
-.ness-menu.red a {
-  background: #8a0f19;
-  color: #f1f3f4;
-}
-.ness-menu.red a:hover {
-  background: #f1f3f4;
-  color: #8a0f19;
+.ness-menu.blue .dropdown-content a:hover {
+  color: white;
 }
 .ness-menu li {
+  color: #505c62;
   cursor: pointer;
+  transition: .15s;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -1135,41 +1176,41 @@ article {
   border: none;
   z-index: 1;
 }
-.ness-menu a {
+.ness-menu li a {
   display: flex;
-  color: #454f54;
+  color: #505c62;
   cursor: pointer;
   padding: 8px 12px;
   transition: .15s;
 }
-.ness-menu a:hover {
-  color: #454f54;
+.ness-menu li a:hover {
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.8);
+  color: #505c62;
   text-decoration: none;
 }
-.ness-menu.hover-3d a:hover {
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.9);
-}
-@media (min-width: 768px) {
-  .ness-menu {
-    flex-flow: row nowrap;
-  }
-}
-.ness-menu .ness-dropdown-container {
+.ness-menu.has-dropdown {
   position: relative;
 }
-.ness-menu .ness-dropdown {
+.ness-menu .dropdown-content {
+  display: none;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
   position: absolute;
+  top: 100%;
+  width: 100%;
+  z-index: 1;
 }
-@media (min-width: 769px) {
-  .ness-menu .ness-dropdown {
-    display: none;
+@media (min-width: 768px) {
+  .ness-menu .dropdown-content {
+    width: initial;
   }
 }
 .ness-menu .toggle-burger {
-  border: 1px solid #454f54;
+  border: 1px solid #505c62;
   border-radius: 5px;
   cursor: pointer;
-  color: #454f54;
+  color: #505c62;
   font-size: 1.1em;
   height: 32px;
   width: 32px;
@@ -1185,7 +1226,12 @@ article {
   }
 }
 .ness-menu .toggle-burger:hover {
-  color: #73848c;
+  color: #819098;
+}
+@media (min-width: 769px) {
+  .ness-menu .burger-content {
+    display: none;
+  }
 }
 .ness-menu .glyphicon {
   padding-right: 12px;
@@ -1220,7 +1266,7 @@ article {
   display: flex;
   justify-content: space-between;
   font-size: 18px;
-  color: #f1f3f4;
+  color: #ffffff;
   padding: 8px;
 }
 .ness-caption .content {
@@ -1262,8 +1308,8 @@ article {
 }
 /***** ALERTS *****/
 .ness-alert {
-  background: #f1f3f4;
-  border: 1px solid #c7ced1;
+  background: #ffffff;
+  border: 1px solid #d5dadd;
   border-radius: 5px;
   color: black;
   display: flex;
@@ -1284,8 +1330,8 @@ article {
   color: white;
 }
 .ness-alert.danger {
-  background: #e6192a;
-  border: 1px solid #b81422;
+  background: #e83040;
+  border: 1px solid #cf1726;
   color: white;
 }
 .ness-alert.neutral {
@@ -1298,23 +1344,23 @@ article {
 }
 /*** CUSTOMIZATION ***/
 .border {
-  border: 1px solid #c7ced1;
+  border: 1px solid #d5dadd;
 }
 .no-border {
   border: none !important;
 }
 .inverse {
-  background: #454f54;
+  background: #505c62;
 }
 .inverse * {
-  color: #f1f3f4;
+  color: #ffffff;
 }
 .failure {
-  background: #fad1d4;
-  border: 1px solid #f6acb2;
+  background: #fce8ea;
+  border: 1px solid #f8c3c8;
 }
 .failure * {
-  color: #8a0f19;
+  color: #a1121e;
 }
 .success {
   background: #e8fcf1;
@@ -1331,11 +1377,11 @@ article {
   color: #0d73a5;
 }
 .neutral {
-  background: #f1f3f4;
-  border: 1px solid #dbdfe1;
+  background: #ffffff;
+  border: 1px solid #ebebeb;
 }
 .neutral * {
-  color: #73848c;
+  color: #819098;
 }
 .warning {
   background: #f7daa1;
@@ -1348,11 +1394,11 @@ article {
   border-radius: 5px;
 }
 .three-d {
-  box-shadow: 0px 0px 6px 1px #73848c;
+  box-shadow: 0px 0px 6px 1px #819098;
 }
 .hover :hover {
-  background: #454f54;
-  border: #454f54;
+  background: #505c62;
+  border: #505c62;
   color: white !important;
 }
 .hover :hover h1,
@@ -1364,10 +1410,10 @@ article {
 .hover :hover li,
 .hover :hover p,
 .hover :hover span {
-  color: #f1f3f4 !important;
+  color: #ffffff !important;
 }
 .hover :hover .text-muted {
-  color: #c7ced1 !important;
+  color: #d5dadd !important;
 }
 .hover :hover .ness-bar {
   border: none;
@@ -1390,7 +1436,7 @@ article {
 .ness-form-container h4:first-child,
 .ness-form-container h5:first-child,
 .ness-form-container h6:first-child {
-  border-bottom: 1px solid #c7ced1;
+  border-bottom: 1px solid #d5dadd;
 }
 .ness-form-container h1 {
   font-size: 24px;
@@ -1416,12 +1462,12 @@ article {
   color: #12a14d;
 }
 .ness-form-container .remove-input {
-  color: #e6192a;
+  color: #e83040;
   cursor: pointer;
   font-size: 22px;
 }
 .ness-form-container .remove-input:hover {
-  color: #8a0f19;
+  color: #a1121e;
 }
 .ness-form-container .ness-form input,
 .ness-form-container .ness-form select,
@@ -1432,7 +1478,7 @@ article {
 .ness-form-container .ness-form input:focus,
 .ness-form-container .ness-form select:focus,
 .ness-form-container .ness-form textarea:focus {
-  background: #73848c;
+  background: #819098;
   color: white;
 }
 .ness-form-container .ness-form .add-input {
@@ -1444,12 +1490,12 @@ article {
   color: #12a14d;
 }
 .ness-form-container .ness-form .remove-input {
-  color: #e6192a;
+  color: #e83040;
   cursor: pointer;
   font-size: 18px;
 }
 .ness-form-container .ness-form .remove-input:hover {
-  color: #8a0f19;
+  color: #a1121e;
 }
 .ness-form-container .ness-form .edit {
   display: none;
@@ -1465,7 +1511,7 @@ article {
   padding: 6px 8px;
 }
 .ness-input {
-  border: 1px solid #c7ced1;
+  border: 1px solid #d5dadd;
   border-radius: 4px;
   box-shadow: inset 0px 1px 2px rgba(12, 13, 13, 0.1);
   padding: 8px 12px;
@@ -1476,8 +1522,8 @@ article {
   box-shadow: 0px 0px 1px 1px #e7f6fd;
 }
 .ness-checkbox {
-  background: #f1f3f4 100%;
-  background: linear-gradient(top, #f1f3f4 0%, white 50%, #f1f3f4 100%);
+  background: #ffffff 100%;
+  background: linear-gradient(top, #ffffff 0%, white 50%, #ffffff 100%);
   border-radius: 0.5px;
   height: 16px;
   width: 16px;
@@ -1489,7 +1535,7 @@ article {
 /*** TABLE ***/
 .ness-table-container {
   align-self: stretch;
-  border: 1px solid #e3e6e8;
+  border: 1px solid #f1f3f4;
   margin: 10px auto;
   overflow-x: auto;
   width: 100%;
@@ -1517,7 +1563,7 @@ article {
   width: 100%;
 }
 .ness-table-container table thead tr {
-  background: #454f54;
+  background: #505c62;
   border-bottom: 2px solid white;
   cursor: pointer;
 }
@@ -1530,7 +1576,7 @@ article {
   background: white;
 }
 .ness-table-container table tbody tr:nth-child(odd) {
-  background: #f1f3f4;
+  background: #ffffff;
 }
 .ness-table-container table tbody tr:hover {
   background: #0d73a5;
@@ -1548,16 +1594,16 @@ article {
   text-align: left;
 }
 .ness-table-container table th:not(:last-child) {
-  border-right: 1px solid #e3e6e8;
+  border-right: 1px solid #f1f3f4;
 }
 .ness-table-container table th:hover {
-  background: #353d41;
+  background: #404a4f;
 }
 .ness-table-container table td {
   padding: 8px 16px;
 }
 .ness-table-container table td:not(:last-child) {
-  border-right: 1px solid #e3e6e8;
+  border-right: 1px solid #f1f3f4;
 }
 .ness-table-container table td:last-child {
   cursor: pointer;
@@ -1580,7 +1626,7 @@ article {
 /*** Customize your table ***/
 .ness-bar {
   background: white;
-  border: 1px solid #c7ced1;
+  border: 1px solid #d5dadd;
   border-radius: 2px;
   width: 100px;
   height: 20px;

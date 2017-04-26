@@ -35,24 +35,20 @@
             </nav>
           </div>
           <div class="ness-block">
-            <h2>Menu "classique + effet 3D"</h2>
-            <nav>
-              <ul class="ness-menu blue hover-3d">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Login</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="ness-block">
             <h2>Menu "dropdown"</h2>
             <nav>
-              <ul class="ness-menu red dropdown">
+              <ul class="ness-menu red has-dropdown">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Login</a></li>
+                <li class="toggle-dropdown" data-toggle="#list-menu">
+                  <a href="#">List</a>
+                  <ul id="list-menu" class="dropdown-content">
+                    <li><a href="#">Pear</a></li>
+                    <li><a href="#">Carot</a></li>
+                    <li><a href="#">Brocoli</a></li>
+                  </ul>
+                </li>
               </ul>
             </nav>
           </div>
