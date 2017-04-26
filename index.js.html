@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="author" content="Mickaël LAO-PANE">
   <link href="css/ness.css" rel="stylesheet">
+  <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <script src="dist/ness.js"></script>
   <title>Ness Library</title>
   <style>
     section { margin-bottom: 20px;}
   </style>
 </head>
-<body>
 
+<body>
   <!-- # Page -->
   <div id="page" class="padding-medium">
 
@@ -23,10 +25,11 @@
       <!-- # Menu -->
       <section class="ness-xs-12 ness-lg-6 padding-h">
         <div class="ness-block three-d">
+          <!-- # Menu classique -->
           <div class="ness-block">
             <h2>Menu "classique"</h2>
             <nav>
-              <ul class="ness-menu grey">
+              <ul class="ness-menu blue border">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">About</a></li>
@@ -34,6 +37,8 @@
               </ul>
             </nav>
           </div>
+          <!-- Menu classique # -->
+          <!-- # Menu dropdown -->
           <div class="ness-block">
             <h2>Menu "dropdown"</h2>
             <nav>
@@ -52,6 +57,27 @@
               </ul>
             </nav>
           </div>
+          <!-- Menu dropdown # -->
+          <!-- # Menu burger -->
+          <div class="ness-block">
+            <h2>Menu "burger"</h2>
+            <nav>
+              <ul class="ness-menu grey burger round">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li class="toggle-dropdown" data-toggle="#list-menu">
+                  <a href="#">List</a>
+                  <ul id="list-menu" class="dropdown-content">
+                    <li><a href="#">Pear</a></li>
+                    <li><a href="#">Carot</a></li>
+                    <li><a href="#">Brocoli</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- Menu burger # -->
         </div>
       </section>
       <!-- Menu # -->
@@ -96,12 +122,11 @@
       </section>
       <!-- Caption # -->
 
-
     </div>
     <!-- Ness Grid # -->
 
   </div>
   <!-- Page # -->
-
 </body>
+
 </html>

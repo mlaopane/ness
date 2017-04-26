@@ -10,20 +10,89 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  @media(min-width: @width-md) {
+  @media(min-width: @menu-breakpoint) {
     flex-flow: row nowrap;
+  }
+  li {
+    &:not(:last-of-type) {
+      border-bottom: 1px solid hsla(200, 0, 0, 0.15);
+    }
+    @media (min-width: @menu-breakpoint) {
+      border-bottom: none;
+      &:not(:last-of-type) {
+        border-bottom: none;
+      }
+      border-right: 1px solid hsla(200, 0, 0, 0.15)
+    }
+    color: @darkgrey;
+    cursor: pointer;
+    transition: .15s;
+    .flex(column, center, stretch);
+    &:hover {
+      z-index: 1;
+    }
+      a {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      color: @darkgrey;
+      cursor: pointer;
+      padding: 8px 12px;
+      transition: .15s;
+      &:hover {
+        background: @lightgrey;
+        box-shadow: 0px 0px 5px 1px hsla(200, 0%, 0%, 0.8);
+        color: @darkgrey;
+        text-decoration: none;
+      }
+    }
+  }
+  &.border {
+    border: 1px solid @border-color;
+    .dropdown-content {
+      border: 1px solid @border-color;
+    }
+  }
+  &.round {
+    & > li {
+      &:first-of-type {
+        a {
+          border-radius: 4px 4px 0px 0px;
+        }
+      }
+      &:last-of-type {
+        a {
+          border-radius: 0px 0px 4px 4px;
+        }
+      }
+    }
+    @media (min-width: @menu-breakpoint) {
+      & > li {
+        &:first-of-type {
+          a {
+            border-radius: 4px 0px 0px 4px;
+          }
+        }
+        &:last-of-type {
+          a {
+            border-radius: 0px 0px 0px 0px;
+          }
+        }
+      }
+    }
   }
   // Colors
   &.grey {
     background: @darkgrey;
     a { 
       background: @darkgrey;
-      color: @txt-color;
+      color: @menu-txt-color;
       &:hover {
         color: @darkgrey;
       }
     }
     .dropdown-content {
+      background: darken(@darkgrey, 3%);
       a {
         background: darken(@darkgrey, 3%);
       }
@@ -33,12 +102,13 @@
     background: @darkred;
     a { 
       background: @darkred;
-      color: @txt-color;
+      color: @menu-txt-color;
       &:hover {
         color: @darkred;
       }
     }
     .dropdown-content {
+      background: darken(@darkred, 3%);
       a {
         background: darken(@darkred, 3%);
       }
@@ -48,7 +118,7 @@
     background: @darkgreen;
     a {
       background: @darkgreen;
-      color: @txt-color;
+      color: @menu-txt-color;
       &:hover {
         color: @darkgreen;
       }
@@ -63,7 +133,7 @@
     background: @darkblue;
     a {
       background: @darkblue;
-      color: @txt-color;
+      color: @menu-txt-color;
       &:hover {
         color: @darkblue;
       }
@@ -74,28 +144,9 @@
       }
     }
   }
-  li {
-    color: @darkgrey;
-    cursor: pointer;
-    transition: .15s;
-    .flex(column, center, stretch);
-    &:hover {
-      border: none;
-      z-index: 1;
-    }
-      a {
-      display: flex;
-      color: @darkgrey;
-      cursor: pointer;
-      padding: 8px 12px;
-      transition: .15s;
-      &:hover {
-        background: @lightgrey;
-        box-shadow: 0px 0px 5px 1px hsla(200, 0%, 0%, 0.8);
-        color: @darkgrey;
-        text-decoration: none;
-      }
-    }
+  .fa {
+    font-size: .9em;
+    padding-left: 10px;
   }
   // Dropdown
   &.has-dropdown {
@@ -111,7 +162,7 @@
     top: 100%;
     width: 100%;
     z-index: 1;
-    @media(min-width: @width-md) {
+    @media(min-width: @menu-breakpoint) {
       width: initial;
     }
     li {
@@ -133,7 +184,7 @@
     font-size: 1.1em;
     height: @giant; width: @giant;
     .flex(row, center, center);
-    @media(min-width: 769px) {
+    @media(min-width: @menu-breakpoint) {
       display: none;
     }
     &:hover {
@@ -141,7 +192,7 @@
     }
   }
   .burger-content {
-    @media(min-width: 769px) {
+    @media(min-width: @menu-breakpoint) {
       display: none;
     }
   }
@@ -150,4 +201,6 @@
 }
 
 // Specific colors
-@txt-color : lighten(@lightgrey, 2%);
+@menu-txt-color : lighten(@lightgrey, 2%);
+@menu-border-color: hsla(200, 0%, 10%, 0.8);
+@menu-breakpoint: (@width-md + 1);
