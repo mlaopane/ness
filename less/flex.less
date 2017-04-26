@@ -1,6 +1,8 @@
+/*** FLEX **/
 .flex {
   display: flex;
   align-content: flex-start;
+  // Row...
   &.row {
      flex-flow: row wrap;
     .cross() {
@@ -15,7 +17,7 @@
       .cross();
     }
     &.left {
-      .common() { justify-content: flex-start;
+      .common() { justify-content: flex-start; }
       .cross();
     }
     &.right {
@@ -31,6 +33,7 @@
       .cross();
     }
   }
+  // Column...
   &.column {
     flex-flow: column nowrap;
     .cross() {
@@ -62,4 +65,3 @@
     }
   }
 }
-

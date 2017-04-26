@@ -36,22 +36,22 @@ h6 {
   padding-bottom: 8px;
 }
 h1 {
-  font-size: 36px;
+  font-size: 32px;
 }
 h2 {
-  font-size: 28px;
+  font-size: 24px;
 }
 h3 {
-  font-size: 22px;
-}
-h4 {
   font-size: 18px;
 }
-h5 {
+h4 {
   font-size: 14px;
 }
-h6 {
+h5 {
   font-size: 12px;
+}
+h6 {
+  font-size: 11px;
 }
 button {
   background: #f1f3f4;
@@ -228,6 +228,10 @@ article {
 @font-face {
   font-family: 'Open Sans';
   src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'Open Sans Light';
+  src: url('../fonts/Open_Sans/OpenSans-Light.ttf');
 }
 /*** GLOBAL MIXINS ***/
 /**** KEYFRAMES *****/
@@ -774,6 +778,7 @@ article {
     width: 100%;
   }
 }
+/*** FLEX **/
 .flex {
   display: flex;
   align-content: flex-start;
@@ -1141,13 +1146,46 @@ article {
   color: #454f54;
   text-decoration: none;
 }
-.ness-menu.center a {
-  justify-content: center;
+.ness-menu.hover-3d a:hover {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.9);
 }
 @media (min-width: 768px) {
   .ness-menu {
     flex-flow: row nowrap;
   }
+}
+.ness-menu .ness-dropdown-container {
+  position: relative;
+}
+.ness-menu .ness-dropdown {
+  position: absolute;
+}
+@media (min-width: 769px) {
+  .ness-menu .ness-dropdown {
+    display: none;
+  }
+}
+.ness-menu .toggle-burger {
+  border: 1px solid #454f54;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #454f54;
+  font-size: 1.1em;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 769px) {
+  .ness-menu .toggle-burger {
+    display: none;
+  }
+}
+.ness-menu .toggle-burger:hover {
+  color: #73848c;
 }
 .ness-menu .glyphicon {
   padding-right: 12px;
@@ -1208,7 +1246,7 @@ article {
 }
 /*** BLOCKS ***/
 .ness-block {
-  margin: 10px 0px;
+  margin-bottom: 10px;
   padding: 16px;
   position: relative;
   transition: .2s;
