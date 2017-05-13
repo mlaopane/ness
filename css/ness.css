@@ -54,7 +54,7 @@ h6 {
   font-size: 11px;
 }
 button {
-  background: #ffffff;
+  background: #f4f5f6;
   color: #505c62;
 }
 button:focus {
@@ -62,7 +62,7 @@ button:focus {
 }
 button:hover {
   background: #505c62;
-  color: #ffffff;
+  color: #f4f5f6;
 }
 @media (min-width: 768px) {
   aside {
@@ -88,15 +88,17 @@ article {
 /******************/
 /* Base */
 /* Extended */
+/* Contextual */
+/* Links */
 /***** BG-COLORS *****/
 .ness-bg-blue {
   background: #3db8f5;
 }
 .ness-bg-darkblue {
-  background: #1265a1;
+  background: #0d59a5;
 }
 .ness-bg-darkblue:hover {
-  background: #0a3a5c;
+  background: #08335e;
 }
 .ness-bg-darkgrey {
   background: #505c62;
@@ -127,10 +129,10 @@ article {
 }
 /***** TEXT-COLORS *****/
 .ness-text-blue {
-  color: #309ce8;
+  color: #2b8cee;
 }
 .ness-text-darkblue {
-  color: #1265a1;
+  color: #0d59a5;
 }
 .ness-text-darkgrey {
   color: #2e3538;
@@ -158,6 +160,27 @@ article {
 }
 .ness-text-yellow {
   color: #ffe02e;
+}
+/*** Backgrounds ***/
+.bg-linear-grey {
+  background: linear-gradient(145deg, #556168, #86959c);
+  color: #ffffff;
+}
+.bg-linear-red {
+  background: linear-gradient(145deg, #af0e1c, #ef3444);
+  color: #ffffff;
+}
+.bg-linear-green {
+  background: linear-gradient(145deg, #0eaf44, #34ef72);
+  color: #ffffff;
+}
+.bg-linear-blue {
+  background: linear-gradient(145deg, #0e5eaf, #3491ef);
+  color: #ffffff;
+}
+.bg-linear-yellow {
+  background: linear-gradient(145deg, #d1ae00, #ffde38);
+  color: #ffffff;
 }
 /*** SIZE ***/
 /* Base for other classes */
@@ -996,7 +1019,7 @@ article {
   margin: 4px;
 }
 .ness-btn {
-  background: #ffffff;
+  background: #f4f5f6;
   border: 1px solid #d5dadd;
   color: #505c62;
   padding: 8px 12px;
@@ -1031,31 +1054,31 @@ article {
   padding: 24px;
 }
 .ness-btn.ness-btn-danger {
-  background: #a1121e;
-  border: 1px solid #a1121e;
+  background: #a50d1a;
+  border: 1px solid #a50d1a;
   color: white;
 }
 .ness-btn.ness-btn-danger:hover {
-  background: #730d15;
+  background: #760a13;
   color: white;
 }
 .ness-btn.ness-btn-primary {
-  background: #1265a1;
-  border: 1px solid #1265a1;
+  background: #0d59a5;
+  border: 1px solid #0d59a5;
   color: white;
 }
 .ness-btn.ness-btn-primary:hover {
   color: white;
-  background: #0d4873;
+  background: #0a4076;
 }
 .ness-btn.ness-btn-success {
-  background: #12a14d;
-  border: 1px solid #12a14d;
+  background: #0da540;
+  border: 1px solid #0da540;
   color: white;
 }
 .ness-btn.ness-btn-success:hover {
   color: white;
-  background: #0d7337;
+  background: #0a762e;
 }
 .ness-btn.ness-btn-warning {
   background: #eeaf2f;
@@ -1129,7 +1152,7 @@ article {
   transition: .15s;
 }
 .ness-menu li a:hover {
-  background: #ffffff;
+  background: #f4f5f6;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.8);
   color: #505c62;
   text-decoration: none;
@@ -1159,7 +1182,7 @@ article {
 }
 .ness-menu.grey a {
   background: #505c62;
-  color: #ffffff;
+  color: #f9fafa;
 }
 .ness-menu.grey a:hover {
   color: #505c62;
@@ -1171,46 +1194,46 @@ article {
   background: #49545a;
 }
 .ness-menu.red {
-  background: #a1121e;
+  background: #a50d1a;
 }
 .ness-menu.red a {
-  background: #a1121e;
-  color: #ffffff;
+  background: #a50d1a;
+  color: #f9fafa;
 }
 .ness-menu.red a:hover {
-  color: #a1121e;
+  color: #a50d1a;
 }
 .ness-menu.red .dropdown-content {
-  background: #93101b;
+  background: #970c18;
 }
 .ness-menu.red .dropdown-content a {
-  background: #93101b;
+  background: #970c18;
 }
 .ness-menu.green {
-  background: #12a14d;
+  background: #0da540;
 }
 .ness-menu.green a {
-  background: #12a14d;
-  color: #ffffff;
+  background: #0da540;
+  color: #f9fafa;
 }
 .ness-menu.green a:hover {
-  color: #12a14d;
+  color: #0da540;
 }
 .ness-menu.green .dropdown-content a {
-  background: #109347;
+  background: #0c973a;
 }
 .ness-menu.blue {
-  background: #1265a1;
+  background: #0d59a5;
 }
 .ness-menu.blue a {
-  background: #1265a1;
-  color: #ffffff;
+  background: #0d59a5;
+  color: #f9fafa;
 }
 .ness-menu.blue a:hover {
-  color: #1265a1;
+  color: #0d59a5;
 }
 .ness-menu.blue .dropdown-content a {
-  background: #105c93;
+  background: #0c5297;
 }
 .ness-menu .fa {
   font-size: .9em;
@@ -1239,7 +1262,7 @@ article {
   z-index: 2;
 }
 .ness-menu .dropdown-content li:hover a {
-  background: #ffffff;
+  background: #f4f5f6;
   z-index: 2;
 }
 .ness-menu.burger {
@@ -1312,7 +1335,7 @@ article {
   display: flex;
   justify-content: space-between;
   font-size: 18px;
-  color: #ffffff;
+  color: #f4f5f6;
   padding: 8px;
 }
 .ness-caption .content {
@@ -1338,7 +1361,7 @@ article {
 }
 /*** BLOCKS ***/
 .ness-block {
-  margin-bottom: 10px;
+  display: block;
   padding: 16px;
   position: relative;
   transition: .2s;
@@ -1354,7 +1377,7 @@ article {
 }
 /***** ALERTS *****/
 .ness-alert {
-  background: #ffffff;
+  background: #f4f5f6;
   border: 1px solid #d5dadd;
   border-radius: 5px;
   color: black;
@@ -1371,18 +1394,18 @@ article {
   z-index: 3;
 }
 .ness-alert.success {
-  background: #30e87d;
-  border: 1px solid #17cf63;
+  background: #2bee6c;
+  border: 1px solid #11d452;
   color: white;
 }
 .ness-alert.danger {
-  background: #e83040;
-  border: 1px solid #cf1726;
+  background: #ee2b3b;
+  border: 1px solid #d41121;
   color: white;
 }
 .ness-alert.neutral {
-  background: #309ce8;
-  border: 1px solid #1782cf;
+  background: #2b8cee;
+  border: 1px solid #1173d4;
   color: white;
 }
 .ness-alert.three-d {
@@ -1399,32 +1422,32 @@ article {
   background: #505c62;
 }
 .inverse * {
-  color: #ffffff;
+  color: #f4f5f6;
 }
 .failure {
-  background: #fce8ea;
-  border: 1px solid #f8c3c8;
+  background: #fde7e9;
+  border: 1px solid #fac2c6;
 }
 .failure * {
-  color: #a1121e;
+  color: #a50d1a;
 }
 .success {
-  background: #e8fcf1;
-  border: 1px solid #c3f8d9;
+  background: #e7fdef;
+  border: 1px solid #c2fad4;
 }
 .success * {
-  color: #12a14d;
+  color: #0da540;
 }
 .info {
-  background: #e8f4fc;
-  border: 1px solid #c3e2f8;
+  background: #e7f2fd;
+  border: 1px solid #c2defa;
 }
 .info * {
-  color: #1265a1;
+  color: #0d59a5;
 }
 .neutral {
-  background: #ffffff;
-  border: 1px solid #ebebeb;
+  background: #f4f5f6;
+  border: 1px solid #dde1e3;
 }
 .neutral * {
   color: #819098;
@@ -1440,7 +1463,7 @@ article {
   border-radius: 5px;
 }
 .three-d {
-  box-shadow: 0px 0px 6px 1px #819098;
+  box-shadow: 0px 1px 5px 1px #819098;
 }
 .hover :hover {
   background: #505c62;
@@ -1456,7 +1479,7 @@ article {
 .hover :hover li,
 .hover :hover p,
 .hover :hover span {
-  color: #ffffff !important;
+  color: #f4f5f6 !important;
 }
 .hover :hover .text-muted {
   color: #d5dadd !important;
@@ -1464,120 +1487,260 @@ article {
 .hover :hover .ness-bar {
   border: none;
 }
+/*********************/
+/***** NESS FORM *****/
+/*********************/
+/* # Form Container */
 .ness-form-container {
   padding: 12px;
 }
-.ness-form-container h1,
-.ness-form-container h2,
-.ness-form-container h3,
-.ness-form-container h4,
-.ness-form-container h5,
-.ness-form-container h6 {
-  margin: 0 0 12px 0;
-  padding: 12px 0px;
+/* # Form */
+.ness-form input:not([type=checkbox]),
+.ness-form select,
+.ness-form textarea {
+  box-sizing: border-box;
+  color: #505c62;
+  font-size: 16px;
+  padding: 4px 8px;
+  line-height: 24px;
+  height: 32px;
+  min-width: 40px;
+  transition: 0.2s;
 }
-.ness-form-container h1:first-child,
-.ness-form-container h2:first-child,
-.ness-form-container h3:first-child,
-.ness-form-container h4:first-child,
-.ness-form-container h5:first-child,
-.ness-form-container h6:first-child {
-  border-bottom: 1px solid #d5dadd;
-}
-.ness-form-container h1 {
-  font-size: 24px;
-}
-.ness-form-container h2 {
-  font-size: 24px;
-}
-.ness-form-container h3 {
-  font-size: 24px;
-}
-.ness-form-container h4 {
-  font-size: 24px;
-}
-.ness-form-container .add-input,
-.ness-form-container .add-option {
-  color: #30e87d;
-  cursor: pointer;
-  font-size: 22px;
+.ness-form label {
+  display: flex;
+  font-size: 14px;
   margin-bottom: 8px;
 }
-.ness-form-container .add-input:hover,
-.ness-form-container .add-option:hover {
-  color: #12a14d;
+.ness-form label:first-child {
+  margin-right: 8px;
 }
-.ness-form-container .remove-input {
-  color: #e83040;
-  cursor: pointer;
-  font-size: 22px;
+.ness-form label:last-child {
+  margin-left: 8px;
 }
-.ness-form-container .remove-input:hover {
-  color: #a1121e;
+.ness-form input:active,
+.ness-form input:focus {
+  color: #2e3538;
+  border-bottom-color: #2b8cee;
+  outline: none;
 }
-.ness-form-container .ness-form input,
-.ness-form-container .ness-form select,
-.ness-form-container .ness-form textarea {
-  color: black;
-  padding: 8px 16px;
+.ness-form select {
+  box-sizing: border-box;
+  color: #505c62;
+  font-size: 16px;
+  padding: 4px 8px;
+  line-height: 24px;
+  height: 32px;
+  min-width: 40px;
+  transition: 0.2s;
 }
-.ness-form-container .ness-form input:focus,
-.ness-form-container .ness-form select:focus,
-.ness-form-container .ness-form textarea:focus {
-  background: #819098;
-  color: white;
+.ness-form select:active,
+.ness-form select:focus {
+  color: #2e3538;
+  outline: none;
 }
-.ness-form-container .ness-form .add-input {
-  color: #30e87d;
-  cursor: pointer;
-  font-size: 18px;
+.ness-form textarea {
+  box-sizing: border-box;
+  color: #505c62;
+  font-size: 16px;
+  padding: 4px 8px;
+  line-height: 24px;
+  height: 32px;
+  min-width: 40px;
+  transition: 0.2s;
 }
-.ness-form-container .ness-form .add-input:hover {
-  color: #12a14d;
+.ness-form textarea:active,
+.ness-form textarea:focus {
+  color: #2e3538;
+  border-bottom-color: #2b8cee;
+  outline: none;
 }
-.ness-form-container .ness-form .remove-input {
-  color: #e83040;
-  cursor: pointer;
-  font-size: 18px;
+/* # Form group */
+.ness-form-group {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 24px;
 }
-.ness-form-container .ness-form .remove-input:hover {
-  color: #a1121e;
-}
-.ness-form-container .ness-form .edit {
-  display: none;
-}
-.ness-form-container .ness-form.edit-mode .edit {
-  display: block;
-}
-.ness-form-container .ness-form.edit-mode .noedit {
-  display: none;
-}
-.ness-label {
-  margin-bottom: 5px;
-  padding: 6px 8px;
-}
+/* # Mixins */
+/* # Input */
 .ness-input {
-  border: 1px solid #d5dadd;
-  border-radius: 4px;
-  box-shadow: inset 0px 1px 2px rgba(12, 13, 13, 0.1);
-  padding: 8px 12px;
+  border-width: 0 0 1px;
+  border-style: solid;
+  border-color: #d5dadd;
+  min-width: 40px;
 }
 .ness-input:active,
 .ness-input:focus {
-  border: 1px solid #1265a1;
-  box-shadow: 0px 0px 1px 1px #e8f4fc;
+  outline: none;
 }
+/* # Select */
+.ness-select {
+  border-width: 0 0 1px;
+  border-style: solid;
+  border-color: #d5dadd;
+  min-width: 40px;
+  padding: 8px 12px;
+}
+.ness-select:active,
+.ness-select:focus {
+  outline: none;
+}
+/* # Option container */
+.ness-option-container {
+  box-shadow: 0px 1px 3px 1px #819098;
+  max-height: 240px;
+  overflow-y: auto;
+}
+/* # Option group */
+.ness-option-group {
+  list-style-type: none;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  display: none;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0px;
+  min-width: 200px;
+}
+.ness-option-group.circle {
+  list-style-type: circle;
+}
+.ness-option-group.square {
+  list-style-type: square;
+}
+.ness-option-group .item {
+  align-items: baseline;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 6px 4px;
+  width: 100%;
+}
+.ness-option-group .item .fa,
+.ness-option-group .item .glyphicon {
+  padding-right: 4px;
+}
+/* # Option */
+.ness-option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0px 16px;
+  height: 48px;
+  transition: 0.2s;
+}
+.ness-option:hover {
+  background: #f4f5f6;
+  color: #000000;
+}
+/* # Checkbox group */
+.ness-checkbox-group {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+/* # Checkbox */
 .ness-checkbox {
-  background: #ffffff 100%;
-  background: linear-gradient(top, #ffffff 0%, white 50%, #ffffff 100%);
-  border-radius: 0.5px;
+  background: #d5dadd;
   height: 16px;
   width: 16px;
   position: relative;
+  font-size: 24px;
+  position: absolute;
+  left: 1px;
+  top: -15px;
+  opacity: 1.0;
+  transition: 0.3s;
 }
-.ness-checkbox + input[type=checkbox] {
-  visibility: hidden;
+.ness-checkbox-neutral {
+  background: #d5dadd;
 }
+.ness-checkbox-primary {
+  background: #2b8cee;
+}
+.ness-checkbox.big {
+  height: 24px;
+  width: 24px;
+}
+.ness-checkbox.big .checksign {
+  font-size: 32px;
+  left: 3px;
+  top: -12px;
+}
+.ness-checkbox ~ [type=checkbox] {
+  display: none;
+}
+.ness-checkbox-neutral {
+  color: #505c62;
+}
+.ness-checkbox-primary {
+  color: #2b8cee;
+}
+.ness-checkbox:after {
+  content: '\002713';
+}
+/* # Checksign */
+.ness-checksign {
+  font-size: 24px;
+  position: absolute;
+  left: 1px;
+  top: -15px;
+  opacity: 1.0;
+  transition: 0.3s;
+}
+.ness-checksign-neutral {
+  color: #505c62;
+}
+.ness-checksign-primary {
+  color: #2b8cee;
+}
+.ness-checksign:after {
+  content: '\002713';
+}
+/* # Misc */
+.remove-input {
+  color: #ee2b3b;
+  cursor: pointer;
+  font-size: 22px;
+}
+.remove-input:hover {
+  color: #a50d1a;
+}
+.add-input,
+.add-option {
+  color: #2bee6c;
+  cursor: pointer;
+  font-size: 18px;
+}
+.add-input:hover,
+.add-option:hover {
+  color: #0da540;
+}
+.remove-input,
+.remove-option {
+  color: #ee2b3b;
+  cursor: pointer;
+  font-size: 18px;
+}
+.remove-input:hover,
+.remove-option:hover {
+  color: #a50d1a;
+}
+.edit {
+  display: none;
+}
+.edit-mode .edit {
+  display: block;
+}
+.edit-mode .noedit {
+  display: none;
+}
+/* # Variables */
 /*** TABLE ***/
 .ness-table-container {
   align-self: stretch;
@@ -1616,16 +1779,16 @@ article {
 .ness-table-container table tbody tr {
   color: black;
   cursor: pointer;
-  transition: 0.12s;
+  transition: 0.10s;
 }
 .ness-table-container table tbody tr:nth-child(even) {
-  background: white;
+  background: #f4f5f6;
 }
 .ness-table-container table tbody tr:nth-child(odd) {
   background: #ffffff;
 }
 .ness-table-container table tbody tr:hover {
-  background: #1265a1;
+  background: #2b8cee;
   color: white;
 }
 .ness-table-container table tbody tr:hover a {
@@ -1679,7 +1842,7 @@ article {
   position: relative;
 }
 .ness-bar .ness-progress {
-  background: #309ce8;
+  background: #2b8cee;
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
   height: 100%;
@@ -1712,7 +1875,6 @@ article {
 }
 .ness-list {
   list-style-type: none;
-  margin: 0 0 12px 0;
   padding: 0;
   position: relative;
   width: 100%;

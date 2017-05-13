@@ -1,98 +1,220 @@
+/*********************/
+/***** NESS FORM *****/
+/*********************/
+
+/* # Form Container */
 .ness-form-container {
   padding: @small;
-  h1, h2, h3, h4, h5, h6 {
-    margin: 0 0 12px 0;
-    padding: 12px 0px;
-    &:first-child { border-bottom: 1px solid @steelgrey }
+}
+
+/* # Form */
+.ness-form {
+  .common-form() {
+    box-sizing: border-box;
+    color: @form-text;
+    font-size: 16px;
+    padding: 4px 8px;
+    line-height: @big;
+    height: @giant;
+    min-width: 40px;
+    transition: 0.2s;
   }
-  h1 {
-    font-size: 24px;
+  input:not([type=checkbox]), select, textarea {
+    .common-form();
   }
-  h2 {
-    font-size: 24px;
+  label {
+    display: flex;
+    font-size: 14px;
+    margin-bottom: @tiny;
+    &:first-child { margin-right: @tiny; }
+    &:last-child { margin-left: @tiny; }
   }
-  h3 {
-    font-size: 24px;
-  }
-  h4 {
-    font-size: 24px;
-  }
-  //
-  .add-input,
-  .add-option {
-    color: @green;
-    cursor: pointer;
-    font-size: 22px;
-    margin-bottom: 8px;
-    &:hover {
-      color: @darkgreen;
+  input {
+    &:active, &:focus {
+      color: @form-text-focus;
+      border-bottom-color: @primary;
+      outline: none;
     }
   }
-  .remove-input {
-    color: @red;
-    cursor: pointer;
-    font-size: 22px;
-    &:hover {
-      color: @darkred;
+  select {
+    .common-form();
+    &:active, &:focus {
+      color: @form-text-focus;
+      outline: none;
     }
   }
-  .ness-form {
-    input, select, textarea {
-      color: black;
-      padding: 8px 16px;
-      &:focus {
-        background: @grey;
-        color: white;
-      }
-    }
-    .add-input {
-      color: @green;
-      cursor: pointer;
-      font-size: 18px;
-      &:hover {
-        color: @darkgreen;
-      }
-    }
-    .remove-input {
-      color: @red;
-      cursor: pointer;
-      font-size: 18px;
-      &:hover {
-        color: @darkred;
-      }
-    }
-    .edit { display: none }
-    &.edit-mode {
-      .edit { display: block; }
-      .noedit { display: none; }
+  textarea {
+    .common-form();
+     &:active, &:focus {
+      color: @form-text-focus;
+      border-bottom-color: @primary;
+      outline: none;
     }
   }
 }
 
-.ness-label
-{
-  margin-bottom: 5px;
-  padding: 6px 8px;
+/* # Form group */
+.ness-form-group {
+  display: flex; flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: @big;
 }
-.ness-input
-{
-  border: 1px solid @steelgrey;
-  border-radius: 4px;
-  box-shadow: inset 0px 1px 2px hsla(200, 5%, 5%, 0.1);
-  padding: 8px 12px;
-  &:active, &:focus
-  {
-    border: 1px solid @darkblue;
-    box-shadow: 0px 0px 1px 1px @lightblue;
+
+/* # Mixins */
+.ness-form-common() {
+  border-width: 0 0 1px;
+  border-style: solid;
+  border-color: @steelgrey;
+  min-width: 40px;
+  &:active, &:focus {
+    outline: none;
   }
 }
+
+/* # Input */
+.ness-input {
+  .ness-form-common();
+}
+
+/* # Select */
+.ness-select {
+  .ness-form-common();
+  padding: 8px 12px;
+}
+
+/* # Option container */
+.ness-option-container {
+  box-shadow: 0px 1px 3px 1px @grey;
+  max-height: @option-height * @max-option;
+  overflow-y: auto; 
+}
+
+/* # Option group */
+.ness-option-group {
+  .ness-list;
+  display: none;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0px;
+  min-width: 200px;
+}
+
+/* # Option */
+.ness-option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0px @medium;
+  height: @option-height;
+  &:hover {
+    background: @option-bg-hover;
+    color: @option-txt-hover
+  }
+  transition: 0.2s;
+}
+
+/* # Checkbox group */
+.ness-checkbox-group {
+  position: relative;
+  display: flex; flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+/* # Checkbox */
 .ness-checkbox {
-  background: @lightgrey 100%;
-  background: linear-gradient(top, @lightgrey 0%, white 50%, @lightgrey 100%);
-  border-radius: 5px/10px;
+  background: @steelgrey;
   height: @medium; width: @medium;
   position: relative;
-  & + input[type=checkbox] {
-    visibility: hidden;
-  }   
+  &-neutral {
+    background: @steelgrey;
+  }
+  &-primary {
+    background: @primary;
+  }
+  &.big {
+    height: @big; width: @big;
+    .checksign {
+      font-size: 32px;
+      left: 3px;
+      top: -12px;
+    }
+  }
+  & ~ [type=checkbox] {
+    display: none;
+  }
+  // Checksign
+  font-size: 24px;
+  position: absolute;
+  left: 1px;
+  top: -15px;
+  opacity: 1.0;
+  transition: 0.3s;
+  &-neutral {
+    color: @darkgrey;
+  }
+  &-primary {
+    color: @primary;
+  }
+  &:after {
+    content: '\002713';
+  }
 }
+
+/* # Checksign */
+.ness-checksign {
+  font-size: 24px;
+  position: absolute;
+  left: 1px;
+  top: -15px;
+  opacity: 1.0;
+  transition: 0.3s;
+  &-neutral {
+    color: @darkgrey;
+  }
+  &-primary {
+    color: @primary;
+  }
+  &:after {
+    content: '\002713';
+  }
+}
+
+/* # Misc */
+.remove-input {
+  color: @red;
+  cursor: pointer;
+  font-size: 22px;
+  &:hover {
+    color: @darkred;
+  }
+}
+  .add-input, .add-option {
+    color: @green;
+    cursor: pointer;
+    font-size: 18px;
+    &:hover {
+      color: @darkgreen;
+    }
+  }
+  .remove-input, .remove-option {
+    color: @red;
+    cursor: pointer;
+    font-size: 18px;
+    &:hover {
+      color: @darkred;
+    }
+  }
+  .edit { display: none }
+  &.edit-mode {
+    .edit { display: block; }
+    .noedit { display: none; }
+  }
+
+/* # Variables */
+@form-text: @darkgrey;
+@form-text-focus: darken(@form-text, 15%);
+@option-bg-hover: @lightgrey;
+@option-txt-hover: @black;
+@option-height: 48px;
+@max-option: 5;

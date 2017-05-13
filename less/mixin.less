@@ -15,6 +15,13 @@
   align-items: @secondary;
 }
 
+.linear-gradient(@angle, @color_start, @color_end) {
+  background: -webkit-linear-gradient(@arguments);
+  background: -moz-linear-gradient(@arguments);
+  background: -o-linear-gradient(@arguments);
+  background: linear-gradient(@arguments);
+}
+
 .setFadeOut(@color: black; @start: 100%; @end: 20%) {
   background: linear-gradient(fadeOut(@color, @start), fadeOut(@color, @end));
 }
@@ -28,4 +35,12 @@
   -webkit-transform: translateY(@value);
   -ms-transform: translateY(@value);
   transform: translateY(@value);
+}
+
+.setColor(@bg) when(lightness(@bg) < 60%) {
+  color: @white;
+}
+
+.setColor(@bg) when(lightness(@bg) >= 60%) {
+  color: @blackgrey;
 }

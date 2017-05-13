@@ -31,7 +31,7 @@
       tr {
         color: black;
         cursor: pointer;
-        transition: 0.12s;
+        transition: 0.10s;
         //
         &:nth-child(even) { background: @tbody-tr-bg-even }
         &:nth-child(odd) { background: @tbody-tr-bg-odd }
@@ -87,7 +87,7 @@
 @thead-tr-bg: @darkgrey;
 @thead-th-bg-hover: darken(@thead-tr-bg, 7%); // Overriding isn't necessary
 //tbody
-@tbody-tr-bg-even: white;
-@tbody-tr-bg-odd: @lightgrey;
-@tbody-tr-bg-hover: @darkblue;
+@tbody-tr-bg-even: @lightgrey;
+@tbody-tr-bg-odd: @white;
+@tbody-tr-bg-hover: @blue;
 @tbody-tr-txt-hover: white;

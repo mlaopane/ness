@@ -1,0 +1,18 @@
+/*** Backgrounds ***/
+
+// Mixins
+.setGradient(@color, @angle: 145deg) {
+  .bg-linear {
+    &-@{color} {
+      background: linear-gradient(@angle, darken(@@color, 18%), lighten(@@color, 2%));
+      .setColor(@@color);
+    }
+  }
+}
+
+// Generate the classes
+.setGradient(grey);
+.setGradient(red);
+.setGradient(green);
+.setGradient(blue);
+.setGradient(yellow);
