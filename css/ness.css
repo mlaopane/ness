@@ -1364,6 +1364,7 @@ article {
 }
 /*** BLOCKS ***/
 .ness-block {
+  background: #f4f5f6;
   display: block;
   padding: 16px;
   position: relative;
@@ -1467,6 +1468,9 @@ article {
 }
 .three-d {
   box-shadow: 0px 1px 5px 1px #819098;
+}
+.shadow {
+  box-shadow: 0px 1px 4px 1px #819098;
 }
 .hover :hover {
   background: #505c62;
