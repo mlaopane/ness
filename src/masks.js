@@ -6,17 +6,19 @@ var Masks = {
   init: function () {
     let masks = $('.ness-mask');
     if (masks.length) {
-      let parent_css = {position: 'relative'};
-      let children_css = {zIndex: '2'};
       for (let mask of masks) {
+        opacity_value = $(mask).data('mask-opacity') > 0 ? $(mask).data('mask-opacity') : '0.8';
+        let parent_css = {position: 'relative'};
+        let mask_css = {opacity: opacity_value};
+        let children_css = {zIndex: '2'};
         let parent = $(mask).parent();
         $(parent).css(parent_css);
+        $(mask).css(mask_css);
         $(parent).find('*').not('.ness-mask').css(children_css);
       }
-      return masks;
     }
-    return null;
-  }
+    return this;
+  },
 }
 
 module.exports = Masks;
