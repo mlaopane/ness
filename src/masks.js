@@ -7,7 +7,7 @@ var Masks = {
     let masks = $('.ness-mask');
     if (masks.length) {
       for (let mask of masks) {
-        opacity_value = $(mask).data('mask-opacity') > 0 ? $(mask).data('mask-opacity') : '0.8';
+        opacity_value = $(mask).data('opacity') > 0 ? $(mask).data('opacity') : '0.8';
         let parent_css = {position: 'relative'};
         let mask_css = {opacity: opacity_value};
         let children_css = {zIndex: '2'};

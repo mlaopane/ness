@@ -8,16 +8,20 @@ var Backgrounds = {
     if (elements.length) {
       let properties;
       for (let element of elements) {
-        properties = { background: "url('" + $(element).data('bg-url') + "')" };
-        $(element).css(properties);
+        if ($(element).data('bg-url')) {
+          properties = { background: "url('" + $(element).data('bg-url') + "')" };
+          $(element).css(properties);
+        }
       }
     }
     elements = $('[data-bg-color]');
     if (elements.length) {
       let properties;
       for (let element of elements) {
-        properties = { background: $(element).data('bg-color') };
-        $(element).css(properties);
+        if ($(element).data('bg-color')) {
+          properties = { background: $(element).data('bg-color') };
+          $(element).css(properties);
+        }
       }
     }
   }
