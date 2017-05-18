@@ -3,7 +3,7 @@ html {
   height: 100%;
 }
 body {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Fira Sans", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   height: 100%;
   margin: 0px;
   padding: 0px;
@@ -17,7 +17,7 @@ hr {
   background: #d5dadd;
 }
 p {
-  color: #505c62;
+  color: #394246;
 }
 a {
   color: black;
@@ -27,34 +27,37 @@ a:hover {
   color: #505c62;
   text-decoration: none;
 }
+a:focus {
+  outline: none;
+}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: #505c62;
+  color: #394246;
   margin: 0px 0px 10px 0px;
   padding-top: 8px;
   padding-bottom: 8px;
 }
 h1 {
-  font-size: 32px;
-}
-h2 {
   font-size: 24px;
 }
-h3 {
+h2 {
   font-size: 18px;
 }
-h4 {
+h3 {
   font-size: 14px;
 }
-h5 {
+h4 {
   font-size: 12px;
 }
-h6 {
+h5 {
   font-size: 11px;
+}
+h6 {
+  font-size: 9px;
 }
 button {
   background: #f4f5f6;
@@ -67,17 +70,17 @@ button:hover {
   background: #505c62;
   color: #f4f5f6;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   aside {
     min-height: 600px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   aside {
     min-height: 800px;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   aside {
     min-height: 1000px;
   }
@@ -251,6 +254,18 @@ article {
   margin: 8px;
 }
 /* Screen */
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/Fira_Sans/FiraSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'Fira Sans Bold';
+  src: url('../fonts/Fira_Sans/FiraSans-Bold.ttf');
+}
+@font-face {
+  font-family: 'Fira Sans Italic';
+  src: url('../fonts/Fira_Sans/FiraSans-Italic.ttf');
+}
 @font-face {
   font-family: 'Open Sans';
   src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
@@ -467,336 +482,336 @@ article {
   transition: .2s;
   width: 100%;
 }
-@media (min-width: 480px) {
+@media (min-width: 576px) {
   .ness-grid .ness-sm-1 {
     box-sizing: border-box;
     transition: .2s;
     width: 8.33333333%;
   }
 }
-@media (min-width: 480px) {
+@media (min-width: 576px) {
   .ness-grid .ness-sm-2 {
     box-sizing: border-box;
     transition: .2s;
     width: 16.66666667%;
   }
 }
-@media (min-width: 480px) {
+@media (min-width: 576px) {
   .ness-grid .ness-sm-3 {
     box-sizing: border-box;
     transition: .2s;
     width: 25%;
   }
 }
-@media (min-width: 480px) {
+@media (min-width: 576px) {
   .ness-grid .ness-sm-4 {
     box-sizing: border-box;
     transition: .2s;
     width: 33.33333333%;
   }
 }
-@media (min-width: 480px) {
+@media (min-width: 576px) {
   .ness-grid .ness-sm-5 {
     box-sizing: border-box;
     transition: .2s;
     width: 41.66666667%;
   }
 }
-@media (min-width: 480px) {
+@media (min-width: 576px) {
   .ness-grid .ness-sm-6 {
     box-sizing: border-box;
     transition: .2s;
     width: 50%;
   }
 }
-@media (min-width: 480px) {
+@media (min-width: 576px) {
   .ness-grid .ness-sm-7 {
     box-sizing: border-box;
     transition: .2s;
     width: 58.33333333%;
   }
 }
-@media (min-width: 480px) {
+@media (min-width: 576px) {
   .ness-grid .ness-sm-8 {
     box-sizing: border-box;
     transition: .2s;
     width: 66.66666667%;
   }
 }
-@media (min-width: 480px) {
+@media (min-width: 576px) {
   .ness-grid .ness-sm-9 {
     box-sizing: border-box;
     transition: .2s;
     width: 75%;
   }
 }
-@media (min-width: 480px) {
+@media (min-width: 576px) {
   .ness-grid .ness-sm-10 {
     box-sizing: border-box;
     transition: .2s;
     width: 83.33333333%;
   }
 }
-@media (min-width: 480px) {
+@media (min-width: 576px) {
   .ness-grid .ness-sm-11 {
     box-sizing: border-box;
     transition: .2s;
     width: 91.66666667%;
   }
 }
-@media (min-width: 480px) {
+@media (min-width: 576px) {
   .ness-grid .ness-sm-12 {
     box-sizing: border-box;
     transition: .2s;
     width: 100%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .ness-grid .ness-md-1 {
     box-sizing: border-box;
     transition: .2s;
     width: 8.33333333%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .ness-grid .ness-md-2 {
     box-sizing: border-box;
     transition: .2s;
     width: 16.66666667%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .ness-grid .ness-md-3 {
     box-sizing: border-box;
     transition: .2s;
     width: 25%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .ness-grid .ness-md-4 {
     box-sizing: border-box;
     transition: .2s;
     width: 33.33333333%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .ness-grid .ness-md-5 {
     box-sizing: border-box;
     transition: .2s;
     width: 41.66666667%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .ness-grid .ness-md-6 {
     box-sizing: border-box;
     transition: .2s;
     width: 50%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .ness-grid .ness-md-7 {
     box-sizing: border-box;
     transition: .2s;
     width: 58.33333333%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .ness-grid .ness-md-8 {
     box-sizing: border-box;
     transition: .2s;
     width: 66.66666667%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .ness-grid .ness-md-9 {
     box-sizing: border-box;
     transition: .2s;
     width: 75%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .ness-grid .ness-md-10 {
     box-sizing: border-box;
     transition: .2s;
     width: 83.33333333%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .ness-grid .ness-md-11 {
     box-sizing: border-box;
     transition: .2s;
     width: 91.66666667%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .ness-grid .ness-md-12 {
     box-sizing: border-box;
     transition: .2s;
     width: 100%;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .ness-grid .ness-lg-1 {
     box-sizing: border-box;
     transition: .2s;
     width: 8.33333333%;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .ness-grid .ness-lg-2 {
     box-sizing: border-box;
     transition: .2s;
     width: 16.66666667%;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .ness-grid .ness-lg-3 {
     box-sizing: border-box;
     transition: .2s;
     width: 25%;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .ness-grid .ness-lg-4 {
     box-sizing: border-box;
     transition: .2s;
     width: 33.33333333%;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .ness-grid .ness-lg-5 {
     box-sizing: border-box;
     transition: .2s;
     width: 41.66666667%;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .ness-grid .ness-lg-6 {
     box-sizing: border-box;
     transition: .2s;
     width: 50%;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .ness-grid .ness-lg-7 {
     box-sizing: border-box;
     transition: .2s;
     width: 58.33333333%;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .ness-grid .ness-lg-8 {
     box-sizing: border-box;
     transition: .2s;
     width: 66.66666667%;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .ness-grid .ness-lg-9 {
     box-sizing: border-box;
     transition: .2s;
     width: 75%;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .ness-grid .ness-lg-10 {
     box-sizing: border-box;
     transition: .2s;
     width: 83.33333333%;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .ness-grid .ness-lg-11 {
     box-sizing: border-box;
     transition: .2s;
     width: 91.66666667%;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .ness-grid .ness-lg-12 {
     box-sizing: border-box;
     transition: .2s;
     width: 100%;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .ness-grid .ness-xl-1 {
     box-sizing: border-box;
     transition: .2s;
     width: 8.33333333%;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .ness-grid .ness-xl-2 {
     box-sizing: border-box;
     transition: .2s;
     width: 16.66666667%;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .ness-grid .ness-xl-3 {
     box-sizing: border-box;
     transition: .2s;
     width: 25%;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .ness-grid .ness-xl-4 {
     box-sizing: border-box;
     transition: .2s;
     width: 33.33333333%;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .ness-grid .ness-xl-5 {
     box-sizing: border-box;
     transition: .2s;
     width: 41.66666667%;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .ness-grid .ness-xl-6 {
     box-sizing: border-box;
     transition: .2s;
     width: 50%;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .ness-grid .ness-xl-7 {
     box-sizing: border-box;
     transition: .2s;
     width: 58.33333333%;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .ness-grid .ness-xl-8 {
     box-sizing: border-box;
     transition: .2s;
     width: 66.66666667%;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .ness-grid .ness-xl-9 {
     box-sizing: border-box;
     transition: .2s;
     width: 75%;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .ness-grid .ness-xl-10 {
     box-sizing: border-box;
     transition: .2s;
     width: 83.33333333%;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .ness-grid .ness-xl-11 {
     box-sizing: border-box;
     transition: .2s;
     width: 91.66666667%;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .ness-grid .ness-xl-12 {
     box-sizing: border-box;
     transition: .2s;
@@ -1115,7 +1130,7 @@ article {
   margin: 0;
   padding: 0;
 }
-@media (min-width: 769px) {
+@media (min-width: 770px) {
   .ness-menu {
     flex-flow: row nowrap;
   }
@@ -1133,7 +1148,7 @@ article {
 .ness-menu li:not(:last-of-type) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
-@media (min-width: 769px) {
+@media (min-width: 770px) {
   .ness-menu li {
     border-bottom: none;
   }
@@ -1172,7 +1187,7 @@ article {
 .ness-menu.round > li:last-of-type a {
   border-radius: 0px 0px 4px 4px;
 }
-@media (min-width: 769px) {
+@media (min-width: 770px) {
   .ness-menu.round > li:first-of-type a {
     border-radius: 4px 0px 0px 4px;
   }
@@ -1256,7 +1271,7 @@ article {
   width: 100%;
   z-index: 1;
 }
-@media (min-width: 769px) {
+@media (min-width: 770px) {
   .ness-menu .dropdown-content {
     width: initial;
   }
@@ -1271,7 +1286,7 @@ article {
 .ness-menu.burger {
   display: none;
 }
-@media (min-width: 769px) {
+@media (min-width: 770px) {
   .ness-menu.burger {
     display: flex;
   }
@@ -1300,7 +1315,7 @@ article {
   justify-content: center;
   align-items: center;
 }
-@media (min-width: 769px) {
+@media (min-width: 770px) {
   .toggle-burger {
     display: none;
   }
