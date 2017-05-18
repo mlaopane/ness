@@ -9,7 +9,7 @@ var Backgrounds = {
       let properties;
       for (let element of elements) {
         if ($(element).data('bg-url')) {
-          properties = { background: "url('" + $(element).data('bg-url') + "')" };
+          properties = { background: $(element).css() + " " + "url('" + $(element).data('bg-url') + "')" };
           $(element).css(properties);
         }
       }
@@ -19,7 +19,7 @@ var Backgrounds = {
       let properties;
       for (let element of elements) {
         if ($(element).data('bg-color')) {
-          properties = { background: $(element).data('bg-color') };
+          properties = { background: $(element).css() + " " + $(element).data('bg-color') };
           $(element).css(properties);
         }
       }
