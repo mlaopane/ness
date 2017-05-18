@@ -28,7 +28,8 @@ a {
     color: @my-link-color-hover;
     text-decoration: none;
   }
-  &:focus {
+  &:focus, &:active {
+    text-decoration: none;
     outline: none;
   }
 }
