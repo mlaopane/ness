@@ -14,7 +14,7 @@ var Masks = {
         let parent = $(mask).parent();
         $(parent).css(parent_css);
         $(mask).css(mask_css);
-        $(parent).find('*').not('.ness-mask').css(children_css);
+        $(parent).children('*').not('.ness-mask').not('.modal').css(children_css);
       }
     }
     return this;
