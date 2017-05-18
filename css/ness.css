@@ -47,19 +47,19 @@ h1 {
   font-size: 24px;
 }
 h2 {
-  font-size: 18px;
+  font-size: 20px;
 }
 h3 {
-  font-size: 14px;
+  font-size: 18px;
 }
 h4 {
-  font-size: 12px;
+  font-size: 16px;
 }
 h5 {
-  font-size: 11px;
+  font-size: 14px;
 }
 h6 {
-  font-size: 9px;
+  font-size: 12px;
 }
 button {
   background: #f4f5f6;
@@ -1857,6 +1857,11 @@ article {
   text-align: right;
 }
 /*** Customize your table ***/
+/* Tests */
+.test {
+  background: #53c69f;
+  color: white;
+}
 .ness-bar {
   background: white;
   border: 1px solid #d5dadd;
