@@ -16,13 +16,17 @@
   border: 1px solid @steelgrey;
   color: @darkgrey !important;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 8px 12px;
   .border-radius(4px);
   &:focus {
     outline: none;
   }
   &:hover {
-    background: darken(@darkgrey, 10%) !important;
+    background: @darkgrey !important;
+    border-color: lighten(@darkgrey, 5%) !important;
     color: white !important;
   }
 
