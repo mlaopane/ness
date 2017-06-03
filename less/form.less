@@ -87,7 +87,7 @@
 .ness-option-container {
   box-shadow: 0px 1px 3px 1px @grey;
   max-height: @option-height * @max-option;
-  overflow-y: auto; 
+  overflow-y: auto;
 }
 
 /* # Option group */
@@ -105,11 +105,19 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  padding: 0px @medium;
   height: @option-height;
+  padding: 0px @medium;
+  width: 100%;
+  a {
+    display: flex;
+  }
   &:hover {
     background: @option-bg-hover;
     color: @option-txt-hover
+    a {
+      background: @option-bg-hover;
+      color: @option-txt-hover
+    }
   }
   transition: 0.2s;
 }

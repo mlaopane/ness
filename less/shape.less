@@ -1,4 +1,5 @@
-// out: false
+// main: ness.less
+
 /*** SHAPE ***/
 .ness-box {
   content: '';
@@ -12,7 +13,49 @@
   border-right: none;
   background: transparent;
   position: absolute;
-  transform: rotate(-45deg); 
+  transform: rotate(-45deg);
+}
+
+.parallelogram {
+	-webkit-transform: skew(-20deg);
+	   -moz-transform: skew(-20deg);
+	     -o-transform: skew(-20deg);
+  &:hover {
+    background: @darkgrey;
+  }
+}
+
+.yin-yang {
+	width: 96px;
+	height: 48px;
+	background: @lightgrey;
+	border-color: red;
+	border-style: solid;
+	border-width: 2px 2px 50px 2px;
+	border-radius: 100%;
+	position: relative;
+  &:before {
+  	content: "";
+  	position: absolute;
+  	top: 50%;
+  	left: 0;
+  	background: @lightgrey;
+  	border: 18px solid red;
+  	border-radius: 100%;
+  	width: 12px;
+  	height: 12px;
+  }
+  &:after {
+  	content: "";
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	background: @blackgrey;
+  	border: 18px solid #eee;
+  	border-radius:100%;
+  	width: 12px;
+  	height: 12px;
+  }
 }
 
 @box-color: darken(@turquoise, 10%);
