@@ -1667,8 +1667,11 @@ article {
 /* # Option container */
 .ness-option-container {
   box-shadow: 0px 1px 3px 1px #819098;
-  max-height: 240px;
+  max-height: 220px;
   overflow-y: auto;
+}
+.ness-option-container.no-limit {
+  max-height: none;
 }
 /* # Option group */
 .ness-option-group {
@@ -1680,7 +1683,7 @@ article {
   display: flex;
   flex-flow: column nowrap;
   margin: 0px;
-  min-width: 200px;
+  min-width: 40px;
 }
 .ness-option-group.circle {
   list-style-type: circle;
@@ -1705,10 +1708,25 @@ article {
   display: flex;
   align-items: center;
   cursor: pointer;
-  height: 48px;
+  height: 44px;
   padding: 0px 16px;
   width: 100%;
   transition: 0.2s;
+}
+.ness-option-xs {
+  height: 20px;
+}
+.ness-option-sm {
+  height: 28px;
+}
+.ness-option-md {
+  height: 36px;
+}
+.ness-option-lg {
+  height: 44px;
+}
+.ness-option-xl {
+  height: 52px;
 }
 .ness-option a {
   display: flex;
